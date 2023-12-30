@@ -43,7 +43,7 @@ const LandingPage = () => {
       {/* Hero Section */}
       <header className="jumbotron bg-primary text-white">
         <div className="container text-center">
-          <h1 className="display-4">Unlock Your Full Potential with Personalized Athletic Coaching</h1>
+          <h1 className="display-4">HELLO LEARNER</h1>
           <a className="btn btn-light btn-lg my-4" href="/booking" role="button">Book Your Coach Now!</a>
         </div>
       </header>
