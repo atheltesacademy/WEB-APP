@@ -168,7 +168,7 @@ const ChatBot = () => {
   return (
     <Widget
       handleNewUserMessage={handleNewUserMessage}
-      title="Hello Chatbot"
+      title="Hello Chatbot, How are you?"
       subtitle="Ask me about Cricket, Football, Tennis, or Yoga"
     />
   );
