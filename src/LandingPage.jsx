@@ -44,22 +44,8 @@ const LandingPage = () => {
       <header className="jumbotron bg-primary text-white">
         <div className="container text-center">
           <h1 className="display-4">HELLO LEARNER</h1>
-          <a className="btn btn-light btn-lg my-4" href="/booking" role="button">Book Your Coach Now!</a>
         </div>
       </header>
-
-      {/* Video Section */}
-      <div className="video-container align my-4" style={{ textAlign: 'center' }}>
-          <iframe
-            title="Athlete Training Video"
-            width="800"
-            height="400"
-            src="https://www.youtube.com/embed/wnHW6o8WMas"
-            allowFullScreen
-            style={{ margin: 'auto' }}
-          ></iframe>
-        </div>
-
       {/* About Section */}
       <section className="container my-5">
         <h2>About Us</h2>
