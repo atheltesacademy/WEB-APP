@@ -1,0 +1,23 @@
+class 70 day Tast[Function and class component]
+
+
+Qustion=3.> What is the defference between a class component and  a functional component??
+Answer=3.< Function Component= a.Simple to read, understand and  are written in few lines of code .
+                            b. Can access props,but they lack state and life cycle hence used as presentational component.
+			c.Due to lack of state, functional component are stateless.
+			d.Don't need this keyword to access props.
+	< Class Component=a.Offer more features,this makes the code a little bulky than Functional componenet.
+			b.Used as container component,as they access props,handle state management and lifecycle.
+			c.Stateful and make use of constructors to initialize state.
+			d.Uses this keyword to access props.
+			
+
+
+
+
+
+
+
+
+
+
