@@ -3,6 +3,8 @@ import './App.css';
 import LandingPage from './LandingPage';
 import CoachList from './CoachList';
 import ChatBot from './ChatBot';
+import UserProfileCard from './components/UserProfileCard';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         </Switch>
     </Router>
     <ChatBot />
+    <div className='userInfo'><UserProfileCard/></div>
     </>
   );
 }
