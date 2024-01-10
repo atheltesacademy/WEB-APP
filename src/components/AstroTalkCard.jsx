@@ -63,6 +63,7 @@ const ChatCard = ({ name }) => {
             <p style={styles.language}>Language: English & Hindi</p>
             <p style={styles.specialist}>Specialist: Army Training</p>
             <p style={styles.experience}>Experience: 2 Years</p>
+            <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
           </div>
           
           <div style={styles.partSb}>
@@ -74,17 +75,7 @@ const ChatCard = ({ name }) => {
         </button>
           </div>
         </div>
-        {modalOpen && (
-          <div style={styles.modal} id="modal">
-            <div style={styles.modalContent}>
-              <span style={styles.closeBtn} onClick={closeCardDetails}>&times;</span>
-              <h2 style={styles.modalHeading}>Details for {name}</h2>
-              <p style={styles.modalDescription}>Replace this with detailed information about the person.</p>
-              <p style={styles.modalPrice}>Price: $50/hour</p>
-              <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
-            </div>
-          </div>
-        )}
+     
       </div>
 
 {/* 2. */}
@@ -111,6 +102,7 @@ const ChatCard = ({ name }) => {
             <p style={styles.language}>Language: English & Hindi</p>
             <p style={styles.specialist}>Specialist: Army Training</p>
             <p style={styles.experience}>Experience: 2 Years</p>
+            <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
           </div>
           
           <div style={styles.partSb}>
@@ -122,17 +114,7 @@ const ChatCard = ({ name }) => {
         </button>
           </div>
         </div>
-        {modalOpen && (
-          <div style={styles.modal} id="modal">
-            <div style={styles.modalContent}>
-              <span style={styles.closeBtn} onClick={closeCardDetails}>&times;</span>
-              <h2 style={styles.modalHeading}>Details for {name}</h2>
-              <p style={styles.modalDescription}>Replace this with detailed information about the person.</p>
-              <p style={styles.modalPrice}>Price: $50/hour</p>
-              <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
-            </div>
-          </div>
-        )}
+     
       </div>
 
       {/* 3. */}
@@ -159,6 +141,7 @@ const ChatCard = ({ name }) => {
             <p style={styles.language}>Language: English & Hindi</p>
             <p style={styles.specialist}>Specialist: Army Training</p>
             <p style={styles.experience}>Experience: 2 Years</p>
+            <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
           </div>
           
           <div style={styles.partSb}>
@@ -170,17 +153,7 @@ const ChatCard = ({ name }) => {
         </button>
           </div>
         </div>
-        {modalOpen && (
-          <div style={styles.modal} id="modal">
-            <div style={styles.modalContent}>
-              <span style={styles.closeBtn} onClick={closeCardDetails}>&times;</span>
-              <h2 style={styles.modalHeading}>Details for {name}</h2>
-              <p style={styles.modalDescription}>Replace this with detailed information about the person.</p>
-              <p style={styles.modalPrice}>Price: $50/hour</p>
-              <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
-            </div>
-          </div>
-        )}
+      
       </div>
 
       {/* 4. */}
@@ -207,6 +180,7 @@ const ChatCard = ({ name }) => {
             <p style={styles.language}>Language: English & Hindi</p>
             <p style={styles.specialist}>Specialist: Army Training</p>
             <p style={styles.experience}>Experience: 2 Years</p>
+            <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
           </div>
           
           <div style={styles.partSb}>
@@ -218,17 +192,7 @@ const ChatCard = ({ name }) => {
         </button>
           </div>
         </div>
-        {modalOpen && (
-          <div style={styles.modal} id="modal">
-            <div style={styles.modalContent}>
-              <span style={styles.closeBtn} onClick={closeCardDetails}>&times;</span>
-              <h2 style={styles.modalHeading}>Details for {name}</h2>
-              <p style={styles.modalDescription}>Replace this with detailed information about the person.</p>
-              <p style={styles.modalPrice}>Price: $50/hour</p>
-              <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
-            </div>
-          </div>
-        )}
+        
       </div>
       {/* 5. */}
       <div style={styles.card}>
@@ -254,6 +218,7 @@ const ChatCard = ({ name }) => {
             <p style={styles.language}>Language: English & Hindi</p>
             <p style={styles.specialist}>Specialist: Army Training</p>
             <p style={styles.experience}>Experience: 2 Years</p>
+            <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
           </div>
           
           <div style={styles.partSb}>
@@ -265,17 +230,7 @@ const ChatCard = ({ name }) => {
         </button>
           </div>
         </div>
-        {modalOpen && (
-          <div style={styles.modal} id="modal">
-            <div style={styles.modalContent}>
-              <span style={styles.closeBtn} onClick={closeCardDetails}>&times;</span>
-              <h2 style={styles.modalHeading}>Details for {name}</h2>
-              <p style={styles.modalDescription}>Replace this with detailed information about the person.</p>
-              <p style={styles.modalPrice}>Price: $50/hour</p>
-              <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
-            </div>
-          </div>
-        )}
+     
       </div>
       {/* 6. */}
       <div style={styles.card}>
@@ -301,6 +256,7 @@ const ChatCard = ({ name }) => {
             <p style={styles.language}>Language: English & Hindi</p>
             <p style={styles.specialist}>Specialist: Army Training</p>
             <p style={styles.experience}>Experience: 2 Years</p>
+            <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
           </div>
           
           <div style={styles.partSb}>
@@ -312,17 +268,7 @@ const ChatCard = ({ name }) => {
         </button>
           </div>
         </div>
-        {modalOpen && (
-          <div style={styles.modal} id="modal">
-            <div style={styles.modalContent}>
-              <span style={styles.closeBtn} onClick={closeCardDetails}>&times;</span>
-              <h2 style={styles.modalHeading}>Details for {name}</h2>
-              <p style={styles.modalDescription}>Replace this with detailed information about the person.</p>
-              <p style={styles.modalPrice}>Price: $50/hour</p>
-              <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
-            </div>
-          </div>
-        )}
+       
       </div>
 
       {/* 7. */}
@@ -349,6 +295,7 @@ const ChatCard = ({ name }) => {
             <p style={styles.language}>Language: English & Hindi</p>
             <p style={styles.specialist}>Specialist: Army Training</p>
             <p style={styles.experience}>Experience: 2 Years</p>
+            <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
           </div>
           
           <div style={styles.partSb}>
@@ -360,17 +307,7 @@ const ChatCard = ({ name }) => {
         </button>
           </div>
         </div>
-        {modalOpen && (
-          <div style={styles.modal} id="modal">
-            <div style={styles.modalContent}>
-              <span style={styles.closeBtn} onClick={closeCardDetails}>&times;</span>
-              <h2 style={styles.modalHeading}>Details for {name}</h2>
-              <p style={styles.modalDescription}>Replace this with detailed information about the person.</p>
-              <p style={styles.modalPrice}>Price: $50/hour</p>
-              <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
-            </div>
-          </div>
-        )}
+      
       </div>
       {/* 8. */}
       <div style={styles.card}>
@@ -396,6 +333,7 @@ const ChatCard = ({ name }) => {
             <p style={styles.language}>Language: English & Hindi</p>
             <p style={styles.specialist}>Specialist: Army Training</p>
             <p style={styles.experience}>Experience: 2 Years</p>
+            <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
           </div>
           
           <div style={styles.partSb}>
@@ -407,17 +345,7 @@ const ChatCard = ({ name }) => {
         </button>
           </div>
         </div>
-        {modalOpen && (
-          <div style={styles.modal} id="modal">
-            <div style={styles.modalContent}>
-              <span style={styles.closeBtn} onClick={closeCardDetails}>&times;</span>
-              <h2 style={styles.modalHeading}>Details for {name}</h2>
-              <p style={styles.modalDescription}>Replace this with detailed information about the person.</p>
-              <p style={styles.modalPrice}>Price: $50/hour</p>
-              <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
-            </div>
-          </div>
-        )}
+     
       </div>
       {/* 9. */}
       <div style={styles.card}>
@@ -443,6 +371,7 @@ const ChatCard = ({ name }) => {
             <p style={styles.language}>Language: English & Hindi</p>
             <p style={styles.specialist}>Specialist: Army Training</p>
             <p style={styles.experience}>Experience: 2 Years</p>
+            <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
           </div>
           
           <div style={styles.partSb}>
@@ -454,17 +383,7 @@ const ChatCard = ({ name }) => {
         </button>
           </div>
         </div>
-        {modalOpen && (
-          <div style={styles.modal} id="modal">
-            <div style={styles.modalContent}>
-              <span style={styles.closeBtn} onClick={closeCardDetails}>&times;</span>
-              <h2 style={styles.modalHeading}>Details for {name}</h2>
-              <p style={styles.modalDescription}>Replace this with detailed information about the person.</p>
-              <p style={styles.modalPrice}>Price: $50/hour</p>
-              <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
-            </div>
-          </div>
-        )}
+       
       </div>
 
       {/* 10. */}
@@ -491,6 +410,7 @@ const ChatCard = ({ name }) => {
             <p style={styles.language}>Language: English & Hindi</p>
             <p style={styles.specialist}>Specialist: Army Training</p>
             <p style={styles.experience}>Experience: 2 Years</p>
+            <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
           </div>
           
           <div style={styles.partSb}>
@@ -502,17 +422,7 @@ const ChatCard = ({ name }) => {
         </button>
           </div>
         </div>
-        {modalOpen && (
-          <div style={styles.modal} id="modal">
-            <div style={styles.modalContent}>
-              <span style={styles.closeBtn} onClick={closeCardDetails}>&times;</span>
-              <h2 style={styles.modalHeading}>Details for {name}</h2>
-              <p style={styles.modalDescription}>Replace this with detailed information about the person.</p>
-              <p style={styles.modalPrice}>Price: $50/hour</p>
-              <button style={styles.bookBtn} onClick={bookNow}>Book Now</button>
-            </div>
-          </div>
-        )}
+       
       </div>
       
     </div>
@@ -526,15 +436,14 @@ const styles = {
     flexWrap: 'wrap',
   },
   card: {
-    display: 'flex',
-    width: '31%',
-    height: '22%',
-    backgroundColor: '#fff',
-    borderRadius: '15px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    border: '1px solid #e0e0e0',
+    borderRadius: '8px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     overflow: 'hidden',
-    margin: '20px',
-    
+    // maxWidth: '300px',
+    margin: '16px',
+    fontFamily: 'Arial, sans-serif',
+    display: 'flex',
   },
   firstPartLeft: {
     display: 'flex',
@@ -602,42 +511,7 @@ const styles = {
   chatBtnHover: {
     backgroundColor: '#ff4f3e',
   },
-  modal: {
-    display: 'none',
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    background: 'rgba(0, 0, 0, 0.7)',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  modalContent: {
-    position: 'relative',
-    background: '#fff',
-    padding: '20px',
-    borderRadius: '8px',
-    width: '60%',
-    maxWidth: '600px',
-    textAlign: 'center',
-  },
-  closeBtn: {
-    position: 'absolute',
-    top: '10px',
-    right: '10px',
-    fontSize: '20px',
-    cursor: 'pointer',
-  },
-  modalHeading: {
-
-  },
-  modalDescription:{
-
-  },
-  modalPrice:{
-
-  },
+  
   bookBtn: {
     backgroundColor: 'darkred',
     color: '#fff',
