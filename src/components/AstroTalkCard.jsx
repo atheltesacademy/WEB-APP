@@ -24,13 +24,6 @@ const ChatCard = ({ name }) => {
   };
 
 
-  const openCardDetails = () => {
-    setModalOpen(true);
-  };
-
-  const closeCardDetails = () => {
-    setModalOpen(false);
-  };
 
   const bookNow = () => {
     alert('Booking functionality will be implemented here.');
