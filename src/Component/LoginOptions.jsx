@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import './script.css'
-function script() {
+import './LoginOptions.css'
+function LoginOptions() {
   const [isActive, setIsActive] = useState(false);
 
   const handleRegisterClick = () => {
@@ -23,4 +23,4 @@ function script() {
   );
 }
 
-export default script;
+export default LoginOptions;

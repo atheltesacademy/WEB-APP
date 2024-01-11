@@ -1,7 +1,5 @@
 import React,{useState} from "react";
-import "./App.css";
-function App() {
-  const container = document.getElementById("root");
+function Login() {
   const [isLoginActive, setLoginActive] = useState(false);
 
   const onClickRegister = () => { 
@@ -15,7 +13,7 @@ function App() {
   };
 
   return (
-    <div className={`container ${isLoginActive ? 'active' : ""}`} id="root">
+    <div className={`container ${isLoginActive ? 'active' : ""}`}>
       <div className="form-container sign-up">
         <form>
           <h1>Create Account </h1>
@@ -74,4 +72,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
