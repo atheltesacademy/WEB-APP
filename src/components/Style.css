@@ -1,0 +1,59 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  background-attachment: fixed;
+  background: url('./Imagee.jpeg') center/cover no-repeat;
+}
+
+
+button {
+  background-color: #1491ed;
+  border: none;
+  border-radius: 5px;
+  color: rgb(5, 5, 5);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+label {
+  margin-bottom: 10px;
+  color: #104c60;
+}
+
+select {
+  padding: 2px;
+    border-radius: 2px;
+    border: 1px solid #666;
+    width: 153px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+  background-color: rgb(143, 221, 248);
+}
+
+#formContainer {
+  display: none;
+}
+#h1 {
+  font-size: xxx-large;
+    font-family: system-ui;
+    font-weight: 700;
+    color: #00a4db;
+    background-color: #fafcf7d1;
+    max-inline-size: fit-content;
+    margin: auto;
+}
+/* .input {
+  width: 30%;
+    padding: 3px;
+} */
