@@ -3,6 +3,7 @@ import './App.css';
 import LandingPage from './LandingPage';
 import CoachList from './CoachList';
 import ChatBot from './ChatBot';
+import  AthleticsAcademy from './components/Page'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <ProductReview />
           </div>
           } />
+          <Route path="/user-selection" component={AthleticsAcademy} />
         </Switch>
       </Router>
       <ChatBot />
