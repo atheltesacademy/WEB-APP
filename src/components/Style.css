@@ -1,0 +1,124 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #1a1ac8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('./fff.jpg');
+}
+
+
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.rating {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #FFD700;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.reviews {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.review {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.review p {
+    margin: 0;
+}
+
+/* Additional styles from the second set */
+#card {
+    width: 160%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 28px;
+    border-radius: 50px 100px;
+    background-color: #afdcedc4;
+    transition: transform 0.2s;
+    margin: 2% 0% 0% 6%;
+}
+
+#card:hover {
+    transform: scale(1.03);
+}
+
+#text {
+    margin-top: 20px;
+    color: black;
+    height: 100%;
+    width: 100%;
+    margin: 1% 1% 4% 1%;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+}
+
+#name svg {
+    margin-left: 9px;
+    fill: #333;
+}
+#info {
+    width: 45%;
+    float: right;
+    padding: 20px;
+    max-inline-size: max-content;
+    /* position: absolute; */
+    top: 23%;
+    right: 70%;
+    transform: translateY(-50%);
+    margin: -10% 70% 0% 0%;
+}
+
+#services,
+#languages,
+#experience,
+#rate,
+#minutes {
+    margin: 5px 0;
+    color: black;
+    text-align: left;
+    position: relative;
+}
+
+#about {
+    margin-top: 20px;
+    margin-right: 45%;
+}
+
+#about h4 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+#about h5 {
+    color: rgb(77, 77, 77);
+}
+
+
+
+.ratingToo {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+
