@@ -7,13 +7,19 @@ import ChatBot from './ChatBot';
 function App() {
   return (
     <>
-    <Router>
+      <Router>
         <Switch>
           <Route path="/" exact component={LandingPage} />
           <Route path="/coaches/:sport" component={CoachList} />
+          <Route path="/coaches/:sport/:id" component={<div>
+            <About />
+            <RatingComponent />
+            <ProductReview />
+          </div>
+          } />
         </Switch>
-    </Router>
-    <ChatBot />
+      </Router>
+      <ChatBot />
     </>
   );
 }
