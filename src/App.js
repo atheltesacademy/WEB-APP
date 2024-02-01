@@ -5,6 +5,7 @@ import CoachList from './CoachList';
 import ChatBot from './ChatBot';
 import  AthleticsAcademy from './components/Page'
 
+import Login from './Component/Login';
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
           </div>
           } />
           <Route path="/user-selection" component={AthleticsAcademy} />
+          <Route path="/login" component={Login} />
         </Switch>
       </Router>
       <ChatBot />
