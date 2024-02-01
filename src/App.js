@@ -5,7 +5,7 @@ import CoachList from './CoachList';
 import ChatBot from './ChatBot';
 import  AthleticsAcademy from './components/Page'
 
-import Login from './Component/Login';
+import Login from './components/Login';
 function App() {
   return (
     <>
