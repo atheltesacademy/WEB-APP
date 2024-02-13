@@ -1,0 +1,113 @@
+.navbar {
+  padding-top: 5px;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-style:Raleway;
+  background-image: linear-gradient(rgb(214, 202, 202), white, white, #ffffff3b);
+  height: 87px;
+}
+.navbar a {
+  padding: 16px;
+  color: rgb(1, 1, 1);
+  text-decoration: none;
+  font-size: 20px; 
+  margin-left: 20px;
+  cursor: pointer;
+}
+.navbar a:hover {
+  /* background-color: #cbf2e8; */
+  font-size: 20px;
+  font-weight: bold;
+}
+.active {
+  margin-left: 40px;
+
+}
+
+/* coachcard css start from here */
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .card-chatcard {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 220px;
+    margin: 13px;
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+  
+  .firstPartLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #d8dcdd;
+    padding: 20px;
+  }
+  
+  .partFa {
+    text-align: center;
+    margin: -10px 1px 0px -10px;
+  }
+  
+  .image {
+    width: 130px;
+    height: 130px;
+    border-radius: 30%;
+  }
+  .partFb {
+    color: #181616;
+  }
+  .rating {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fb9507; /* Gold color */
+  }
+  .secondPartRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color:  #d8dcdd;
+    padding: 20px;
+  }
+  .partSa {
+    color: #333;
+  }
+  .language,
+  .specialist,
+  .experience {
+    margin: 5px 0;
+  }
+  .partSb {
+    margin-top: auto;
+    /* margin: 5% 5% -10% 5%; */
+    text-align: center;
+    height: 26px;
+  }
+  .buttonStyle1 {
+    border-radius: 10px;
+    border: 2px solid green;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .buttonStyle2 {
+    border-radius: 10px;
+    border: 2px rgb(5, 26, 163) solid;
+    cursor: pointer;
+    margin-left: 20px;
+    color: black;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .buttonStyle:hover {
+    background-color: #961004;
+  }

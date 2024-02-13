@@ -1,0 +1,64 @@
+.coach-profile {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .coach-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .coach-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .coach-description {
+    font-size: 16px;
+  }
+  
+  .coach-ratings {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+  .ratings-count {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .coach-experience,
+  .coach-services {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .experience-info,
+  .coach-price {
+    margin-right: 20px;
+  }
+  
+  .experience-label,
+  .price-label,
+  .services-label {
+    font-weight: bold;
+  }
+  
+  .price {
+    color: #2ecc71; /* Green color for price */
+  }
+  
+  .services-list div {
+    margin-right: 10px;
+  }
+  

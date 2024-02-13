@@ -1,0 +1,48 @@
+.navbar {
+    padding-top: 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(white, white, white, #ffffff3b);
+    height: 70px;
+  }
+  .navbar a {
+    padding: 16px;
+    color: rgb(1, 1, 1);
+    text-decoration: none;
+    font-size: 19px;
+  }
+  .active {
+    margin-left: 40px;
+  }
+  /* #input-home{
+    margin-top: 100px;
+  } */
+  
+  #card-divmain {
+    height: 560px;
+    background-color: rgb(221, 230, 227);
+    width: 70%;
+    border-radius: 7%;
+    border: 5px solid rgb(4, 186, 135);
+    margin-top: 30px;
+    float: left;
+    margin-left: 160px;
+    padding: 15px;
+  }
+  .top-left {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image: linear-gradient(rgb(0, 204, 255), rgb(0, 229, 255));
+  }
+  .img1-01 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+  }
+  
+  .img1-01:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+  

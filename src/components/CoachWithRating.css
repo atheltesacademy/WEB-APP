@@ -1,0 +1,65 @@
+#card-coach {
+  transition: 0.3s;
+  /* margin-top: 50px; */
+  background-color: aqua;
+  border: 4px solid black;
+  width: fit-content;
+  height:min-content;
+  background-color: white;
+    height: -webkit-fill-available;
+    width: initial;
+    display: contents;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width:250px;
+  padding: 10px;
+  height: 650px; /* Should be removed. Only for demonstration */
+}
+.column1 {
+  float: left;
+  width: 160px;
+  padding: 10px;
+  font-size: 20px;
+  height: 650px; /* Should be removed. Only for demonstration */
+}
+.column2 {
+  margin-left: 9%;
+  width: 290px;
+  padding: 10px;
+  height: 650px; /* Should be removed. Only for demonstration */
+}
+.column3 {
+  margin-left: 12%;
+  display: grid;
+  width: 260px;
+  padding: 10px;
+  height: 650px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.file {
+  color: orange;
+}
+#sp1{
+  padding-top: 400px;
+  
+}
+.Usercontainer{
+  margin-left: 77%;
+    margin-top: -29%;
+    display: flexbox;
+    width: 20%;
+}
+.rating {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #FFD700;
+}
