@@ -1,0 +1,137 @@
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.save-page {
+    border-radius: 5px;
+    background-color: #faf5f5;
+    width: 400px;
+    height: 700px;
+    padding: 20px;
+    margin-right: 160px;
+    float: right;
+}
+
+/* .col-25 {
+    float: left;
+    width: 35%;
+    margin-top: 116px;
+} */
+
+.col-75 {
+    float: left;
+    width: 79%;
+    height: 45px;
+    margin-top: 12px;
+}
+
+.row-signin:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.main-container {
+    height: 600px;
+    background-color: white;
+    width: 108%;
+    margin-left: 320px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.card-container {
+    background-color: rgb(39, 241, 214);
+    width: 450px;
+    height: 700px;
+    float: left;
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 100px;
+    height: 30px;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.logo-register {
+    width: 250px;
+    height: 170px;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+
+.container-save {
+    font-weight: bold;
+    text-align: left;
+}
+
+.welcome-back {
+    color: rgb(48, 45, 45);
+    margin-left: 40px;
+    font-size: 30px;
+    margin-top: 250px;
+}
+
+.description {
+    color: rgb(18, 17, 17);
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+.sign-in-title {
+    margin-left: 90px;
+}
+
+.register-link {
+    color: rgb(244, 117, 6);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: bold;
+}
+
+.sign-in-button {
+    height: 40px;
+    width: 340px;
+    background-color: #0f0e62;
+    color: rgb(244, 235, 235);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.forget-password-link {
+    color: rgb(246, 105, 5);
+    text-align: center;
+    font-weight: bold;
+}
