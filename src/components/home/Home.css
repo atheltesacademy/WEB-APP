@@ -1,0 +1,54 @@
+
+#card-divmain {
+  height: 640px;
+  background-color: rgb(221, 230, 227);
+  width: 70%;
+  border-radius: 7%;
+  border: 5px solid rgb(4, 186, 135);
+  margin-top: 30px;
+  float: left;
+  margin-left: 160px;
+  /* padding: 15px; */
+}
+.top-left {
+  position: absolute;
+  height: 28px;
+  width: 75px;
+  color:black;
+  border: aliceblue;
+  font-weight: bold;
+  border-radius: 20px 2px;
+  margin-top: 20px;
+  margin-left: 19px;
+  background-image: linear-gradient(rgb(0, 204, 255), rgb(46, 201, 248),rgb(150, 255, 101));
+}
+
+.img1-01 {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+}
+.search-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: gray;
+}
+
+
+.img1-01:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.Micro-icon {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: gray;
+}
