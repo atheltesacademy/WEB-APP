@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import './CoachWithRating.css';
-import MainLogo from '../../assets/min-frame@2x.png';
+import MainLogo from '../../assets/Rectangle 64.svg';
+import MainLogo4 from '../../assets/price icon.svg';
+import MainLogo3 from '../../assets/Group 5.svg';
+import MainLogo1 from '../../assets/material-symbols_verified-rounded.svg';
+import MainLogo2 from '../../assets/Rectangle 63.svg';
+import MessageLogo from '../../assets/Group (1).svg';
+import CallLogo from '../../assets/fluent_call-16-regular.svg';
+import VDLogo from '../../assets/watch intro.svg';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalculator, faCamera, faCog, faGreaterThan, faMicrophone, faPaperclip, faVideo } from "@fortawesome/free-solid-svg-icons";
+
 import { Link } from 'react-router-dom';
 import NavigationBar from '../navigation/NavigationBar'
 
@@ -37,21 +47,37 @@ const WithRating = () => {
     <div>
 <NavigationBar/>
       <div className="row">
-        
-        <div className="column card-coach" style={{ backgroundColor: 'white' }}>
-          <img src={MainLogo} alt="Avatar" style={{ width: '80%',marginTop:'80px' }} />
-          {/* <FontAwesomeIcon icon={faUser}/> */}
-        </div>
+      <div className='gameAndCoach'>
+                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available'}}>Football</button>
+                            <span className='m-1'><FontAwesomeIcon icon={faGreaterThan} style={{ marginLeft: '8%'}}/>&nbsp;Coaches</span>
+                        </div>
 
-        <div className="column1 card-coach" style={{ backgroundColor: 'white' }}>
-          <span className="column1">
-            <h4><b>Sam</b></h4>
+        <div className="column card-coach" style={{ backgroundColor: 'white' }}>
+          {/* <img src={MainLogo} alt="Avatar" style={{ width: '600px',position:'absolute',height: 'max-content',marginTop: '12%' }} /> */}
+         <div className="imageDin">
+         <span className="column1Video">
+            <h2><b>Sam</b></h2>
             <p>Football Player,UP Skill</p>
             <p>English,Hindi</p>
             <p>8 Years</p>
-            <p>₹ <sup>30/min</sup></p>
-            <button> <Link to="/Coach-Chat" style={{ textDecoration: 'none', color: 'green' }}>Online</Link></button>
+            
+            
           </span>
+
+          <img src={MainLogo2} alt="boom" style={{ position:'relative',marginTop:'167px',marginLeft:'7px', height:'270px' }}/>
+          <img src={MainLogo1} alt="boom" style={{position:'relative',marginTop:'-23%', marginLeft:'150%'}} />
+          <img src={MainLogo3} alt="boom" style={{position:'relative',marginTop:'150%', marginLeft:'-110%'}} />
+          <img src={MainLogo4} alt="boom" style={{position:'relative',marginTop:'150%', marginLeft:'-140%'}} /> 
+          <h1 style={{position:'relative',marginTop:'165%'}}> 30/min</h1>
+
+          
+          </div>
+          {/* <FontAwesomeIcon icon={faUser}/> */}
+    <Link to="/">
+     <div className="with3rd">  
+        <img src={MessageLogo} alt="boom"  style={{marginLeft:'-50px'}}/>
+          <img src={CallLogo} alt="boom" style={{marginLeft:'90px'}}/>
+          <img src={VDLogo} alt="boom" width='300px'  style={{marginLeft:'90px'}}/></div> </Link>
         </div>
 
         <div className="column2 card-coach" style={{ backgroundColor: 'white' }}>

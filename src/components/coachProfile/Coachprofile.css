@@ -1,8 +1,8 @@
-.save-page {
+.savepageCoach {
     border-radius: 5px;
     background-color: hsl(0, 33%, 97%);
     width: 400px;
-    height: 670px;
+    height: 700px;
     padding: 20px;
     margin-right: 160px;
     float: right;
@@ -86,4 +86,35 @@
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+}
+
+
+.welcomebackCoach {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+color:#061A48;    
+
+width: 350px;
+    
+height: 49.98px;
+top: 807px;
+left: 80px;
+}
+
+.descriptionCoach {
+    width: 201px;
+    height: 19px;
+    top: 889.94px;
+    margin-left: 2%;
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #6D717A;
 }

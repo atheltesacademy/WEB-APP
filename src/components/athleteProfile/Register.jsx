@@ -11,12 +11,12 @@ const Register = () => {
                 {/* <img src={Logo1} alt="Avatar" className="avatar" /> */}
                 <img src={Logo2} alt="Logo" className="logo-register" />
                 <div className="container-save">
-                    <p className="welcome-back">Welcome Back</p>
-                    <p className="description">Welcome to Athlets Academy, Your Premium Sports Partner</p>
+                <p className="welcomebackAthlete">WELCOME BACK</p>
+                    <p className="descriptionCoachAthlete">WELCOME TO ATA</p>
                 </div>
             </div>
 
-            <div className="save-page">
+            <div className="savepageAthlete">
                 <form action="/" target="_blank">
                     <img src={Logo3} alt="saveimg" className="save-img" width= "40% "style={{marginLeft:'20%'}}/>
                     <div className="row-register">
@@ -58,7 +58,8 @@ const Register = () => {
                     <Link ><button className="save-button" style={{backgroundColor:"green",padding:"10px",width:"90px",color:"white",borderRadius:"10px"}} >Save</button></Link>
                     </div>
                 </form>
-                <p className="copy-right"style={{marginTop:'70px',marginLeft:'20px'}}>Copyright@2024 fix Athlet Academy.ltd all right reserved</p>
+                <p  style={{marginTop:'50px',marginLeft:'40px',fontSize:'small'}}>Copyright@2024 ATA All. right reserved</p>
+               
             </div>
         </div>
     );

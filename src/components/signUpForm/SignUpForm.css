@@ -1,24 +1,24 @@
-/* input[type=text], select, textarea {
+input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-} */
+}
 
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
 
-.save-page {
+.save-pageUp {
     border-radius: 5px;
     background-color: hsl(0, 33%, 97%);
     width: 400px;
-    height: 670px;
+    height: 900px;
     padding: 20px;
     margin-right: 160px;
-    float: right;
+    
 }
 /* 
 .col-25 {
@@ -47,12 +47,13 @@ label {
     }
 }
 /* Additional styling for the React component */
-.signup-container {
+.signUpContainer{
     height: 600px;
     background-color: white;
     width: 100%;
     margin-left: 80px;
     margin-top: 100px;
+    display: flex;
 }
 .card-containerUp {
     background-color: rgb(39, 241, 214);
@@ -67,10 +68,10 @@ label {
     margin-left: 80px;
     margin-top: 60px;
 }
-.logo-signup {
+.logoSignUp {
     width: 250px;
     height: 170px;
-    margin-left: 380px;
+    margin-left: 130px;
     margin-top: 160px;
 }
 .container-save {

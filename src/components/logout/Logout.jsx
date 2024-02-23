@@ -11,10 +11,10 @@ const Logout = () => {
         <div className="main-container">
             <div className="card-containerIn">
                 {/* <img src={Logo1} alt="Avatar" className="avatar" /> */}
-                <img src={Logo2} alt="Logo" className="logo-register" />
+                <img src={Logo2} alt="Logo" className="logo-LogoOut" />
                 <div className="container-save">
-                    <p className="Thank-you">Thank you</p>
-                    <p className="description">for visiting ATA Website</p>
+                    <p className="ThankyouOut">THANK YOU</p>
+                    <p className="descriptionOut">FOR VISITING ATA WEBSITE</p>
                 </div>
             </div>
 
@@ -26,8 +26,9 @@ const Logout = () => {
                         <div id="forgetPasswordLink">
                             <a href="#" id="forgetPassword" className="forget-password-link">Forget Password?</a>
                         </div>
-                        <div id='threeIcon'><img src={Icon} alt="hello" style={{marginTop:'20%'}} /></div>
-                        <p className="copy-right" style={{marginTop:'150px',marginLeft:'20px'}}>Copyright@2024 ATA All. right reserved</p>
+                        <div id='threeIcon'><img src={Icon} alt="hello" style={{marginTop:'20%',marginLeft:'15px'}} /></div>
+                        <p  style={{marginTop:'50px',marginLeft:'40px',fontSize:'small'}}>Copyright@2024 ATA All. right reserved</p>
+                       
                     </div>
                 </form>
             </div>

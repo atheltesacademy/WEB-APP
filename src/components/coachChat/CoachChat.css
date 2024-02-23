@@ -25,13 +25,13 @@
     clear: both;
   }
       /* chatbox csss start */
-      :root {
+      /* :root {
           --body-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
           --msger-bg: #fff;
           --border: 2px solid #ddd;
           --left-msg-bg: #ececec;
           --right-msg-bg: #579ffb;
-      }
+      } */
   
       html {
           box-sizing: border-box;
@@ -52,6 +52,7 @@
           margin-left: 500px;
           background-image: var(--body-bg);
           font-family: Helvetica, sans-serif;
+          margin-right: 30%;
       }
       .msger {
           display: flex;
@@ -59,7 +60,9 @@
           justify-content: space-between;
           width: 400px;
           max-width: 867px;
-          margin: 25px 10px;
+          margin: 25px -90px;
+          margin-top: 160%;
+
           height: calc(100% - 50px);
           border: var(--border);
           border-radius: 5px;
@@ -168,5 +171,27 @@
       }
       .msger-chat {
           background-color: #fcfcfe;
+          
       }
+  .rowCoachChat{
+    display: flex;
+    height: 100%;
+    margin-left: 30px;
+margin-top: 10%;
+  }
+  .gameAndCoachChat{
+    margin-top: -3%;
+    position: absolute;
+        margin-left: 17%;
+    display: flex;
+      width: 20%;
+      justify-content: space-around;
+
+  }
+
+
+  .with3rdChat{
+    display: flex;
+  margin: 3% 0% 0% 40%;
+  }
   

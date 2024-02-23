@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Mainpage from './components/mainPage/Mainpage';
 // import SignUp from './components/SignUp';
 import SignUpForm from './components/signUpForm/SignUpForm';
@@ -18,8 +18,8 @@ import NavigationBar from './components/navigation/NavigationBar';
 import Coachprofile from './components/coachProfile/Coachprofile';
 import CoachId from './components/coachId/CoachId';
 // import Chat from './components/video/VideoChat';
-import VideoChat from './components/video/VideoChat';
 import Logout from './components/logout/Logout';
+import { CoachVideoChat } from './components/coachVideoChat/CoachVideoChat';
 // import ChatBot from './components/ChatBot';
 
 
@@ -28,9 +28,9 @@ import Logout from './components/logout/Logout';
 const App = () => {
   return (
 
-    <Router>
+    <>
       <Routes>
-        <Route path="/" element={<Mainpage />} />
+        <Route path="/" element={< Mainpage />} />
         {/* <Route path="/Sign-Up"  element={<SignUp />} /> */}
         <Route path="/SignUp-from" element={<SignUpForm />} />
         <Route path="/SignIn-from" element={<SignInForm />} />
@@ -50,20 +50,14 @@ const App = () => {
         <Route path='/Coach-Chat' element={<CoachChat />} />
         <Route path='/Navigation-Bar' element={<NavigationBar />} />
         <Route path='/Coach-profile' element={<Coachprofile />} />
-        <Route path='/Video-chat' element={<VideoChat/>} />
-        <Route path='/log-out' element={<Logout/>} />
-
-
+        <Route path='/Video-chat' element={<CoachVideoChat/>} />
+        <Route path='/log-out' element={<Logout />} />
         {/* <ChatBot /> */}
-
-
-
-
-
-
+        <Route path='/Coach-video-chat' element={<CoachVideoChat />} />
 
       </Routes>
-    </Router>
+      {/* // </Router > */}
+    </>
   );
 };
 

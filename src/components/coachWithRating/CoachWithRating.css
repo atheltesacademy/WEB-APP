@@ -18,28 +18,28 @@
   padding: 10px;
   height: 650px; /* Should be removed. Only for demonstration */
 }
-.column1 {
-  float: left;
-  width: 160px;
-  padding: 10px;
+.column1Video {
   font-size: 20px;
-  margin-top: 50px;
-  height: 650px; /* Should be removed. Only for demonstration */
+  margin-top: 170px;
+  margin-left: 19%;
+  position: absolute;
+  display: grid;
+  height: 200px;
 }
 .column2 {
-  margin-left: 9%;
+  margin-left: 39%;
   width: 290px;
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 90px;
 
   height: 650px; /* Should be removed. Only for demonstration */
 }
 .column3 {
-  margin-left: 12%;
+  margin-left: 141;
   display: grid;
   width: 260px;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 50px;
 
   height: 650px; /* Should be removed. Only for demonstration */
 }
@@ -144,3 +144,29 @@ button:hover {
   margin: 0;
 }
 
+
+
+
+.with3rd{
+  display: flex;
+margin: 3% 0% 0% 40%;
+}
+.imageDin{
+  display: flex;
+  
+}
+
+.gameAndCoach{
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 17%;
+  display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+.m-1{
+  height: 34px;
+  display: contents;
+  font-size: xx-large;
+ 
+}

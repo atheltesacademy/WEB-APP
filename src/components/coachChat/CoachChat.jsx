@@ -1,7 +1,15 @@
 import React from 'react';
 import logo1 from '../../assets/min-frame@2x.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faContactBook } from "@fortawesome/free-solid-svg-icons";
+import { faContactBook,faGreaterThan } from "@fortawesome/free-solid-svg-icons";
+import MainLogo4 from '../../assets/price icon.svg';
+import MainLogo3 from '../../assets/Group 5.svg';
+import MainLogo1 from '../../assets/material-symbols_verified-rounded.svg';
+import MainLogo2 from '../../assets/Rectangle 63.svg';
+import MessageLogo from '../../assets/Group (1).svg';
+import CallLogo from '../../assets/fluent_call-16-regular.svg';
+import VDLogo from '../../assets/watch intro.svg';
+
 import './CoachChat.css'; // Import the CSS file for CoachChat component
 import { Link } from 'react-router-dom';
 import NavigationBar from '../navigation/NavigationBar';
@@ -10,52 +18,40 @@ const CoachChat = () => {
   return (
     <div>
       <NavigationBar/>
-      <button
-        style={{
-          marginTop: 80,
-          backgroundColor: "#579ffb",
-          color: "white",
-          border: "none",
-          padding: 10,
-          marginLeft: 150,
-          borderRadius: 20
-        }}
-      >
-        <a>Football</a>
-      </button>
-      <FontAwesomeIcon icon={faContactBook}/>
-      <Link to="/Chat-Bot">coaches</Link>
-      <div className="row">
-        <div
-          className="column"
-          id="card-coach"
-          style={{ backgroundColor: "white" }}
-        >
-          <img src={logo1} alt="Avatar" width="20%" height="10%" />
-        </div>
-        <div
-          className="column1"
-          id="card-coach"
-          style={{ backgroundColor: "white" }}
-        >
-          <span className="column1">
-            <h4>
-              <b>Sam</b>
-            </h4>
+           <div className="rowCoachChat">
+           <div className='gameAndCoachChat'>
+                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available'}}>Football</button>
+                            <span className='m-1'><FontAwesomeIcon icon={faGreaterThan} style={{ marginLeft: '8%'}}/>&nbsp;Coaches</span>
+                        </div>
+                        <div className="column card-coach" style={{ backgroundColor: 'white' }}>
+          {/* <img src={MainLogo} alt="Avatar" style={{ width: '600px',position:'absolute',height: 'max-content',marginTop: '12%' }} /> */}
+         <div className="imageDin">
+         <span className="column1Video">
+            <h2><b>Sam</b></h2>
             <p>Football Player,UP Skill</p>
             <p>English,Hindi</p>
             <p>8 Years</p>
-            <p>
-              ₹ <sup>30/min</sup>
-            </p>
-            <button>
-              {" "}
-              <a href="#" style={{ textDecoration: "none", color: "green" }}>
-                Online
-              </a>
-            </button>
+            
+            
           </span>
+
+          <img src={MainLogo2} alt="boom" style={{ position:'relative',marginTop:'167px',marginLeft:'7px', height:'270px' }}/>
+          <img src={MainLogo1} alt="boom" style={{position:'relative',marginTop:'-23%', marginLeft:'150%'}} />
+          <img src={MainLogo3} alt="boom" style={{position:'relative',marginTop:'150%', marginLeft:'-110%'}} />
+          <img src={MainLogo4} alt="boom" style={{position:'relative',marginTop:'150%', marginLeft:'-140%'}} /> 
+          <h1 style={{position:'relative',marginTop:'165%'}}> 30/min</h1>
+
+          
+          </div>
+          {/* <FontAwesomeIcon icon={faUser}/> */}
+    <Link to="/">
+     <div className="with3rdChat">  
+        <img src={MessageLogo} alt="boom"  style={{marginLeft:'-50px'}}/>
+          <img src={CallLogo} alt="boom" style={{marginLeft:'90px'}}/>
+          <img src={VDLogo} alt="boom" width='300px'  style={{marginLeft:'90px'}}/></div> </Link>
         </div>
+
+       
         <div id="chatbox-div" style={{marginleft: 'auto'}} >
           <section className="msger">
             <header className="msger-header">
