@@ -53,13 +53,14 @@ const SignInForm = () => {
                 {/* <img src={Logo1} alt="Avatar" className="avatar" /> */}
                 <img src={Logo2} alt="Logo" className="logo-register" />
                 <div className="container-save">
-                    <p className="welcome-back">Welcome Back</p>
-                    <p className="description">Welcome to Athlets Academy, Your Premium Sports Partner</p>
+                    <p className="welcomebackIn">WELCOME BACK</p>
+                    <p className="descriptionIn">WELCOME TO ATA</p>
+
                 </div>
             </div>
 
-            <div className="save-page">
-                <form action="/" target="_blank"  onSubmit={signinHandle}>
+            <div className="savepageIn">
+                <form action="/" style={{marginLeft:'10%',marginTop:'10%'}}  onSubmit={signinHandle}>
                     <h1 className="sign-in-title" style={{color:'black'}}>SIGN IN</h1><br /><br />
                     <p>Not a member? <Link to="/SignUp-from" className="register-link">Register</Link></p>
 
@@ -81,13 +82,14 @@ const SignInForm = () => {
                         <input type="checkbox" defaultUnChecked name="remember" /> Remember me
                     </label>
                     <div className="row-signin">
-                        <button className="sign-in-button">Sign in</button>
+                        <button className="signInOnly">Sign in</button>
                         <div id="forgetPasswordLink">
                             <Link to="/Log-out" id="forgetPassword" className="forget-password-link">Forget Password?</Link>
                         </div>
-<div id='threeIcon'><img src={Icon} alt="hello" style={{marginTop:'20%'}} /></div>
+<div id='threeIcon'><img src={Icon} alt="hello" style={{marginTop:'20%',marginLeft:'10px'}} /></div>
+
                        
-                        <p className="copy-right" style={{marginTop:'150px',marginLeft:'20px'}}>Copyright@2024 ATA All. right reserved</p>
+                        <p  style={{marginTop:'10px',marginLeft:'40px',fontSize:'small'}}>Copyright@2024 ATA All. right reserved</p>
                     </div>
                 </form>
             </div>

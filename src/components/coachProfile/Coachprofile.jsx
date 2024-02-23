@@ -1,5 +1,5 @@
 import React from 'react';
-import './SignUpForm.css';
+import './Coachprofile.css';
 import Logo1 from '../../assets/ata-flat-1@2x.png';
 import Logo2 from '../../assets/lockup-color-1@2x.png';
 import Logo3 from '../../assets/unsplashumfpfokxivg@2x.png';
@@ -12,12 +12,13 @@ const Coachprofile = () => {
                 {/* <img src={Logo1} alt="Avatar" className="avatar" /> */}
                 <img src={Logo2} alt="Logo" className="logo-register" />
                 <div className="container-save">
-                    <p className="welcome-back">Welcome Back</p>
-                    <p className="description">Welcome to Athlets Academy, Your Premium Sports Partner</p>
+                    <p className="welcomebackCoach">WELCOME BACK</p>
+                    <p className="descriptionCoach">WELCOME TO ATA</p>
+
                 </div>
             </div>
 
-            <div className="save-page">
+            <div className="savepageCoach">
                 <form action="main.html" target="_blank">
                 <img src={Logo3} alt="saveimg" className="save-img" width= "40% " style={{marginLeft:'20%'}}/>
                     <div className="row">
@@ -59,7 +60,8 @@ const Coachprofile = () => {
                         <Link ><button className="save-button" style={{backgroundColor:"green",padding:"10px",width:"90px",color:"white",borderRadius:"10px"}} >Save</button></Link>
                     </div>
                 </form>
-                <p className="copy-right" style={{marginTop:'70px',marginLeft:'20px'}}>Copyright@2024 fix Athlet Academy.ltd all right reserved</p>
+                <p  style={{marginTop:'50px',marginLeft:'40px',fontSize:'small'}}>Copyright@2024 ATA All. right reserved</p>
+               
             </div>
         </div>
     );

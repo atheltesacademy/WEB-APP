@@ -4,6 +4,7 @@ import football from '../../assets/football-card@2x.png'
 import basketball from '../../assets/basketball-card1@2x.png'
 import tennis from '../../assets/tennis-card1@2x.png'
 import yoga from '../../assets/yoga-card1@2x.png'
+import More from '../../assets/more.svg'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -38,7 +39,8 @@ const LandingPage4 = () => {
       <Link to="/Landing-Page3">    <img src={basketball} alt="img1" width="13%" /></Link>
       <Link to="/Landing-Page2">    <img src={tennis} alt="img1" width="12%" /></Link>
       <Link to="/Landing-Page4">     <img src={yoga} alt="img1" width="11%" /></Link>
-          <Link to="#">More</Link><FontAwesomeIcon icon={faAngleRight} style={{height:"48px"}}/>
+      <Link to="#"><img src={More} alt="error" /></Link>
+         
         </div>
       </div>
       </div>

@@ -94,10 +94,43 @@ border-radius:25px;
     border-radius:25px;
     
   }
-.filterPng{
-  Width:47.04px;
-Height:39.01px;
-Top:44px;
-Left:1513.96px;
-border-radius:9px;
-}
+  .search-Nav1 {
+    position: relative;
+    top: 8px;
+    left: 150px;
+    color: gray;
+margin: -5% 0% 0% 54%;
+display: table;
+font-family: Inter;
+font-size: 13px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+    .search-Nav2 {
+    position: relative;
+    top: 8px;
+    left: 10px;
+    color: gray;
+margin: -27% 0% 0% 110%;
+display: table;
+font-family: Inter;
+font-size: 13px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+
+  .gameAndCoachId{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 17%;
+    display: flex;
+      width: 20%;
+      justify-content: space-around;
+  }
+  

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 // import { ReactComponent as GoogleIcon} from './assets/group-53.svg';
+import myImage0 from '../../assets/Group 1380.svg'
 import Sports from '../../assets/tennis-card@2x.png';
 import Sports2 from '../../assets/Yoga-card@2x.png';
 import Sports3 from '../../assets/football-card@2x.png';
@@ -26,13 +27,14 @@ const Home = () => {
       
       <span className="search-barhome">
         <div className="search-container">
-          <input type="text" id="input" placeholder="Name Sports Category..." style={{ borderRadius: '25px', width: '740px', height: '30px', backgroundColor: 'lightgray', borderColor: 'black', paddingLeft: '5%' }} />
+          <input type="text" id="input" placeholder="Name Sports Category..." style={{ borderRadius: '25px', width: '900px', height: '30px', backgroundColor: 'lightgray', borderColor: 'black', paddingLeft: '5%' }} />
           <FontAwesomeIcon icon={faSearch} className="search-icon" /><FontAwesomeIcon icon={faMicrophone} className="Micro-icon" />
       
         </div>
         <br /><br />
-        <input type="text" id="input" placeholder="Popular Now.." style={{ borderRadius: '25px', width: '190px', height: '30px', marginLeft: '150px', borderColor: 'black', backgroundColor: 'lightgray' }} />
-      </span>
+        <input type="text" id="input" placeholder="Popular Now.." style={{ borderRadius: '25px', width: '190px', height: '30px', marginLeft: '150px', borderColor: 'black', backgroundColor: 'lightgray',paddingLeft: '1%' }} />
+<img src={myImage0} alt="error" style={{marginLeft:'50%'}} />
+            </span>
       <div id="card-divmain">
         <Link to="/Coach-Id">
           <button className="top-left">Tennis</button>

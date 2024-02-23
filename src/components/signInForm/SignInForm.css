@@ -1,10 +1,10 @@
-/* input[type=text], select, textarea {
+input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-} */
+}
 
 label {
     padding: 12px 12px 12px 0;
@@ -25,7 +25,7 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.save-page {
+.savepageIn {
     border-radius: 5px;
     background-color: #faf5f5;
     width: 400px;
@@ -78,12 +78,6 @@ input[type=submit]:hover {
     border-radius: 10px;
 }
 
-.avatar {
-    width: 100px;
-    height: 30px;
-    margin-left: 150px;
-    margin-top: 30px;
-}
 
 .logo-register {
     width: 250px;
@@ -97,21 +91,37 @@ input[type=submit]:hover {
     text-align: left;
 }
 
-.welcome-back {
-    color: rgb(48, 45, 45);
-    margin-left: 40px;
-    font-size: 30px;
-    margin-top: 250px;
+.welcomebackIn {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+color:#061A48;    
+
+    width: 350px;
+height: 49.98px;
+top: 807px;
+left: 80px;
 }
 
-.description {
-    color: rgb(18, 17, 17);
-    font-size: 15px;
-    margin-left: 40px;
+.descriptionIn {
+    width: 201px;
+    height: 19px;
+    top: 889.94px;
+    margin-left: 2%;
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #6D717A;
 }
 
 .sign-in-title {
-    margin-left: 90px;
+    margin-left: 60px;
 }
 
 .register-link {
@@ -121,13 +131,14 @@ input[type=submit]:hover {
     font-size: bold;
 }
 
-.sign-in-button {
+.signInOnly {
     height: 40px;
-    width: 340px;
+    width: 250px;
     background-color: #0f0e62;
     color: rgb(244, 235, 235);
     border-radius: 20px;
     margin-top: 20px;
+    margin-left: 3px;
 }
 
 .forget-password-link {

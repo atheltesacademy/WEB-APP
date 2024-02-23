@@ -18,7 +18,6 @@ import NavigationBar from './components/navigation/NavigationBar';
 import Coachprofile from './components/coachProfile/Coachprofile';
 import CoachId from './components/coachId/CoachId';
 // import Chat from './components/video/VideoChat';
-import VideoChat from './components/video/VideoChat';
 import Logout from './components/logout/Logout';
 import { CoachVideoChat } from './components/coachVideoChat/CoachVideoChat';
 // import ChatBot from './components/ChatBot';
@@ -51,7 +50,11 @@ const App = () => {
         <Route path='/Coach-Chat' element={<CoachChat />} />
         <Route path='/Navigation-Bar' element={<NavigationBar />} />
         <Route path='/Coach-profile' element={<Coachprofile />} />
+<<<<<<< HEAD
+        <Route path='/Video-chat' element={<CoachVideoChat/>} />
+=======
         <Route path='/Video-chat' element={<VideoChat />} />
+>>>>>>> 3bbee2d5a43523a9a1716d67c78116220d11bba0
         <Route path='/log-out' element={<Logout />} />
         {/* <ChatBot /> */}
         <Route path='/Coach-video-chat' element={<CoachVideoChat />} />

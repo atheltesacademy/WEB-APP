@@ -6,11 +6,14 @@ import myImage2 from '../../assets/mask-group-4@2x.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faComment,
-  faPhone,
-  faUserCheck,
+  faSearch,
   faRupee,
+  faGreaterThan,
+  faAngleDown
 } from "@fortawesome/free-solid-svg-icons";
+
+
+
 import './CoachId.css';
 import NavigationBar from '../navigation/NavigationBar';
 
@@ -31,10 +34,102 @@ const CoachId = ({ name }) => {
 
   return (
     <div>
+<<<<<<< HEAD
+      <NavigationBar/>
+
+      <div style={{marginTop:'10%'}}>
+      <div className='gameAndCoachId'>
+                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available'}}>Football</button>
+                            <span className='m-1'><FontAwesomeIcon icon={faGreaterThan} style={{ marginLeft: '8%'}}/>&nbsp;Coaches</span>
+                        </div>
+
+        <div className="search-Nav1">
+          <input type="text" id="input" placeholder="Name Sports C..." style={{ borderRadius: '26px',left:'223px', width: '145px', height: '30px', backgroundColor: 'lightgray', borderColor: 'black', paddingLeft: '28px' }} />
+          <FontAwesomeIcon icon={faSearch} className="search-icon" />
+          <span className="search-Nav2">
+
+<input type="text" id="input" placeholder="Exp: High to Low" style={{ borderRadius: '26px',left:'223px', width: '145px', height: '30px', backgroundColor: 'lightgray', borderColor: 'black', paddingLeft: '28px' }} />
+  <FontAwesomeIcon icon={faAngleDown} className="search-icon" />
+  </span>
+  <img src={myImage0} alt="error" style={{marginLeft:'250%',marginTop:'-20%'}} />
+
+        </div>
+
+        {/* <img src={myImage0} alt="error" style={{marginLeft:'50%'}} /> */}
+        </div>
+        <div className="mainContainer" style={{marginTop:'20px'}}>
+            <Link to="/With-Rating" style={{textDecoration:'none'}}>
+      <div className="card-chatcard">
+        <div className="firstPartLeft">
+          <div className="partFa">
+            <img src={myImage} alt="placeholder image" className="image" />
+          </div>
+          <div className="partFb">
+            <div className="rating">
+            
+            <span>&#9733;</span>
+              <p style={{color:'black'}}>4.4</p>
+            </div>
+          </div>
+        </div>
+        <div className="secondPartRight">
+          <div className="partSa">
+            <h3>{name}Andreaw</h3>
+            <p className="language">Language: English & Hindi</p>
+            <p className="specialist">Football, Cricket</p>
+            <span style={{color:"green"}}>Free</span>
+            <p className="experience"><FontAwesomeIcon icon={faRupee} />16/min</p>
+          </div>
+          <div className="partSb">
+            <Link to="/Coach-Chat"><button className="buttonStyle1">
+              Chat Now
+            </button></Link>
+            <Link><button className="buttonStyle2" onClick={CallNow}>
+              Call Now
+            </button></Link>
+          </div>
+        </div>
+      </div>
+      </Link>
+      <Link to="/With-Rating" style={{textDecoration:'none'}}>
+      <div className="card-chatcard">
+        <div className="firstPartLeft">
+          <div className="partFa">
+            <img src={myImage1} alt="placeholder image" className="image" />
+          </div>
+          <div className="partFb">
+            <div className="rating">
+            
+            <span>&#9733;</span>
+              <p style={{color:'black'}}>4.4</p>
+            </div>
+          </div>
+        </div>
+        <div className="secondPartRight">
+          <div className="partSa">
+            <h3>{name}Andreaw</h3>
+            <p className="language">Language: English & Hindi</p>
+            <p className="specialist">Football, Cricket</p>
+            <span style={{color:"green"}}>Free</span>
+            <p className="experience"><FontAwesomeIcon icon={faRupee} />16/min</p>
+          </div>
+          <div className="partSb">
+            <Link to="/Coach-Chat"><button className="buttonStyle1">
+              Chat Now
+            </button></Link>
+            <Link><button className="buttonStyle2" onClick={CallNow}>
+              Call Now
+            </button></Link>
+          </div>
+        </div>
+      </div>
+      </Link>
+=======
       <NavigationBar />
       <Link to="login" style={{ marginLeft: '250px' }}><button style={{ width: '90px', height: '35px', backgroundColor: 'dodgerblue', borderRadius: '20px', cursor: 'pointer', color: 'white', fontWeight: 'bold' }}>Coaches</button></Link>
       <Link to="login" style={{ marginLeft: '20px' }}><button style={{ width: '90px', height: '35px', backgroundColor: 'dodgerblue', borderRadius: '20px', cursor: 'pointer', color: 'white', fontWeight: 'bold' }}>Football</button></Link>
       <div className="mainContainer" style={{ marginTop: '100px' }}>
+>>>>>>> 3bbee2d5a43523a9a1716d67c78116220d11bba0
 
         <div className="filterPng"><img src={myImage0} alt="error" /></div>
         <Link to="/With-Rating" style={{ textDecoration: 'none' }}>
