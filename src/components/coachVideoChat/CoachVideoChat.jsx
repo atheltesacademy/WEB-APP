@@ -67,10 +67,10 @@ export const CoachVideoChat = () => {
                 <div className='row'>
                     <div className='col-md-4 col-sm-4'>
                         <div className='d-flex justify-content-end align-items-center'>
-                            <button type="button" id='btn' className='m-1 text-white'
+                            <button type="button" id='btn' className='text-white'
                                 style={{ borderColor: 'transparent' }}
                             >Football</button>
-                            <span className='m-1'><FontAwesomeIcon icon={faGreaterThan} />&nbsp;Coaches</span>
+                            <span style={{ fontSize: 20 }}>&nbsp;<FontAwesomeIcon icon={faGreaterThan} />&nbsp;Coaches</span>
                         </div>
 
                         <div className='card mt-2 shadow p-3 rounded' >

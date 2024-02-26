@@ -1,0 +1,29 @@
+.card {
+    height: 28rem !important;
+    width: 40rem !important;
+    background-color: #FFFFFF !important;
+    border-color: transparent;
+    border-radius: 8px;
+}
+
+#btn {
+    background-color: #255B9B;
+    border-radius: 10px;
+    font-size: 19px
+}
+
+#aboutText {
+    font-size: 10px;
+    color: #000000;
+}
+
+.secondContainer {
+    height: 38rem !important;
+    width: 42rem !important;
+    background-image: linear-gradient(#12A7E1, #12A7E1, #D9D9D9, #000000) !important;
+}
+
+.vl {
+    border-left: 2px solid #FFFFFF;
+    height: 80px;
+}
