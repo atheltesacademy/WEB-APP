@@ -20,7 +20,7 @@ const CoachChat = () => {
       <NavigationBar/>
            <div className="rowCoachChat">
            <div className='gameAndCoachChat'>
-                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available'}}>Football</button>
+                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available',color:'#ffffff'}}>Football</button>
                             <span className='m-1'><FontAwesomeIcon icon={faGreaterThan} style={{ marginLeft: '8%'}}/>&nbsp;Coaches</span>
                         </div>
                         <div className="column card-coach" style={{ backgroundColor: 'white' }}>

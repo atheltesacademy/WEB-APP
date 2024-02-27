@@ -62,7 +62,7 @@ const SignInForm = () => {
             <div className="savepageIn">
                 <form action="/" style={{marginLeft:'10%',marginTop:'10%'}}  onSubmit={signinHandle}>
                     <h1 className="sign-in-title" style={{color:'black'}}>SIGN IN</h1><br /><br />
-                    <p>Not a member? <Link to="/SignUp-from" className="register-link">Register</Link></p>
+                    <p>Not a member? <Link to="/signup" className="register-link">Register</Link></p>
 
                     <div className="row-signin">
                         <div className="col-75">
@@ -84,7 +84,7 @@ const SignInForm = () => {
                     <div className="row-signin">
                         <button className="signInOnly">Sign in</button>
                         <div id="forgetPasswordLink">
-                            <Link to="/Log-out" id="forgetPassword" className="forget-password-link">Forget Password?</Link>
+                            <Link to="/logout" id="forgetPassword" className="forget-password-link">Forget Password?</Link>
                         </div>
 <div id='threeIcon'><img src={Icon} alt="hello" style={{marginTop:'20%',marginLeft:'10px'}} /></div>
 

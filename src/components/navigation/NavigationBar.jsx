@@ -1,6 +1,8 @@
 import React from 'react';
 import ImageLogo from '../../assets/logo-navbar.png';
-import VectorLogo from '../../assets/Vector (2).svg';
+import SignLogo from '../../assets/Sign up.svg';
+import LoginLogo from '../../assets/Costumer login.svg';
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,19 +19,20 @@ function NavigationBar() {
     <div className="navbar">
        <img src={ImageLogo} alt="img1" width="200px" style={{marginLeft:'3%'}} />
        <span className="navbarContant">
-        <Link to="/Landing-Page"><i className="fa fa-fw fa-home"></i> Home</Link>
-        <Link to="/Home-jsx"> Category</Link>
-        <Link to="/With-Rating"> Blog</Link>
-        <Link to="/Video-chat"> Wallet</Link>               
+        <Link to="/category/:sport"><i className="fa fa-fw fa-home"></i> Home</Link>
+        <Link to="/home"> Category</Link>
+        <Link to="/coachesRating"> Blog</Link>
+        <Link to="/coachVideoChat"> Wallet</Link>               
          <div className="search-Nav">
           <input type="text" id="input" placeholder="Name Sports Category..." style={{ borderRadius: '26px',left:'423px', width: '184px', height: '26px',marginTop:'1%', backgroundColor: 'lightgray', borderColor: 'black', paddingLeft: '28px' }} />
           <FontAwesomeIcon icon={faSearch} className="search-icon" />
       
         </div>
                  </span>
-        <span style={{float:'right',marginTop:'1%',marginLeft:'8%'}}>
-        <Link to="/SignUp-from">Register</Link>
-        <Link to="/SignIn-form"><FontAwesomeIcon icon={faUser}/>Sign in</Link></span>
+        {/* <span style={{marginTop:'1%',marginLeft:'4%'}}> */}
+        <Link to="/signup"><img src={LoginLogo} alt="" style={{marginTop:'-4%', marginLeft:'50%'}}/></Link>
+        <Link to="/signin"><img src={SignLogo} alt=""  style={{marginTop:'-6%', marginLeft:'40%'}} /></Link>
+        {/* </span> */}
     </div>
   );
 }

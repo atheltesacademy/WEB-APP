@@ -91,9 +91,9 @@ label {
     cursor: pointer;
     font-weight: bold;
 }
-.sign-in-button {
+.sign-in-buttonSignUp {
     height: 40px;
-    width: 340px;
+    width: 300px;
     background-color: #0f0e62;
     color: rgb(244, 235, 235);
     border-radius: 20px;

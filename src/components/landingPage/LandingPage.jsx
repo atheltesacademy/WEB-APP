@@ -1,29 +1,36 @@
-import React from 'react';
-import './LandingPage.css';
-import football from '../../assets/football-card@2x.png'
-import basketball from '../../assets/basketball-card1@2x.png'
-import tennis from '../../assets/tennis-card1@2x.png'
-import yoga from '../../assets/yoga-card1@2x.png'
-import More from '../../assets/more.svg'
-
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faAngleRight,
-} from "@fortawesome/free-solid-svg-icons";
-// import './ChatCard.css'; 
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavigationBar from '../navigation/NavigationBar';
+import LandingPageCard from './LandingPageCard';
+import football from '../../assets/football-card@2x.png';
+import basketball from '../../assets/basketball-card1@2x.png';
+import tennis from '../../assets/tennis-card1@2x.png';
+import yoga from '../../assets/yoga-card1@2x.png';
+import More from '../../assets/more.svg';
+import './LandingPage.css'
+
+const sportsData = [
+  { title: "Football", image: football },
+  { title: "Basketball", image: basketball },
+  { title: "Tennis", image: tennis },
+  { title: "Yoga", image: yoga }
+];
 
 const LandingPage = () => {
+  const [selectedSport, setSelectedSport] = useState(sportsData[0]);
+
+  const handleSelectSport = (sport) => {
+    setSelectedSport(sport);
+  };
+
   return (
     <div>
-      <NavigationBar/>
+      <NavigationBar />
       <div className="content">
         <div className="row">
           <div className="column-01">
-            <h1 style={{fontSize:"80px"}}>Sports</h1>
-            <h2>Football</h2>
+            <h1 style={{ fontSize: "80px" }}>Sports</h1>
+            <h2>{selectedSport.title}</h2>
             <p>
               Welcome to Athlet’s Academy - Your Gateway to Sporting Excellence!
               At Athlet’s Academy. We are dedicated to connecting aspiring with experienced,
@@ -32,18 +39,23 @@ const LandingPage = () => {
             </p>
           </div>
           <div className="column-02">
-            <img src={football} alt="img1"  width="400px" />
+            <img src={selectedSport.image} alt="img1" width="400px" />
           </div>
         </div>
         <div className="row1">
-       <Link to="/Landing-Page">   <img src={football} alt="img1" width="15%" /></Link>
-      <Link to="/Landing-Page3">    <img src={basketball} alt="img1" width="13%" /></Link>
-      <Link to="/Landing-Page2">    <img src={tennis} alt="img1" width="12%" /></Link>
-      <Link to="/Landing-Page4">     <img src={yoga} alt="img1" width="11%" /></Link>
-          <Link to="#"><img src={More} alt="error" /></Link>
+          {sportsData.map((sport, index) => (
+            <Link key={index} onClick={() => handleSelectSport(sport)}>
+              <LandingPageCard
+                title={sport.title}
+                image={sport.image}
+                active={sport.title === selectedSport.title}
+              />
+            </Link>
+          ))}
+          <Link to="/home"><img src={More} alt="error" /></Link>
         </div>
       </div>
-      </div>
+    </div>
   );
 }
 

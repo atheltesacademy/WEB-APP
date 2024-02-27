@@ -16,7 +16,7 @@ import { faCalculator, faCamera, faCog, faGreaterThan, faMicrophone, faPaperclip
 import { Link } from 'react-router-dom';
 import NavigationBar from '../navigation/NavigationBar'
 
-const WithRating = () => {
+const CoachWithRating = () => {
   // const [userRating, setUserRating] = useState(0);
   // const [review, setReview] = useState('');
   // const [reviews, setReviews] = useState([]);
@@ -48,7 +48,7 @@ const WithRating = () => {
 <NavigationBar/>
       <div className="row">
       <div className='gameAndCoach'>
-                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available'}}>Football</button>
+                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available',color:'#ffffff'}}>Football</button>
                             <span className='m-1'><FontAwesomeIcon icon={faGreaterThan} style={{ marginLeft: '8%'}}/>&nbsp;Coaches</span>
                         </div>
 
@@ -214,4 +214,4 @@ const WithRating = () => {
 //   }
 // }
 
-export default WithRating;
+export default CoachWithRating;

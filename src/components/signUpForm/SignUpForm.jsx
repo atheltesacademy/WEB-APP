@@ -80,7 +80,7 @@ class SignUpForm extends React.Component {
                 <div className="save-pageUp">
                     <form onSubmit={this.handleSubmit}>
                         <h1 style={{color:'black',fontSize:'30px',fontFamily:'Raleway ,sans-serif',marginBottom:'20px'}}>Create an Account</h1>
-                        <p>Already have an account? <Link to="/SignIn-Form" className="signin-link">Sign in</Link></p>
+                        <p>Already have an account? <Link to="/signin" className="signin-link">Sign in</Link></p>
 
                         <div className="row1-signup">
                             <div className="col-75">
@@ -108,15 +108,15 @@ class SignUpForm extends React.Component {
                             </div>
                         </div>
                         
-                        <Link to="/Regi-ster"><button style={{backgroundColor:"darkblue",color:"white",borderRadius:"10px",marginTop:"20px",marginLeft:"9px",paddingLeft:'2%',width:'28%'}}><FontAwesomeIcon icon={faUser}/>Athelete</button></Link>
-                        <Link to="/Coach-profile"><button style={{backgroundColor:"darkblue",color:"white",borderRadius:"10px",marginTop:"20px",marginLeft:"90px",paddingLeft:'2%',width:'28%'}}><FontAwesomeIcon icon={faUser}/>Coach</button></Link>
+                        <Link to="/register"><button style={{backgroundColor:"#061A48",color:"white",borderRadius:"10px",marginTop:"20px",marginLeft:"9px",paddingLeft:'2%',width:'28%'}}><FontAwesomeIcon icon={faUser}/>Athelete</button></Link>
+                        <Link to="/coachProfile"><button style={{backgroundColor:"#061A48",color:"white",borderRadius:"10px",marginTop:"20px",marginLeft:"90px",paddingLeft:'2%',width:'28%'}}><FontAwesomeIcon icon={faUser}/>Coach</button></Link>
         
                         
                         <label>
                             <input type="checkbox" defaultUnChecked name="remember" /> I have read and agree to the <a href="#" className="terms-link">Terms and Services</a> and <a href="#" className="privacy-link">Privacy Policy</a>
                         </label>
                         <div className="row1-signup">
-                            <button type="submit" className="sign-in-button">Register</button>
+                            <button type="submit" className="sign-in-buttonSignUp">Register</button>
                             <p className="or-text">or Register with</p>
 <div id='threeIcon'><img src={Icon} alt="hello" style={{marginTop:'20%',marginLeft:'30px'}} /></div>
                        

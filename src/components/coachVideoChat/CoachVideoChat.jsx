@@ -7,12 +7,8 @@ import './CoachVideoChat.css'
 import NavigationBar from '../navigation/NavigationBar';
 
 //bootstrap import
-<<<<<<< HEAD
 // import "bootstrap/dist/css/bootstrap.min.css";
-=======
-import "bootstrap/dist/css/bootstrap.min.css";
->>>>>>> 3bbee2d5a43523a9a1716d67c78116220d11bba0
-import "bootstrap/dist/js/bootstrap.bundle.min";
+// import "bootstrap/dist/js/bootstrap.bundle.min";
 
 export const CoachVideoChat = () => {
 
