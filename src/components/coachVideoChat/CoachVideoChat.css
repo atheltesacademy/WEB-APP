@@ -40,7 +40,7 @@
 
 .img-fluid {
     height: 500px !important;
-    width: 600px !important;
+    width: 650px !important;
 }
 
 #audioIcon {
@@ -62,4 +62,8 @@
     color: #FFFFFF;
     font-weight: 500;
     font-family: 'roboto';
+    text-align: center;
+    /* display: inline-block; */
+    margin: 0 auto;
+    justify-content: center;
 }

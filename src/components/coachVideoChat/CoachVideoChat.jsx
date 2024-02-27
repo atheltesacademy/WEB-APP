@@ -1,10 +1,13 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalculator, faCamera, faCog, faGreaterThan, faMicrophone, faPaperclip, faVideo } from "@fortawesome/free-solid-svg-icons";
+import { faCalculator, faCamera, faEllipsisV, faGreaterThan, faMicrophone, faPaperclip, faVideo } from "@fortawesome/free-solid-svg-icons";
 import { Card } from 'react-bootstrap';
-import Sports from '../../assets/basketball-card1@2x.png';
-import './CoachVideoChat.css'
+import Avatar from '../../assets/AvatarImageVideo.png';
+import MaleAvatar from '../../assets/videoAvatarMale.png';
+import FemaleAvatar from '../../assets/femaleAvatar.png'
 import NavigationBar from '../navigation/NavigationBar';
+import DummyAvatar from '../../assets/maleAvatar.png'
+import './CoachVideoChat.css'
 
 //bootstrap import
 // import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,32 +19,44 @@ export const CoachVideoChat = () => {
         {
             id: 1,
             message: "Hello Guys! Whats your opinion?",
-            type: "Receiver"
+            type: "Receiver",
+            name: 'Demo',
+            image: FemaleAvatar
         },
         {
             id: 2,
             message: "Images are better.",
-            type: "Receiver"
+            type: "Receiver",
+            name: 'Demo',
+            image: Avatar
         },
         {
             id: 3,
             message: "Yes, It will decrease the loading",
-            type: "Sender"
+            type: "Sender",
+            name: 'You',
+            image: Avatar
         },
         {
             id: 4,
             message: "Anyone is up for illustrations. I think there are less relatable images according to our brand.",
-            type: "Receiver"
-        },
-        {
-            id: 4,
-            message: "Anyone is up for illustrations. I think there are less relatable images according to our brand.",
-            type: "Receiver"
+            type: "Receiver",
+            name: 'Demo',
+            image: DummyAvatar
         },
         {
             id: 5,
-            message: "Anyone is up for illustrations. I think there are less relatable images according to our brand.",
-            type: "Sender"
+            message: "Hello Guys! Whats your opinion?",
+            type: "Receiver",
+            name: 'Demo',
+            image: FemaleAvatar
+        },
+        {
+            id: 6,
+            message: "Hello Guys! Whats your opinion?",
+            type: "Receiver",
+            name: 'Demo',
+            image: FemaleAvatar
         },
     ]
 
@@ -52,23 +67,29 @@ export const CoachVideoChat = () => {
                 <div className='row'>
                     <div className='col-md-4 col-sm-4'>
                         <div className='d-flex justify-content-end align-items-center'>
-                            <button type="button" id='btn' className='m-1'>Football</button>
+                            <button type="button" id='btn' className='m-1 text-white'
+                                style={{ borderColor: 'transparent' }}
+                            >Football</button>
                             <span className='m-1'><FontAwesomeIcon icon={faGreaterThan} />&nbsp;Coaches</span>
                         </div>
 
                         <div className='card mt-2 shadow p-3 rounded' >
                             <Card.Body>
-                                <div id="msgContainer" className='d-flex justify-content-center'>
+                                <div id="msgContainer">
                                     Messages</div>
                                 <Card.Text style={{ height: '400px', overflowY: 'scroll' }}>
-                                    Messages
+                                    <div className='d-flex flex-row mt-3'>
+                                        {/* <div style={{ borderWidth: 1, borderColor: 'black' }}></div> */}
+                                        {/* <div className='text-center'>Messages</div> */}
+                                        {/* <div></div> */}
+                                    </div>
                                     {chatJson.map((item, index) => (
                                         <div
                                             key={index}
                                             className={item.type === 'Sender' ? 'd-flex justify-content-end align-items-end' : 'd-flex justify-content-start align-items-start'}
                                         >
                                             {item.type == "Receiver" &&
-                                                <img src={Sports} height={30} width={30} style={{ borderRadius: 15 }} />
+                                                <img src={item.image} height={30} width={30} style={{ borderRadius: 15 }} />
                                             }
                                             <div id={item.type === 'Sender' ? 'senderMsg' : 'receiverMsg'}>
                                                 {item.message}
@@ -77,7 +98,12 @@ export const CoachVideoChat = () => {
                                     ))}
                                 </Card.Text>
                             </Card.Body>
-                            <div className='bottom-container rounded-top rounded-right mb-4' style={{ position: 'absolute', bottom: 0 }}>
+                            <div className='bottom-container m-3'
+                                style={{
+                                    position: 'absolute', bottom: 0,
+                                    borderTopLeftRadius: 20,
+                                    borderTopRightRadius: 20
+                                }}>
                                 <div className='d-flex flex-row justify-content-between align-items-center'>
                                     <button className='p-2 bg-transparent' style={{ borderColor: 'transparent' }}>
                                         <FontAwesomeIcon icon={faPaperclip} color='rgba(0, 14, 8, 0.5)' />
@@ -94,29 +120,37 @@ export const CoachVideoChat = () => {
                     </div>
                     <div className='col-md-8 mt-3 col-sm-8'>
                         <div className='row'>
-                            <div className='col-md-9'>
-                                <img src={Sports} className="img-fluid" alt="Responsive image" />
+                            <div className='col-md-10'>
+                                <img src={Avatar} className="img-fluid" alt="Responsive image" />
                             </div>
-                            <div className='col-md-2 d-flex justify-content-end align-items-end mb-4'>
-                                <img src={Sports} alt="Responsive image" height={150} width={150} />
+                            <div className='col-md-2 d-flex justify-content-end align-items-end px-2'>
+                                <img src={MaleAvatar} alt="Responsive image" height={160} width={180}
+                                    style={{ position: 'relative' }} />
+                                <div style={{
+                                    backgroundColor: '#00E324',
+                                    padding: '28px',
+                                    borderRadius: 28,
+                                    position: "absolute",
+                                    margin: '10px'
+                                }}></div>
                             </div>
                             <div className='d-flex flex-row mt-4 justify-content-center'>
                                 <button id='audioIcon' className='m-2' style={{ borderColor: 'transparent' }}></button>
                                 <button id='audioIcon' className='d-flex justify-content-center align-items-center m-2'
                                     style={{ borderColor: 'transparent' }}>
-                                    <FontAwesomeIcon icon={faVideo} />
+                                    <FontAwesomeIcon icon={faVideo} color='#FFFFFF' />
                                 </button>
                                 <button id='callIcon' className='d-flex justify-content-center align-items-center m-2'
                                     style={{ borderColor: 'transparent' }}>
-                                    <FontAwesomeIcon icon={faCalculator} />
+                                    <FontAwesomeIcon icon={faCalculator} color='#FFFFFF' />
                                 </button>
                                 <button id='audioIcon' className='d-flex justify-content-center align-items-center m-2'
                                     style={{ borderColor: 'transparent' }}>
-                                    <FontAwesomeIcon icon={faMicrophone} />
+                                    <FontAwesomeIcon icon={faMicrophone} color='#FFFFFF' />
                                 </button>
                                 <button id='audioIcon' className='d-flex justify-content-center align-items-center m-2'
-                                    style={{ borderColor: 'transparent' }}>
-                                    <FontAwesomeIcon icon={faCog} />
+                                    style={{ borderColor: 'transparent' }} >
+                                    <FontAwesomeIcon icon={faEllipsisV} color='#FFFFFF' />
                                 </button>
                             </div>
                         </div>
