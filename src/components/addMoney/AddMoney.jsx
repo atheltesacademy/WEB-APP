@@ -2,7 +2,9 @@ import { faGreaterThan } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import NavigationBar from '../navigation/NavigationBar'
+import badgeIcon from '../../assets/badgeIcon.svg'
 import './AddMoney.css'
+import { BestCoaches } from '../bestCoaches/BestCoaches'
 
 //bootstrap import
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -48,6 +50,25 @@ export const AddMoney = () => {
             amt: '2000'
         },
     ]
+
+    const coaches = [
+        {
+            name: 'Vijay',
+            sports: "Cricket"
+        },
+        {
+            name: 'Ajay',
+            sports: "Football"
+        },
+        {
+            name: 'Vipul',
+            sports: "Boxing"
+        },
+        {
+            name: 'Dhruv',
+            sports: "Tennis"
+        },
+    ]
     return (
         <>
             <NavigationBar />
@@ -91,20 +112,50 @@ export const AddMoney = () => {
                     })}
                 </div>
 
-                <div className='amountContainer mt-5 mx-5 p-3 d-flex justify-content-center align-self-center'
+                <div className='amountContainer mt-5 mx-5 p-3 d-flex justify-content-between align-items-center'
                     style={{
-                        borderRadius: 20,
-                        margin: '200px 100px 200px'
+                        borderRadius: 50,
                     }}>
+
                     <div style={{
                         fontSize: '35px',
                         color: "#FFFFFF",
-                    }}>Pay Rs. 100 Get Extra Rs. 75</div>
+                    }}>
+                        <img src={badgeIcon} style={{
+                            height: "50px",
+                            width: '50px'
+                        }} />
+                        Pay Rs. 100 Get Extra Rs. 75</div>
+                    <div>
+                        <button type='button' style={{
+                            backgroundColor: "#0396C4",
+                            borderColor: "transparent",
+                            padding: '5px 30px 5px',
+                            borderRadius: 30,
+                            fontSize: '32px',
+                            color: 'white'
+                        }}>₹ Recharge</button>
+                    </div>
                 </div>
 
-                <div className='mt-5'>
 
-                </div>
+                {/* best coaches section */}
+                <section className='container mt-5 mx-5'>
+                    <div style={{
+                        fontWeight: '600',
+                        fontSize: '25px',
+                        color: "#000000"
+                    }}>Check out our best rated Coaches and Mentors</div>
+                    <div className='d-flex flex-row justify-content-around align-items-center flex-wrap mt-3'>
+                        {coaches.map((item) => {
+                            return (
+                                <div className='mt-3'>
+                                    <BestCoaches name={item.name} sports={item.sports} />
+                                </div>
+                            )
+                        })}
+                    </div>
+                </section>
             </div>
         </>
     )
