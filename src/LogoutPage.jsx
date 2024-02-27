@@ -12,13 +12,18 @@ const LogoutPage = () => {
             </div>
 
             <div className="right-page">
-                <img src={Right1} alt="Logout" className="Logout" />
-                <p className="copy-right" style={{marginTop:'30px',marginLeft:'20px'}}>YOU ARE LOGGED OUT</p>
-                <div>
-                <button class = 'btn'>Sign in</button>
+                <img src={Right1} alt="Logout" className="Logout" style={{marginTop:'180px',marginLeft:'100px'}} />
+                <p className="copy-right" style={{marginTop:'1px',marginLeft:'130px'}}>YOU ARE LOGGED OUT</p>
+                <div className='sign'>
+                <button className="btn">Sign in</button>
+                <p className="pswrd">FORGOT PASSWORD?</p>
                 </div>
-                <img src={Rightb} alt="icons" className="icons" />
-                <p className="copy-right" style={{marginTop:'70px',marginLeft:'20px'}}>Copyright@2024 fix Athlet Academy.ltd all right reserved</p>
+                <div className='icon'>
+                <img src={Rightb} alt="icons" />
+                </div>
+                <div className='cpy'>
+                <p className="copy-right">Copyright@2024 fix Athlet Academy.ltd all right reserved</p>
+                </div>
             </div>
         </div>
     );

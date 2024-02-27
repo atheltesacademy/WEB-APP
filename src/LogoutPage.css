@@ -22,7 +22,7 @@ label {
 }
 
 .Logout {
-    margin-top: 60px;
+    margin-top: 180px;
 }
 
 @media screen and (max-width: 600px) {
@@ -31,7 +31,8 @@ label {
         margin-top: 0;
     }
 }
-/* Additional styling for the React component */
+
+
 .signup-container {
     height: 600px;
     background-color: white;
@@ -69,13 +70,41 @@ label {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0f0e62;
+    background-color: hsl(241, 75%, 22%);
+    width: 430px;
+    height: 50px;
     color: #fff;
     border: none;
-    border-radius: 20px;
+    border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
     text-align: center;
-    text-decoration: none; 
-    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.sign{
+    margin: 60px 10px;
+}
+
+.icon{
+    margin: 100px 100px;
+}
+
+.pswrd{
+    margin-top: 1px;
+    margin-left: 150px;
+    color: rgba(255, 166, 0, 0.856);
+    text-decoration: double;
+}
+
+.cpy{
+    height: 13px;
+    width: 400px;
+    padding: 10px;
+}
+
+.copy-right{
+    font-size: 10px;
+    margin-top:220px;
+    margin-left:100px;
 }
