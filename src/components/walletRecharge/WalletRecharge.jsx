@@ -14,12 +14,34 @@ import { Link } from 'react-router-dom'
 //bootstrap import
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import { Services } from '../services/Services'
+import { BestCoaches } from '../bestCoaches/BestCoaches'
 
 export const WalletRecharge = () => {
+
+    const coaches = [
+        {
+            name: 'Vijay',
+            sports: "Cricket"
+        },
+        {
+            name: 'Ajay',
+            sports: "Football"
+        },
+        {
+            name: 'Vipul',
+            sports: "Boxing"
+        },
+        {
+            name: 'Dhruv',
+            sports: "Tennis"
+        },
+    ]
+
     return (
         <>
             <NavigationBar />
-            <div className='container-fluid mx-4'>
+            <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-md-6 mt-4'>
                         <div className='d-flex justify-content-center align-items-center'>
@@ -234,6 +256,28 @@ export const WalletRecharge = () => {
 
 
                 </div>
+
+                <section className='container mt-4'>
+                    <Services />
+                </section>
+
+                {/* best coaches section */}
+                <section className='container mt-5 '>
+                    <div style={{
+                        fontWeight: '600',
+                        fontSize: '25px',
+                        color: "#000000"
+                    }}>Check out our best rated Coaches and Mentors</div>
+                    <div className='d-flex flex-row justify-content-around align-items-center flex-wrap mt-3'>
+                        {coaches.map((item) => {
+                            return (
+                                <div className='mt-3'>
+                                    <BestCoaches name={item.name} sports={item.sports} />
+                                </div>
+                            )
+                        })}
+                    </div>
+                </section>
             </div>
         </>
     )

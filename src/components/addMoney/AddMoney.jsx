@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import NavigationBar from '../navigation/NavigationBar'
 import badgeIcon from '../../assets/badgeIcon.svg'
-import './AddMoney.css'
 import { BestCoaches } from '../bestCoaches/BestCoaches'
+import { Services } from '../services/Services'
+import './AddMoney.css'
 
 //bootstrap import
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -137,6 +138,12 @@ export const AddMoney = () => {
                         }}>₹ Recharge</button>
                     </div>
                 </div>
+
+                <section className='container' style={{
+                    marginLeft: '50px',
+                }}>
+                    <Services />
+                </section>
 
 
                 {/* best coaches section */}
