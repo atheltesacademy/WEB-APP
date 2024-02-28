@@ -19,10 +19,11 @@ import Coachprofile from './components/coachProfile/Coachprofile';
 import CoachId from './components/coachId/CoachId';
 // import Chat from './components/video/VideoChat';
 import Logout from './components/logout/Logout';
-import { CoachVideoChat } from './components/coachVideoChat/CoachVideoChat';
 import { WalletRecharge } from './components/walletRecharge/WalletRecharge';
 import { AddMoney } from './components/addMoney/AddMoney';
 import { WalletCoachBalance } from './components/walletCoachBalance/WalletCoachBalance';
+import { CoachReferral } from './components/coachReferral/CoachReferral';
+import { CoachVideoChat } from './components/coachVideoChat/CoachVideoChat';
 // import ChatBot from './components/ChatBot';
 
 
@@ -60,6 +61,7 @@ const App = () => {
         <Route path='/wallet-recharge' element={<WalletRecharge />} />
         <Route path='/add-money' element={<AddMoney />} />
         <Route path='/wallet-coach-balance' element={<WalletCoachBalance />} />
+        <Route path='/coach-referral' element={<CoachReferral />} />
 
       </Routes>
       {/* // </Router > */}

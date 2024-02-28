@@ -61,11 +61,11 @@ export const CoachVideoChat = () => {
     ]
 
     return (
-        <div>
+        <>
             <NavigationBar />
             <div className='container'>
                 <div className='row'>
-                    <div className='col-md-4 col-sm-4'>
+                    <div className='col-md-4'>
                         <div className='d-flex justify-content-end align-items-center'>
                             <button type="button" id='btn' className='text-white'
                                 style={{ borderColor: 'transparent' }}
@@ -118,7 +118,7 @@ export const CoachVideoChat = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-8 mt-3 col-sm-8'>
+                    <div className='col-md-8 mt-3'>
                         <div className='row'>
                             <div className='col-md-10'>
                                 <img src={Avatar} className="img-fluid" alt="Responsive image" />
@@ -158,6 +158,6 @@ export const CoachVideoChat = () => {
 
                 </div>
             </div>
-        </div>
+        </>
     )
 }
