@@ -8,15 +8,13 @@ import MainLogo2 from '../../assets/Rectangle 63.svg';
 import MessageLogo from '../../assets/Group (1).svg';
 import CallLogo from '../../assets/fluent_call-16-regular.svg';
 import VDLogo from '../../assets/watch intro.svg';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalculator, faCamera, faCog, faGreaterThan, faMicrophone, faPaperclip, faVideo } from "@fortawesome/free-solid-svg-icons";
 
 import { Link } from 'react-router-dom';
 import NavigationBar from '../navigation/NavigationBar'
 
-const WithRating = () => {
+const CoachWithRating = () => {
   // const [userRating, setUserRating] = useState(0);
   // const [review, setReview] = useState('');
   // const [reviews, setReviews] = useState([]);
@@ -48,12 +46,11 @@ const WithRating = () => {
 <NavigationBar/>
       <div className="row">
       <div className='gameAndCoach'>
-                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available'}}>Football</button>
+                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available',color:'#ffffff'}}>Football</button>
                             <span className='m-1'><FontAwesomeIcon icon={faGreaterThan} style={{ marginLeft: '8%'}}/>&nbsp;Coaches</span>
                         </div>
 
         <div className="column card-coach" style={{ backgroundColor: 'white' }}>
-          {/* <img src={MainLogo} alt="Avatar" style={{ width: '600px',position:'absolute',height: 'max-content',marginTop: '12%' }} /> */}
          <div className="imageDin">
          <span className="column1Video">
             <h2><b>Sam</b></h2>
@@ -72,8 +69,7 @@ const WithRating = () => {
 
           
           </div>
-          {/* <FontAwesomeIcon icon={faUser}/> */}
-    <Link to="/">
+tr io    <Link to="/">
      <div className="with3rd">  
         <img src={MessageLogo} alt="boom"  style={{marginLeft:'-50px'}}/>
           <img src={CallLogo} alt="boom" style={{marginLeft:'90px'}}/>
@@ -214,4 +210,4 @@ const WithRating = () => {
 //   }
 // }
 
-export default WithRating;
+export default CoachWithRating;

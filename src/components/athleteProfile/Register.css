@@ -1,28 +1,17 @@
-input[type=text], select, textarea {
+
+.RegisterInput{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-}
-
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-
-input[type=submit] {
-    background-color: #354e45;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
-}
 
-input[type=submit]:hover {
-    background-color: #45a049;
 }
 
 .savepageAthlete {
@@ -61,15 +50,9 @@ input[type=submit]:hover {
     }
 }
 
-/* .main-container {
-    height: 600px;
-    background-color: white;
-    width: 100%;
-    margin-left: 80px;
-    margin-top: 100px;
-} */
 
-.card-containerRe {
+
+.RegisterCard-container {
     background-color: rgb(39, 241, 214);
     width: 450px;
     height: 700px;

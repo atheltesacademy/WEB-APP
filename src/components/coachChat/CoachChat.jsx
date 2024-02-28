@@ -1,5 +1,4 @@
 import React from 'react';
-import logo1 from '../../assets/min-frame@2x.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faContactBook,faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 import MainLogo4 from '../../assets/price icon.svg';
@@ -20,11 +19,10 @@ const CoachChat = () => {
       <NavigationBar/>
            <div className="rowCoachChat">
            <div className='gameAndCoachChat'>
-                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available'}}>Football</button>
+                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available',color:'#ffffff'}}>Football</button>
                             <span className='m-1'><FontAwesomeIcon icon={faGreaterThan} style={{ marginLeft: '8%'}}/>&nbsp;Coaches</span>
                         </div>
                         <div className="column card-coach" style={{ backgroundColor: 'white' }}>
-          {/* <img src={MainLogo} alt="Avatar" style={{ width: '600px',position:'absolute',height: 'max-content',marginTop: '12%' }} /> */}
          <div className="imageDin">
          <span className="column1Video">
             <h2><b>Sam</b></h2>
@@ -43,8 +41,7 @@ const CoachChat = () => {
 
           
           </div>
-          {/* <FontAwesomeIcon icon={faUser}/> */}
-    <Link to="/">
+    <Link to="/coachVideoChat">
      <div className="with3rdChat">  
         <img src={MessageLogo} alt="boom"  style={{marginLeft:'-50px'}}/>
           <img src={CallLogo} alt="boom" style={{marginLeft:'90px'}}/>

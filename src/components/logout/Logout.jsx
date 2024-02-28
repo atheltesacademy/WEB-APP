@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import './Logout.css';
-// import Logo1 from '../../assets/Group 59.svg';
 import Logo2 from '../../assets/lockup-color-1@2x.png';
 import Icon from '../../assets/Group 59.svg'
-import { Link } from 'react-router-dom';
 
 
 const Logout = () => {
     return (
         <div className="main-container">
             <div className="card-containerIn">
-                {/* <img src={Logo1} alt="Avatar" className="avatar" /> */}
                 <img src={Logo2} alt="Logo" className="logo-LogoOut" />
                 <div className="container-save">
                     <p className="ThankyouOut">THANK YOU</p>

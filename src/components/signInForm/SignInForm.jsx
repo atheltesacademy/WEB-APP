@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './SignInForm.css';
-import Logo1 from '../../assets/ata-flat-1@2x.png';
-import Logo2 from '../../assets/lockup-color-1@2x.png';
+import blueLogo from '../../assets/lockup-color-1@2x.png';
 import Icon from '../../assets/Group 59.svg'
 
 import { Link } from 'react-router-dom';
@@ -50,8 +49,8 @@ const SignInForm = () => {
     return (
         <div className="main-container">
             <div className="card-containerIn">
-                {/* <img src={Logo1} alt="Avatar" className="avatar" /> */}
-                <img src={Logo2} alt="Logo" className="logo-register" />
+            <img src={blueLogo} alt="Logo" width= "60% " style={{margin:'10% 5% 5% 20%'}}/>
+               
                 <div className="container-save">
                     <p className="welcomebackIn">WELCOME BACK</p>
                     <p className="descriptionIn">WELCOME TO ATA</p>
@@ -62,11 +61,11 @@ const SignInForm = () => {
             <div className="savepageIn">
                 <form action="/" style={{marginLeft:'10%',marginTop:'10%'}}  onSubmit={signinHandle}>
                     <h1 className="sign-in-title" style={{color:'black'}}>SIGN IN</h1><br /><br />
-                    <p>Not a member? <Link to="/SignUp-from" className="register-link">Register</Link></p>
+                    <p>Not a member? <Link to="/signup" className="register-link">Register</Link></p>
 
                     <div className="row-signin">
                         <div className="col-75">
-                            <input type="text" id="email" name="email" placeholder="Enter Email" value={email} 
+                            <input type="text" id="email" name="email" className='SigninInput' placeholder="Enter Email" value={email} 
                 onChange={handleEmailChange} 
             />
             {emailError && <span style={{ color: 'red' }}>Invalid email</span>}
@@ -74,17 +73,17 @@ const SignInForm = () => {
                     </div>
                     <div className="row-signin">
                         <div className="col-75">
-                            <input type="text" id="password" name="password" placeholder="Enter Password" onChange={passwordHandler} />
+                            <input type="text" id="password" name="password" placeholder="Enter Password" className='SigninInput' onChange={passwordHandler} />
                             {passErr ? <span style={{color:"red"}}>Password Not Valid</span> : ""}
                         </div>
                     </div>
-                    <label>
+                    <label className='SigninLabel'>
                         <input type="checkbox" defaultUnChecked name="remember" /> Remember me
                     </label>
                     <div className="row-signin">
                         <button className="signInOnly">Sign in</button>
                         <div id="forgetPasswordLink">
-                            <Link to="/Log-out" id="forgetPassword" className="forget-password-link">Forget Password?</Link>
+                            <Link to="/logout" id="forgetPassword" className="forget-password-link">Forget Password?</Link>
                         </div>
 <div id='threeIcon'><img src={Icon} alt="hello" style={{marginTop:'20%',marginLeft:'10px'}} /></div>
 

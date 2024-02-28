@@ -1,16 +1,16 @@
-input[type=text], select, textarea {
+
+.SignupLabel{
+    padding: 12px 12px 12px 0;
+    display: inline-block; 
+}
+.SignupInput{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+   
 }
-
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-
 .save-pageUp {
     border-radius: 5px;
     background-color: hsl(0, 33%, 97%);
@@ -20,12 +20,6 @@ label {
     margin-right: 160px;
     
 }
-/* 
-.col-25 {
-    float: left;
-    width: 35%;
-    margin-top: 16px;
-} */
 
 .col-75 {
     float: left;
@@ -91,9 +85,9 @@ label {
     cursor: pointer;
     font-weight: bold;
 }
-.sign-in-button {
+.sign-in-buttonSignUp {
     height: 40px;
-    width: 340px;
+    width: 300px;
     background-color: #0f0e62;
     color: rgb(244, 235, 235);
     border-radius: 20px;

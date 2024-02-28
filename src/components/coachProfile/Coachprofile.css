@@ -1,120 +1,62 @@
-.savepageCoach {
-    border-radius: 5px;
-    background-color: hsl(0, 33%, 97%);
-    width: 400px;
-    height: 700px;
-    padding: 20px;
-    margin-right: 160px;
-    float: right;
-}
-
-.col-75 {
-    float: left;
-    width: 79%;
-    height: 45px;
-    margin-top: 12px;
-}
-
-.row1-signup:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-}
-
-/* Additional styling for the React component */
-.signup-container {
-    height: 600px;
-    background-color: white;
-    width: 100%;
-    margin-left: 80px;
-    margin-top: 100px;
-}
-
-.card-containerPro {
-    background-color: rgb(39, 241, 214);
-    width: 450px;
-    height: 700px;
-    float: left;
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card-containerPro {
+    background-color: #f2f2f2;
     border-radius: 10px;
-}
-
-.avatar {
-    width: 100px;
-    height: 30px;
-    margin-left: 80px;
-    margin-top: 60px;
-}
-
-.container-save {
-    font-weight: bold;
-    text-align: left;
-}
-
-.signin-link {
-    color: rgb(244, 117, 6);
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.terms-link,
-.privacy-link {
-    color: rgb(244, 117, 6);
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.sign-in-button {
-    height: 40px;
-    width: 340px;
-    background-color: #0f0e62;
-    color: rgb(244, 235, 235);
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-.or-text {
-    color: rgb(16, 15, 14);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
     text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-
-.welcomebackCoach {
-    font-family: Roboto;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 47px;
-    letter-spacing: 0em;
-    text-align: left;
-color:#061A48;    
-
-width: 350px;
-    
-height: 49.98px;
-top: 807px;
-left: 80px;
-}
-
-.descriptionCoach {
-    width: 201px;
-    height: 19px;
-    top: 889.94px;
-    margin-left: 2%;
-    font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: left;
-color: #6D717A;
-}
+  }
+  
+  .logo-register {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .welcomebackCoach {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .descriptionCoach {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .savepageCoach {
+    margin-left: 20px;
+  }
+  
+  .save-img {
+    margin-bottom: 20px;
+  }
+  
+  .CoachProfileInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .save-button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-button:hover {
+    background-color: darkgreen;
+  }
+  
+  /* Add more CSS rules as needed */
+  
