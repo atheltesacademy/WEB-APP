@@ -24,6 +24,7 @@ import { AddMoney } from './components/addMoney/AddMoney';
 import { WalletCoachBalance } from './components/walletCoachBalance/WalletCoachBalance';
 import { CoachReferral } from './components/coachReferral/CoachReferral';
 import { CoachVideoChat } from './components/coachVideoChat/CoachVideoChat';
+import { Blog } from './components/blogPage/Blog';
 // import ChatBot from './components/ChatBot';
 
 
@@ -62,6 +63,7 @@ const App = () => {
         <Route path='/add-money' element={<AddMoney />} />
         <Route path='/wallet-coach-balance' element={<WalletCoachBalance />} />
         <Route path='/coach-referral' element={<CoachReferral />} />
+        <Route path='/blog' element={<Blog />} />
 
       </Routes>
       {/* // </Router > */}

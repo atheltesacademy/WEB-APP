@@ -16,6 +16,7 @@ import { Services } from '../services/Services'
 //bootstrap import
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import { Footer } from '../footer/Footer'
 
 export const WalletRecharge = () => {
 
@@ -142,7 +143,7 @@ export const WalletRecharge = () => {
 
 
                         <div className='d-flex align-items-center justify-content-center mt-5'>
-                            <button className='px-4 p-3 text-black' style={{
+                            <Link to='/coach-referral'><button className='px-4 p-3 text-black' style={{
                                 backgroundColor: 'white',
                                 borderColor: "transparent",
                                 borderRadius: 25,
@@ -150,6 +151,7 @@ export const WalletRecharge = () => {
                                 fontWeight: "600",
                                 textAlign: "center"
                             }}>Apply Coupon</button>
+                            </Link>
                         </div>
 
                         <div className='text-center mt-3'
@@ -279,6 +281,9 @@ export const WalletRecharge = () => {
                     </div>
                 </section>
             </div>
+            <section className='mt-5'>
+                <Footer />
+            </section>
         </>
     )
 }

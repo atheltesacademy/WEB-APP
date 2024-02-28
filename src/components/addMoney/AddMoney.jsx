@@ -10,6 +10,7 @@ import './AddMoney.css'
 //bootstrap import
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import { Footer } from '../footer/Footer'
 
 export const AddMoney = () => {
 
@@ -139,15 +140,13 @@ export const AddMoney = () => {
                     </div>
                 </div>
 
-                <section className='container' style={{
-                    marginLeft: '50px',
-                }}>
+                <section className='container'>
                     <Services />
                 </section>
 
 
                 {/* best coaches section */}
-                <section className='container mt-5 mx-5'>
+                <section className='container mt-5'>
                     <div style={{
                         fontWeight: '600',
                         fontSize: '25px',
@@ -164,6 +163,9 @@ export const AddMoney = () => {
                     </div>
                 </section>
             </div>
+            <section className='mt-5'>
+                <Footer />
+            </section>
         </>
     )
 }

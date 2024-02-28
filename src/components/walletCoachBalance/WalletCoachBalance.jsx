@@ -11,6 +11,7 @@ import './WalletCoachBalance.css'
 import { Link } from 'react-router-dom'
 import { BestCoaches } from '../bestCoaches/BestCoaches'
 import { Services } from '../services/Services'
+import { Footer } from '../footer/Footer'
 
 
 //bootstrap import
@@ -234,6 +235,10 @@ export const WalletCoachBalance = () => {
                     </div>
                 </section>
             </div>
+
+            <section className='mt-5 pt-5'>
+                <Footer />
+            </section>
         </>
     )
 }
