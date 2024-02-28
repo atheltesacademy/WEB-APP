@@ -79,7 +79,7 @@ const CoachId = ({ name }) => {
                 <Link to="/coachChat"><button className="buttonStyle1">
                   Chat Now
                 </button></Link>
-                <Link><button className="buttonStyle2" onClick={CallNow}>
+                <Link to='/Coach-video-chat'><button className="buttonStyle2">
                   Call Now
                 </button></Link>
               </div>

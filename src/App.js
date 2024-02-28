@@ -5,7 +5,6 @@ import SignUpForm from './components/signUpForm/SignUpForm';
 import Register from './components/athleteProfile/Register';
 import SignInForm from './components/signInForm/SignInForm';
 import Home from './components/home/Home';
-import CoachChat from './components/CoachChat/CoachChat';
 import Coachprofile from './components/coachProfile/Coachprofile';
 import CoachId from './components/coachId/CoachId';
 import Logout from './components/logout/Logout';
@@ -16,6 +15,9 @@ import { CoachReferral } from './components/coachReferral/CoachReferral';
 import { CoachVideoChat } from './components/coachVideoChat/CoachVideoChat';
 import CoachWithRating from './components/coachWithRating/CoachWithRating';
 import LandingPage from './components/landingPage/LandingPage';
+import { Blog } from './components/blogPage/Blog';
+import CoachChat from './components/coachChat/CoachChat';
+
 const App = () => {
   return (
 

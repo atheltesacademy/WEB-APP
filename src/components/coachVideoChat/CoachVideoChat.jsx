@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalculator, faCamera, faEllipsisV, faGreaterThan, faMicrophone, faPaperclip, faVideo } from "@fortawesome/free-solid-svg-icons";
+import { faCalculator, faCamera, faEllipsisV, faGreaterThan, faMessage, faMicrophone, faPaperclip, faVideo } from "@fortawesome/free-solid-svg-icons";
 import { Card } from 'react-bootstrap';
 import Avatar from '../../assets/AvatarImageVideo.png';
 import MaleAvatar from '../../assets/videoAvatarMale.png';
