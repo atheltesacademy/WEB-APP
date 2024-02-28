@@ -22,6 +22,7 @@ import Logout from './components/logout/Logout';
 import { CoachVideoChat } from './components/coachVideoChat/CoachVideoChat';
 import { WalletRecharge } from './components/walletRecharge/WalletRecharge';
 import { AddMoney } from './components/addMoney/AddMoney';
+import { WalletCoachBalance } from './components/walletCoachBalance/WalletCoachBalance';
 // import ChatBot from './components/ChatBot';
 
 
@@ -58,6 +59,7 @@ const App = () => {
         <Route path='/Coach-video-chat' element={<CoachVideoChat />} />
         <Route path='/wallet-recharge' element={<WalletRecharge />} />
         <Route path='/add-money' element={<AddMoney />} />
+        <Route path='/wallet-coach-balance' element={<WalletCoachBalance />} />
 
       </Routes>
       {/* // </Router > */}
