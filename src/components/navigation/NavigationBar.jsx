@@ -29,10 +29,8 @@ function NavigationBar() {
       
         </div>
                  </span>
-        {/* <span style={{marginTop:'1%',marginLeft:'4%'}}> */}
         <Link to="/signup"><img src={LoginLogo} alt="" style={{marginTop:'-4%', marginLeft:'50%'}}/></Link>
-        <Link to="/signin"><img src={SignLogo} alt=""  style={{marginTop:'-6%', marginLeft:'40%'}} /></Link>
-        {/* </span> */}
+        <Link to="/signin"><img src={SignLogo} alt=""  style={{marginTop:'-6%', marginLeft:'10%'}} /></Link>
     </div>
   );
 }

@@ -18,9 +18,6 @@ import './CoachId.css';
 import NavigationBar from '../navigation/NavigationBar';
 
 const CoachId = ({ name }) => {
-  // const [modalOpen, setModalOpen] = useState(false);
-  // const [paymentInfo, setPaymentInfo] = useState('');
-
 
   const ChatNow = () => {
     alert('Chating functionality will be implemented here.');
@@ -54,7 +51,6 @@ const CoachId = ({ name }) => {
 
         </div>
 
-        {/* <img src={myImage0} alt="error" style={{marginLeft:'50%'}} /> */}
         </div>
         <div className="mainContainer" style={{marginTop:'20px'}}>
             <Link to="/coachesRating" style={{textDecoration:'none'}}>

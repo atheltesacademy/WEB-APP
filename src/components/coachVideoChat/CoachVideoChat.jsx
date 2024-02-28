@@ -1,17 +1,18 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalculator, faCamera, faEllipsisV, faGreaterThan, faMicrophone, faPaperclip, faVideo } from "@fortawesome/free-solid-svg-icons";
+import { faCalculator, faCamera,  faGreaterThan, faMessage, faMicrophone, faPaperclip, faVideo } from "@fortawesome/free-solid-svg-icons";
 import { Card } from 'react-bootstrap';
 import Avatar from '../../assets/AvatarImageVideo.png';
 import MaleAvatar from '../../assets/videoAvatarMale.png';
-import FemaleAvatar from '../../assets/femaleAvatar.png'
+import FemaleAvatar from '../../assets/femaleAvatar.png';
+import OnlineProve from '../../assets/Group 42.svg';
 import NavigationBar from '../navigation/NavigationBar';
 import DummyAvatar from '../../assets/maleAvatar.png'
 import './CoachVideoChat.css'
 
 //bootstrap import
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 export const CoachVideoChat = () => {
 
@@ -67,10 +68,10 @@ export const CoachVideoChat = () => {
                 <div className='row'>
                     <div className='col-md-4 col-sm-4'>
                         <div className='d-flex justify-content-end align-items-center'>
-                            <button type="button" id='btn' className='m-1 text-white'
-                                style={{ borderColor: 'transparent' }}
-                            >Football</button>
-                            <span className='m-1'><FontAwesomeIcon icon={faGreaterThan} />&nbsp;Coaches</span>
+                            <button type="button" style={{backgroundColor:'rgba(37, 91, 155, 1)',borderRadius:'10px',height:'35px',width: '-webkit-fill-available',color:'#ffffff'}}>Football</button>
+                            <span className='m-1'><FontAwesomeIcon icon={faGreaterThan} style={{ marginLeft: '8%'}}/>&nbsp;Coaches</span>
+                        
+
                         </div>
 
                         <div className='card mt-2 shadow p-3 rounded' >
@@ -79,9 +80,6 @@ export const CoachVideoChat = () => {
                                     Messages</div>
                                 <Card.Text style={{ height: '400px', overflowY: 'scroll' }}>
                                     <div className='d-flex flex-row mt-3'>
-                                        {/* <div style={{ borderWidth: 1, borderColor: 'black' }}></div> */}
-                                        {/* <div className='text-center'>Messages</div> */}
-                                        {/* <div></div> */}
                                     </div>
                                     {chatJson.map((item, index) => (
                                         <div
@@ -112,6 +110,10 @@ export const CoachVideoChat = () => {
                                         <input type='text' className='form-control p-2 rounded' placeholder='Write your message' color='#797C7B80' style={{ borderColor: '#FFFFFF' }} />
                                     </div>
                                     <button className='p-2 bg-transparent' style={{ borderColor: 'transparent' }}>
+                                        <FontAwesomeIcon icon={faMessage} color='rgba(0, 14, 8, 0.5)' />
+                                    </button>
+
+                                    <button className='p-2 bg-transparent' style={{ borderColor: 'transparent' }}>
                                         <FontAwesomeIcon icon={faCamera} color='rgba(0, 14, 8, 0.5)' />
                                     </button>
                                 </div>
@@ -127,15 +129,11 @@ export const CoachVideoChat = () => {
                                 <img src={MaleAvatar} alt="Responsive image" height={160} width={180}
                                     style={{ position: 'relative' }} />
                                 <div style={{
-                                    backgroundColor: '#00E324',
-                                    padding: '28px',
-                                    borderRadius: 28,
                                     position: "absolute",
-                                    margin: '10px'
-                                }}></div>
+                                    margin: '8px'
+                                }}> <img src={OnlineProve} alt='boom' /> </div>
                             </div>
                             <div className='d-flex flex-row mt-4 justify-content-center'>
-                                <button id='audioIcon' className='m-2' style={{ borderColor: 'transparent' }}></button>
                                 <button id='audioIcon' className='d-flex justify-content-center align-items-center m-2'
                                     style={{ borderColor: 'transparent' }}>
                                     <FontAwesomeIcon icon={faVideo} color='#FFFFFF' />
@@ -147,10 +145,6 @@ export const CoachVideoChat = () => {
                                 <button id='audioIcon' className='d-flex justify-content-center align-items-center m-2'
                                     style={{ borderColor: 'transparent' }}>
                                     <FontAwesomeIcon icon={faMicrophone} color='#FFFFFF' />
-                                </button>
-                                <button id='audioIcon' className='d-flex justify-content-center align-items-center m-2'
-                                    style={{ borderColor: 'transparent' }} >
-                                    <FontAwesomeIcon icon={faEllipsisV} color='#FFFFFF' />
                                 </button>
                             </div>
                         </div>

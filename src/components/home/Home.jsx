@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-// import { ReactComponent as GoogleIcon} from './assets/group-53.svg';
 import myImage0 from '../../assets/Group 1380.svg'
 import Sports from '../../assets/tennis-card@2x.png';
 import Sports2 from '../../assets/Yoga-card@2x.png';

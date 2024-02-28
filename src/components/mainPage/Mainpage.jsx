@@ -1,5 +1,3 @@
-
-// export default Mainpage;
 import React from 'react';
 import './Mainpage.css';
 import Image from '../../assets/bg - Copy.jpeg';

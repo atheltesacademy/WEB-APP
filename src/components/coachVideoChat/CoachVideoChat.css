@@ -7,7 +7,7 @@
 .card {
     background-color: rgba(129, 186, 255, 0.09) !important;
     height: 550px !important;
-    /* width: 340px;     */
+   
 }
 
 #senderMsg {
@@ -63,7 +63,6 @@
     font-weight: 500;
     font-family: 'roboto';
     text-align: center;
-    /* display: inline-block; */
     margin: 0 auto;
     justify-content: center;
 }
