@@ -17,6 +17,7 @@ import CoachWithRating from './components/coachWithRating/CoachWithRating';
 import LandingPage from './components/landingPage/LandingPage';
 import { Blog } from './components/blogPage/Blog';
 import CoachChat from './components/coachChat/CoachChat';
+import { CoachJourney } from './components/coachJourney/CoachJourney';
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
         <Route path='/wallet-coach-balance' element={<WalletCoachBalance />} />
         <Route path='/coach-referral' element={<CoachReferral />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/coach-journey' element={<CoachJourney />} />
       </Routes>
     </>
   );

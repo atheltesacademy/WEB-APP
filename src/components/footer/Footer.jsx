@@ -1,11 +1,14 @@
 import React from 'react'
 import './Footer.css'
 import LogoImage from '../../assets/lockup-color-1@2x.png'
+import FacebookIcon from '../../assets/facebook.svg'
+import InstagramIcon from '../../assets/instagram.svg'
+import YoutubeIcon from '../../assets/youtube.svg'
+import LinkedIn from '../../assets/linkedin.svg'
 
 //bootstrap import
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Footer = () => {
     return (
@@ -69,8 +72,45 @@ export const Footer = () => {
                         }}> ndndnnd@gmail.com</span>
                     </div>
 
-                    <div>
-                        {/* <FontAwesomeIcon icon={faInk} color=' white' size='sm' /> */}
+                    <div className='d-flex flex-row align-items-center mt-4'>
+                        <div className='d-flex align-items-center justify-content-center' style={{
+                            backgroundColor: "#1A22E3",
+                            borderRadius: 30,
+                            height: "30px",
+                            width: '30px'
+                        }}>
+                            <img src={FacebookIcon} height='15px' width='15px' />
+                        </div>
+
+                        <div className='d-flex align-items-center justify-content-center' style={{
+                            backgroundColor: "#2867B2",
+                            borderRadius: 30,
+                            height: "28px",
+                            width: '28px',
+                            marginLeft: '10px'
+                        }}>
+                            <img src={LinkedIn} height='15px' width='15px' />
+                        </div>
+
+                        <div className='d-flex align-items-center justify-content-center' style={{
+                            backgroundColor: "#FF0000",
+                            borderRadius: 30,
+                            height: "28px",
+                            width: '28px',
+                            marginLeft: '10px'
+                        }}>
+                            <img src={YoutubeIcon} height='15px' width='15px' />
+                        </div>
+
+                        <div className='d-flex align-items-center justify-content-center' style={{
+                            backgroundColor: "#F00073",
+                            borderRadius: 30,
+                            height: "28px",
+                            width: '28px',
+                            marginLeft: '10px'
+                        }}>
+                            <img src={InstagramIcon} height='15px' width='15px' />
+                        </div>
                     </div>
                 </div>
 
