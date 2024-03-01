@@ -11,12 +11,12 @@ import './WalletRecharge.css'
 import { Link } from 'react-router-dom'
 import { BestCoaches } from '../bestCoaches/BestCoaches'
 import { Services } from '../services/Services'
+import { Footer } from '../footer/Footer'
 
 
 //bootstrap import
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { Footer } from '../footer/Footer'
 
 export const WalletRecharge = () => {
 
