@@ -22,10 +22,9 @@ import { CoachPageEdit } from './components/coachPageEdit/CoachPageEdit';
 
 const App = () => {
   return (
-
     <>
       <Routes>
-        <Route path="/" element={< Mainpage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/signup" element={<SignUpForm />} />
         <Route path="/signin" element={<SignInForm />} />
         <Route path="/register" element={<Register />} />

@@ -1,40 +1,84 @@
-  
-  .column-01 {
-    margin-top: 100px;  
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 340px; /* Should be removed. Only for demonstration */
-  }
-  
-  .column-02 {
-    margin-top:190px;  
-    float: left;
-    padding-left: 70px;
-    width: 50%;
-    padding: 60px;
-    height: 340px; /* Should be removed. Only for demonstration */
-  }
-  
-  .row1 {
-    margin: -10% 0% -8% 0%; 
-    float: left;
-    width: 80%;
-    padding: 10px;
-    height: 170px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .row{
-    display: flex;
+#main {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    min-height: 100%;
+    max-height: 100%;
+    padding-top: 40px;
+    right: 0;
+    left: 0;
+    filter: brightness(0.6);
+}
+.overlay {
+    position: absolute;
     height: 100%;
-    margin-left: 30px;
-  }
-  .img1-landing{
-    margin-top: 50px;
-  }
+    width: 100%;
+    background-color: 0, 0, 0, 0.6;
+    bottom: 0;
+    left: 0;
+}
+.inner {
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding-top: 180px;
+    padding-left: 250px;
+}
+ .logotoo {
+    width: 160px;
+    height: 54px;
+}
+.logo {
+    color: 'rgb(241, 237, 237)';
+    text-Align: 'center';
+    height: '200px';
+    font-Size: '20px';
+    font-Family: 'cursive';
+    border-Radius: '20px';
+    font-Weight: 'bold';
+    width: '150%';
+    backdrop-filter: 'blur(10px)';
+    color: white;
+}
+
+.logoImage{
+    min-inline-size: -webkit-fill-availabl;
+     margin-Left: 200px;
+     margin-top: -70px;
+     filter: drop-shadow(2px 4px 6px black); 
+     margin-top: 10%;
+}
+#landing-intro{
+top: 813px;
+left: 408px;
+border-radius: 21px;
+border: 4px;
+font-family: Raleway;
+font-size: 20px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0px;
+text-align: center;
+width: 981px;
+height: 130px;
+padding: 2% 3% 3% 3%;
+top: 829px;
+left: 469px;
+background: rgba(255, 255, 255, 1);
+color:white;
+backdrop-filter: blur(6px);
+
+background: radial-gradient(50% 50% at 100% 41.07%, rgba(37, 142, 217, 0.2596) 0%, rgba(37, 142, 217, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+linear-gradient(346.87deg, rgba(235, 27, 27, 0.2) 5.57%, rgba(235, 27, 27, 0) 51.38%),
+linear-gradient(164.62deg, rgba(212, 34, 241, 0.2) 14.27%, rgba(206, 46, 232, 0) 44.4%),
+linear-gradient(74.29deg, rgba(46, 247, 102, 0.2) 9.54%, rgba(54, 255, 110, 0) 57.67%),
+linear-gradient(0deg, rgba(217, 217, 217, 0.44), rgba(217, 217, 217, 0.44));
+
+border-image-source: linear-gradient(74.29deg, rgba(46, 247, 102, 0.2) 9.54%, rgba(54, 255, 110, 0) 57.67%),
+linear-gradient(164.62deg, rgba(212, 34, 241, 0.2) 14.27%, rgba(206, 46, 232, 0) 44.4%),
+linear-gradient(346.87deg, rgba(235, 27, 27, 0.2) 5.57%, rgba(235, 27, 27, 0) 51.38%),
+radial-gradient(50% 50% at 100% 41.07%, rgba(37, 142, 217, 0.2596) 0%, rgba(37, 142, 217, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+
+
+}
