@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Mainpage from "./components/mainPage/Mainpage";
 import SignUpForm from "./components/signUpForm/SignUpForm";
 import Register from "./components/athleteProfile/Register";
 import SignInForm from "./components/signInForm/SignInForm";
@@ -11,11 +10,12 @@ import CoachId from "./components/coachId/CoachId";
 import Logout from "./components/logout/Logout";
 import { CoachVideoChat } from "./components/coachVideoChat/CoachVideoChat";
 import CoachWithRating from "./components/coachWithRating/CoachWithRating";
+import CategoryPage from "./components/categoryPage/CategoryPage";
 import LandingPage from "./components/landingPage/LandingPage";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Mainpage />} />
+      <Route path="/" element={<LandingPage />} />
       <Route path="/signup" element={<SignUpForm />} />
       <Route path="/signin" element={<SignInForm />} />
       <Route path="/register" element={<Register />} />
@@ -26,7 +26,7 @@ const App = () => {
       <Route path="/coachProfile" element={<Coachprofile />} />
       <Route path="/logout" element={<Logout />} />
       <Route path="/coachVideoChat" element={<CoachVideoChat />} />
-      <Route path="/category/:sport" element={<LandingPage />} />
+      <Route path="/category/:sport" element={<CategoryPage />} />
     </Routes>
   );
 };

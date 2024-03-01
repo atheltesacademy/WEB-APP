@@ -1,0 +1,39 @@
+  
+  .sport-desc {
+    margin-top: 100px;  
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 340px; /* Should be removed. Only for demonstration */
+  }
+  
+  .sport-image {
+    margin-top:190px;  
+    float: left;
+    width: 50%;
+    padding: 60px;
+    height: 340px; /* Should be removed. Only for demonstration */
+  }
+  
+  .row1 {
+    margin: -10% 0% -8% 0%; 
+    float: left;
+    width: 80%;
+    padding: 10px;
+    height: 170px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row{
+    display: flex;
+    height: 100%;
+    margin-left: 30px;
+  }
+  .img1-landing{
+    margin-top: 50px;
+  }
