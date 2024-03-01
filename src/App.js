@@ -18,6 +18,7 @@ import LandingPage from './components/landingPage/LandingPage';
 import { Blog } from './components/blogPage/Blog';
 import CoachChat from './components/coachChat/CoachChat';
 import { CoachJourney } from './components/coachJourney/CoachJourney';
+import { CoachPageEdit } from './components/coachPageEdit/CoachPageEdit';
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
         <Route path='/coach-referral' element={<CoachReferral />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/coach-journey' element={<CoachJourney />} />
+        <Route path='/coach-edit' element={<CoachPageEdit />} />
       </Routes>
     </>
   );
