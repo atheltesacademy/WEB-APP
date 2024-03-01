@@ -24,8 +24,8 @@ function NavigationBar() {
         </Link>
         <Link to="/category/:sport"> Category</Link>
         {/* Blog page will be added later */}
-        <Link to="/coachesRating"> Blog</Link>
-        <Link to="/coachVideoChat"> Wallet</Link>
+        <Link to="/blog"> Blog</Link>
+        <Link to="/wallet-recharge"> Wallet</Link>
         {/* <div className="search-Nav">
           <input type="text" id="input" placeholder="Name Sports Category..." style={{ borderRadius: '26px',left:'423px', width: '184px', height: '26px',marginTop:'1%', backgroundColor: 'lightgray', borderColor: 'black', paddingLeft: '28px' }} />
           <FontAwesomeIcon icon={faSearch} className="search-icon" />

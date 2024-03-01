@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Mainpage from './components/mainPage/Mainpage';
+// import Mainpage from './components/mainPage/Mainpage';
 import SignUpForm from './components/signUpForm/SignUpForm';
 import Register from './components/athleteProfile/Register';
 import SignInForm from './components/signInForm/SignInForm';
