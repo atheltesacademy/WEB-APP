@@ -4,6 +4,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGreaterThan } from '@fortawesome/free-solid-svg-icons'
 import NavigationBar from '../navigation/NavigationBar'
 import MaleAvatar from '../../assets/min-frame@2x.png'
+import { Card } from 'react-bootstrap'
+import { Services } from '../services/Services'
+import { BestCoaches } from '../bestCoaches/BestCoaches'
+import { Footer } from '../footer/Footer'
+
+const coaches = [
+    {
+        name: 'Vijay',
+        sports: "Cricket"
+    },
+    {
+        name: 'Ajay',
+        sports: "Football"
+    },
+    {
+        name: 'Vipul',
+        sports: "Boxing"
+    },
+    {
+        name: 'Dhruv',
+        sports: "Tennis"
+    },
+]
+
 
 export const CoachPageEdit = () => {
     return (
@@ -17,7 +41,7 @@ export const CoachPageEdit = () => {
                     >Coach Profile</button>
                 </div>
 
-                <div className='border border-dark mt-4'>
+                <div className='border rounded border-dark mt-4'>
                     <div className='row'>
                         <div className='col-md-5 p-4'>
                             <div className='d-flex flex-row align-items-center justify-content-end'>
@@ -58,7 +82,7 @@ export const CoachPageEdit = () => {
                         </div>
 
                         <div className='col-md-7 mt-4'>
-                            <div id='rightContainer'>
+                            <div id='rightContainer' style={{ marginRight: '30px' }}>
                                 <div className='d-flex flex-row align-items-center p-4' style={{
                                     color: "#000000",
                                     fontSize: "18px",
@@ -107,14 +131,69 @@ export const CoachPageEdit = () => {
                                     }}>Upload</button>
                                 </div>
 
-                                <div className='d-flex flex-row align-items-center justify-content-center pt-3'>
+                                <div className='d-flex flex-row align-items-center justify-content-center p-4'
+                                    style={{
+                                        color: '#808080',
+                                        fontSize: '18px'
+                                    }}>
                                     Upload above mentioned  Document
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div className='card mt-4 m-2 shadow rounded'>
+                    <div class="card-body p-5">
+                        <h6 style={{ color: '#808080' }}>About Yourself</h6>
+                        <div className='d-flex justify-content-center'>
+                            <input type='text' placeholder='Write about your Skill and certificate and Jouney'
+                                style={{
+                                    backgroundColor: 'transparent',
+                                    borderColor: 'transparent',
+                                    width: "400px",
+                                }} />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className='d-flex align-items-center justify-content-center mb-4'>
+                    <button className='px-5 p-1 rounded-pill' style={{
+                        backgroundColor: "transparent",
+                        borderColor: '#DA8300',
+                        color: "#000000",
+                        fontSize: "15px",
+                        fontWeight: 'bold',
+                        marginLeft: '200px'
+                    }}>Save</button>
+                </div>
+
+                <section className='container'>
+                    <Services />
+                </section>
+
+                <section className='container mt-5'>
+                    <div style={{
+                        fontWeight: '600',
+                        fontSize: '25px',
+                        color: "#000000"
+                    }}>Check out our best rated Coaches and Mentors</div>
+                    <div className='d-flex flex-row justify-content-around align-items-center flex-wrap mt-3'>
+                        {coaches.map((item) => {
+                            return (
+                                <div className='mt-3'>
+                                    <BestCoaches name={item.name} sports={item.sports} />
+                                </div>
+                            )
+                        })}
+                    </div>
+                </section>
             </div>
+
+            <section className='mt-5'>
+                <Footer />
+            </section>
         </>
     )
 }

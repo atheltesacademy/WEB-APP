@@ -19,6 +19,7 @@ import { Blog } from './components/blogPage/Blog';
 import CoachChat from './components/coachChat/CoachChat';
 import { CoachJourney } from './components/coachJourney/CoachJourney';
 import { CoachPageEdit } from './components/coachPageEdit/CoachPageEdit';
+import CategoryPage from './components/categoryPage/CategoryPage';
 
 const App = () => {
   return (
@@ -35,7 +36,7 @@ const App = () => {
         <Route path='/coachProfile' element={<Coachprofile />} />
         <Route path='/logout' element={<Logout />} />
         {/* <Route path='/coachVideoChat' element={<CoachVideoChat />} /> */}
-        <Route path='/category/:sport' element={<LandingPage />} />
+        <Route path='/category/:sport' element={<CategoryPage />} />
         <Route path='/Coach-video-chat' element={<CoachVideoChat />} />
         <Route path='/wallet-recharge' element={<WalletRecharge />} />
         <Route path='/add-money' element={<AddMoney />} />

@@ -1,3 +1,9 @@
 #rightContainer {
     background-color: #D9D9D9;
 }
+
+.card {
+    background-color: #FFFFFF !important;
+    height: 150px !important;
+    width: 1450px !important;
+}
