@@ -12,65 +12,65 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { Footer } from '../footer/Footer'
 
+const amount = [
+    {
+        amt: '100'
+    },
+    {
+        amt: '200'
+    },
+    {
+        amt: '300'
+    },
+    {
+        amt: '400'
+    },
+    {
+        amt: '500'
+    },
+    {
+        amt: '600'
+    },
+    {
+        amt: '700'
+    },
+    {
+        amt: '800'
+    },
+    {
+        amt: '900'
+    },
+    {
+        amt: '1000'
+    },
+    {
+        amt: '1100'
+    },
+    {
+        amt: '2000'
+    },
+]
+
+const coaches = [
+    {
+        name: 'Vijay',
+        sports: "Cricket"
+    },
+    {
+        name: 'Ajay',
+        sports: "Football"
+    },
+    {
+        name: 'Vipul',
+        sports: "Boxing"
+    },
+    {
+        name: 'Dhruv',
+        sports: "Tennis"
+    },
+]
+
 export const AddMoney = () => {
-
-    const amount = [
-        {
-            amt: '100'
-        },
-        {
-            amt: '200'
-        },
-        {
-            amt: '300'
-        },
-        {
-            amt: '400'
-        },
-        {
-            amt: '500'
-        },
-        {
-            amt: '600'
-        },
-        {
-            amt: '700'
-        },
-        {
-            amt: '800'
-        },
-        {
-            amt: '900'
-        },
-        {
-            amt: '1000'
-        },
-        {
-            amt: '1100'
-        },
-        {
-            amt: '2000'
-        },
-    ]
-
-    const coaches = [
-        {
-            name: 'Vijay',
-            sports: "Cricket"
-        },
-        {
-            name: 'Ajay',
-            sports: "Football"
-        },
-        {
-            name: 'Vipul',
-            sports: "Boxing"
-        },
-        {
-            name: 'Dhruv',
-            sports: "Tennis"
-        },
-    ]
     return (
         <>
             <NavigationBar />
