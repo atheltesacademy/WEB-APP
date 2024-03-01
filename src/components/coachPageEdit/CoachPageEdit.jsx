@@ -143,7 +143,7 @@ export const CoachPageEdit = () => {
                     </div>
                 </div>
 
-                <div className='card mt-4 m-2 shadow rounded'>
+                <div className='card mt-4 m-2 shadow rounded' id="aboutCard">
                     <div class="card-body p-5">
                         <h6 style={{ color: '#808080' }}>About Yourself</h6>
                         <div className='d-flex justify-content-center'>

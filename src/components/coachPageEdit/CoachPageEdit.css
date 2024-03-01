@@ -2,8 +2,8 @@
     background-color: #D9D9D9;
 }
 
-.card {
+#aboutCard {
     background-color: #FFFFFF !important;
-    /* height: 150px !important; */
-    /* width: 1450px !important; */
+    height: 150px !important;
+    width: 1450px !important;
 }
