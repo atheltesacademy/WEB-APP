@@ -7,34 +7,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 export const BestCoaches = (props) => {
     return (
-        <div className='bestCoaches' style={{
-            padding: '40px 240px 40px',
-            borderRadius: 30
-        }}>
-            <div style={{
-                color: '#FFFFFF',
-                fontWeight: "500",
-                fontSize: "25px",
-                textAlign: "center"
-            }}>{props.name}<br />
-                <span style={{
-                    color: '#FFFFFF',
-                    fontWeight: "100",
-                    fontSize: "15px",
-                    textAlign: "center"
-                }}>{props.sports}</span></div>
+        <div className='bestCoaches'>
+            <div className='coachName'>{props.name}<br />
+                <span className='coachSport'>{props.sports}</span></div>
 
-            <button type='btn'
-                style={{
-                    borderRadius: 20,
-                    backgroundColor: "#EFCC00",
-                    borderColor: "transparent",
-                    color: "white",
-                    fontSize: '14px',
-                    padding: '5px 25px 5px',
-                    textAlign: 'center',
-                    marginTop: '10px'
-                }}
+            <button type='btn' className='button'
             >SEE MORE</button>
         </div>
     )

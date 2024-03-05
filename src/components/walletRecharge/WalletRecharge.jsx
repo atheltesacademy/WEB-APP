@@ -52,7 +52,7 @@ export const WalletRecharge = () => {
                             <span style={{ fontSize: 20 }}>&nbsp;<FontAwesomeIcon icon={faGreaterThan} />&nbsp;Player</span>
                         </div>
 
-                        <div className='card mt-5 shadow'>
+                        <div className='card mt-5 shadow' id='box'>
                             <div className="card-body d-flex flex-row">
                                 <img src={maleAvatar} style={{
                                     height: '260px',
@@ -81,27 +81,33 @@ export const WalletRecharge = () => {
                                                 fontSize: 14
                                             }}> Age: 08</div>
                                     </div>
-                                    <div className='pt-4' style={{
-                                        fontWeight: "bold",
-                                        fontSize: 16,
-                                        color: '#000000'
-                                    }}>₹ 1000
+                                    <div id='aboutText' className='pt-3'>
+                                        <span style={{
+                                            fontWeight: 'bold'
+                                        }}> About me: </span>
+                                        I am Rahul a football campign A football coach plans and leads training sessions with the aim of helping players
+                                        improve at playing the game. Football coaches develop the skills, motivation and fitness of football players and teams.
+                                        They also organise and lead the team in competitive matches.
+
                                     </div>
                                 </div>
                             </div>
-                            <hr />
-                            <div id='aboutText' className='pb-5 mb-4 px-3' style={{
-                                marginRight: '50px'
-                            }}>
-                                <span style={{
-                                    fontWeight: 'bold'
-                                }}> About me: </span>
-                                I am Rahul a football campign A football coach plans and leads training sessions with the aim of helping players
-                                improve at playing the game. Football coaches develop the skills, motivation and fitness of football players and teams.
-                                They also organise and lead the team in competitive matches.
+                        </div>
 
-                            </div>
-
+                        <div className='card mt-3 shadow' id='box'>
+                            <h6 className='text-center pt-4'>Wallet Transactions</h6>
+                            <table className="table mt-4">
+                                <tr>
+                                    <th scope="col">Date Created</th>
+                                    <th scope="col">Transaction</th>
+                                    <th scope="col">Amount</th>
+                                </tr>
+                                <tr>
+                                    <td>2021-11-04 11:06:46</td>
+                                    <td>Transferred to 10140715</td>
+                                    <td>1200.00</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
 

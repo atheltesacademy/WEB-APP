@@ -84,32 +84,15 @@ export const AddMoney = () => {
                 </div>
 
                 <div className='d-flex justify-content-center align-items-center'>
-                    <span style={{
-                        fontSize: '42px',
-                        fontWeight: '500',
-                        color: '#000000'
-                    }}>Add Money to Wallet
-                        <div className='pt-3'
-                            style={{
-                                fontSize: '22px',
-                                textAlign: 'center'
-                            }}>Available Balance:</div>
-                        <div className='pt-3'
-                            style={{
-                                fontSize: '30px',
-                                textAlign: 'center'
-                            }}>₹40</div></span>
+                    <span className='moneyText'>Add Money to Wallet
+                        <div className='pt-3 availableText'>Available Balance:</div>
+                        <div className='pt-3 availableText'>₹40</div></span>
                 </div>
 
                 <div className=' d-flex justify-content-between flex-wrap mx-4'>
                     {amount.map((item) => {
                         return (
-                            <div className='amountContainer d-flex justify-content-center align-items-center mt-5' style={{
-                                color: '#FFFFFF',
-                                fontSize: '35px',
-                                height: '100px',
-                                width: '180px',
-                            }}>{item.amt}</div>
+                            <div className='amountContainer d-flex justify-content-center align-items-center mt-5 amtText'>{item.amt}</div>
                         )
                     })}
                 </div>
@@ -123,20 +106,10 @@ export const AddMoney = () => {
                         fontSize: '35px',
                         color: "#FFFFFF",
                     }}>
-                        <img src={badgeIcon} style={{
-                            height: "50px",
-                            width: '50px'
-                        }} />
+                        <img src={badgeIcon} height={'50px'} width={'50px'} />
                         Pay Rs. 100 Get Extra Rs. 75</div>
                     <div>
-                        <button type='button' style={{
-                            backgroundColor: "#0396C4",
-                            borderColor: "transparent",
-                            padding: '5px 30px 5px',
-                            borderRadius: 30,
-                            fontSize: '32px',
-                            color: 'white'
-                        }}>₹ Recharge</button>
+                        <button type='button' id='rechargeBtn'>₹ Recharge</button>
                     </div>
                 </div>
 
@@ -147,11 +120,7 @@ export const AddMoney = () => {
 
                 {/* best coaches section */}
                 <section className='container mt-5'>
-                    <div style={{
-                        fontWeight: '600',
-                        fontSize: '25px',
-                        color: "#000000"
-                    }}>Check out our best rated Coaches and Mentors</div>
+                    <div className='moneyText'>Check out our best rated Coaches and Mentors</div>
                     <div className='d-flex flex-row justify-content-around align-items-center flex-wrap mt-3'>
                         {coaches.map((item) => {
                             return (

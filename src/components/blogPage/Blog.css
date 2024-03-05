@@ -6,3 +6,18 @@
     background-color: #000000;
     color: #FFFFFF;
 }
+
+#line {
+    display: block;
+    height: 1px;
+    border: 5px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.titleText {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000
+}

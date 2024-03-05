@@ -1,3 +1,31 @@
 .amountContainer {
     background-color: #26C2F3;
 }
+
+#rechargeBtn {
+    background-color: #0396C4;
+    border-color: transparent;
+    padding: 5px 30px 5px;
+    border-radius: 50px;
+    font-size: 32px;
+    color: white
+}
+
+.moneyText {
+    font-size: 42px;
+    font-weight: 500;
+    color: #000000
+}
+
+.availableText {
+    font-size: 22px;
+    color: #000000;
+    text-align: center;
+}
+
+.amtText {
+    color: #FFFFFF;
+    font-size: 35px;
+    height: 100px;
+    width: 180px
+}
