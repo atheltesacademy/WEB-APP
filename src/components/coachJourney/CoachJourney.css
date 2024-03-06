@@ -1,0 +1,56 @@
+.coach-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000
+}
+
+.coach-info {
+    font-size: 18px;
+    color: #808080
+}
+
+.btnStyle {
+    background-color: transparent;
+    border-color: #1E9500;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.socialIcon {
+    background-color: #1A22E3;
+    border-radius: 30px;
+    height: 28px;
+    width: 28px
+}
+
+.linkedInIcon {
+    background-color: #2867B2;
+    border-radius: 30px;
+    height: 28px;
+    width: 28px;
+    margin-left: 30px
+}
+
+.youtubeIcon {
+    background-color: #FF0000;
+    border-radius: 30px;
+    height: 28px;
+    width: 28px;
+    margin-left: 30px
+}
+
+.instaIcon {
+    background-color: #F00073;
+    border-radius: 30px;
+    height: 28px;
+    width: 28px;
+    margin-left: 30px
+}
+
+.readMoreBtn {
+    background-color: transparent;
+    color: #1A22E3;
+    font-size: 22px;
+    border-color: transparent;
+}

@@ -73,42 +73,19 @@ export const Footer = () => {
                     </div>
 
                     <div className='d-flex flex-row align-items-center mt-4'>
-                        <div className='d-flex align-items-center justify-content-center' style={{
-                            backgroundColor: "#1A22E3",
-                            borderRadius: 30,
-                            height: "30px",
-                            width: '30px'
-                        }}>
+                        <div className='d-flex align-items-center justify-content-center socialIcon'>
                             <img src={FacebookIcon} height='15px' width='15px' />
                         </div>
 
-                        <div className='d-flex align-items-center justify-content-center' style={{
-                            backgroundColor: "#2867B2",
-                            borderRadius: 30,
-                            height: "28px",
-                            width: '28px',
-                            marginLeft: '10px'
-                        }}>
+                        <div className='d-flex align-items-center justify-content-center linkedInIcon'>
                             <img src={LinkedIn} height='15px' width='15px' />
                         </div>
 
-                        <div className='d-flex align-items-center justify-content-center' style={{
-                            backgroundColor: "#FF0000",
-                            borderRadius: 30,
-                            height: "28px",
-                            width: '28px',
-                            marginLeft: '10px'
-                        }}>
+                        <div className='d-flex align-items-center justify-content-center youtubeIcon'>
                             <img src={YoutubeIcon} height='15px' width='15px' />
                         </div>
 
-                        <div className='d-flex align-items-center justify-content-center' style={{
-                            backgroundColor: "#F00073",
-                            borderRadius: 30,
-                            height: "28px",
-                            width: '28px',
-                            marginLeft: '10px'
-                        }}>
+                        <div className='d-flex align-items-center justify-content-center instaIcon'>
                             <img src={InstagramIcon} height='15px' width='15px' />
                         </div>
                     </div>

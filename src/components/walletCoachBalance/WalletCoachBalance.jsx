@@ -44,56 +44,31 @@ export const WalletCoachBalance = () => {
                 <div className='row'>
                     <div className='col-md-6 mt-4'>
                         <div className='d-flex justify-content-center align-items-center'>
-                            <button type="button" id='btn' className='text-white px-2'
-                                style={{ borderColor: 'transparent' }}
+                            <button type="button" id='btn' className='text-white px-2 border-light'
                             >Football</button>
                             <span style={{ fontSize: 20 }}>&nbsp;<FontAwesomeIcon icon={faGreaterThan} />&nbsp;Player</span>
                         </div>
 
                         <div className='card mt-5 shadow'>
                             <div className="card-body d-flex flex-row">
-                                <img src={maleAvatar} style={{
-                                    height: '260px',
-                                    width: '220px'
-                                }} />
+                                <img src={maleAvatar} height={'260px'} width={'220px'} />
 
                                 <div className='px-5 mt-2'>
-                                    <div style={{
-                                        fontWeight: "bold",
-                                        fontSize: 16,
-                                        color: '#000000'
-                                    }}>Rahul</div>
-                                    <div className='pt-4'
-                                        style={{
-                                            color: '#808080',
-                                            fontSize: 14
-                                        }}>Football, Player
+                                    <div className='titleStyle'>Rahul</div>
+                                    <h6 className='pt-4' color='#808080'
+                                    >Football, Player
                                         <div className='pt-4'
-                                            style={{
-                                                color: '#808080',
-                                                fontSize: 14
-                                            }}>English, Hindi</div>
+                                        >English, Hindi</div>
                                         <div className='pt-4'
-                                            style={{
-                                                color: '#808080',
-                                                fontSize: 14
-                                            }}> Age: 08</div>
-                                    </div>
-                                    <div className='pt-4' style={{
-                                        fontWeight: "bold",
-                                        fontSize: 16,
-                                        color: '#000000'
-                                    }}>₹ 1000
+                                        > Age: 08</div>
+                                    </h6>
+                                    <div className='pt-4 titleStyle'>₹ 1000
                                     </div>
                                 </div>
                             </div>
                             <hr />
-                            <div id='aboutText' className='pb-5 mb-4 px-3' style={{
-                                marginRight: '50px'
-                            }}>
-                                <span style={{
-                                    fontWeight: 'bold'
-                                }}> About me: </span>
+                            <div id='aboutText' className='pb-5 mb-4 px-3 w-75'>
+                                <span><b> About me: </b></span>
                                 I am Rahul a football campign A football coach plans and leads training sessions with the aim of helping players
                                 improve at playing the game. Football coaches develop the skills, motivation and fitness of football players and teams.
                                 They also organise and lead the team in competitive matches.
@@ -106,38 +81,19 @@ export const WalletCoachBalance = () => {
                     <div className='secondContainer col-md-6 mt-5 text-white pt-4'>
                         <div className='d-flex flex-row align-items-center'>
                             <FontAwesomeIcon icon={faArrowLeft} color=' white' size='2xl' />
-                            <button style={{
-                                textAlign: "center",
-                                fontSize: "24px",
-                                fontWeight: '500',
-                                borderColor: "transparent",
-                                backgroundColor: "#B84E2D",
-                                padding: '5px 20px 5px',
-                                borderRadius: 20,
-                                marginLeft: '250px',
-                                color: 'white'
-                            }}>Balance</button>
+                            <button id='balanceBtn'>Balance</button>
                         </div>
 
                         <div className='d-flex flex-row justify-content-around align-items-center mt-5 px-5'>
-                            <div style={{
-                                fontSize: '16px',
-                                color: '#FFFFFF'
-                            }}>
+                            <div>
                                 Current Amount <br />
                                 <div className='mt-3'>Platform fee @10%</div>
                                 <div className='mt-3'>Total Amount</div>
                             </div>
 
-                            <div className='vl' style={{
-                                marginRight: '100px'
-                            }}></div>
+                            <div className='vl'></div>
 
-                            <div style={{
-                                fontSize: '16px',
-                                color: '#FFFFFF',
-                                paddingRight: '150px'
-                            }}>
+                            <div className='w-25'>
                                 <div>500 Rs</div>
                                 <div className='mt-2'>50 Rs</div>
                                 <div className='mt-2'>450 Rs</div>
@@ -146,67 +102,25 @@ export const WalletCoachBalance = () => {
 
 
                         <div className='d-flex align-items-center justify-content-start mt-5 px-5'>
-                            <button className='px-4 p-3' style={{
-                                backgroundColor: 'white',
-                                borderColor: "transparent",
-                                borderRadius: 25,
-                                fontSize: '16px',
-                                fontWeight: "700",
-                                textAlign: "center",
-                                color: '#094F6A'
-                            }}>Withdraw Money</button>
+                            <button className='px-4 p-3' id='withdrawBtn'>Withdraw Money</button>
                         </div>
 
-                        <div className='text-center mt-5'
-                            style={{
-                                fontSize: '22px',
-                                color: "#FFFFFF",
-                                fontWeight: '500'
-                            }}>Enter UPI or Paypal Details</div>
+                        <div className='text-center mt-5 whiteTitle'>Enter UPI or Paypal Details</div>
 
                         <div className='d-flex align-items-center justify-content-center mt-3'>
-                            <div><input type='text' style={{
-                                backgroundColor: 'white',
-                                borderRadius: 20,
-                                fontSize: '16px',
-                                fontWeight: "600",
-                                padding: '10px 60px 10px',
-                                textAlign: 'center',
-                                color: 'black'
-                            }}
-                                placeholder='Sanjay@UPI' />
-                                <button className='d-flex align-items-center justify-content-center mt-3' style={{
-                                    backgroundColor: 'white',
-                                    borderRadius: 20,
-                                    fontSize: '16px',
-                                    fontWeight: "600",
-                                    padding: '10px 60px 10px',
-                                    textAlign: 'center',
-                                    color: 'black',
-                                    marginLeft: '70px'
-                                }}>Confirm</button>
+                            <div>
+                                <input type='text' id='inputType'
+                                    placeholder='Sanjay@UPI' />
+                                <button className='d-flex align-items-center justify-content-center mt-3' id='moneyBtn'
+                                >Confirm</button>
                             </div>
 
                         </div>
 
                         <div className='d-flex flex-row justify-content-center align-items-center m-5'>
-                            <div style={{
-                                backgroundColor: 'white',
-                                borderRadius: 8,
-                                padding: '5px 10px 5px',
-                            }}></div>
-                            <div style={{
-                                backgroundColor: 'white',
-                                borderRadius: 20,
-                                padding: '5px 10px 5px',
-                                marginLeft: '15px'
-                            }}></div>
-                            <div style={{
-                                backgroundColor: 'white',
-                                borderRadius: 20,
-                                padding: '5px 10px 5px',
-                                marginLeft: '15px'
-                            }}></div>
+                            <div id='whiteContainer'></div>
+                            <div id='whiteContainer' className='mx-3'></div>
+                            <div id='whiteContainer'></div>
                         </div>
                     </div>
 
@@ -219,11 +133,7 @@ export const WalletCoachBalance = () => {
 
                 {/* best coaches section */}
                 <section className='container mt-5 '>
-                    <div style={{
-                        fontWeight: '600',
-                        fontSize: '25px',
-                        color: "#000000"
-                    }}>Check out our best rated Coaches and Mentors</div>
+                    <div className='titleStyle'>Check out our best rated Coaches and Mentors</div>
                     <div className='d-flex flex-row justify-content-around align-items-center flex-wrap mt-3'>
                         {coaches.map((item) => {
                             return (
