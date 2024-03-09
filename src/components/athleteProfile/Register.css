@@ -1,132 +1,129 @@
-
-.RegisterInput{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-
+.registerInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
 
 .savepageAthlete {
-    border-radius: 5px;
-    background-color: #faf5f5;
-    width: 400px;
-    height: 700px;
-    padding: 20px;
-    margin-right: 160px;
-    float: right;
+  border-radius: 5px;
+  background-color: #faf5f5;
+  width: 400px;
+  height: 700px;
+  padding: 20px;
+  margin-right: 160px;
+  float: right;
 }
 
 .col-25 {
-    float: left;
-    width: 35%;
-    margin-top: 16px;
+  float: left;
+  width: 35%;
+  margin-top: 16px;
 }
 
 .col-75 {
-    float: left;
-    width: 79%;
-    height: 45px;
-    margin-top: 12px;
+  float: left;
+  width: 79%;
+  height: 45px;
+  margin-top: 12px;
 }
 
 .row-register:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
-
-
-.RegisterCard-container {
-    background-color: rgb(39, 241, 214);
-    width: 450px;
-    height: 700px;
-    float: left;
-    border-radius: 10px;
+.register-card-container {
+  background-color: rgb(39, 241, 214);
+  width: 450px;
+  height: 700px;
+  float: left;
+  border-radius: 10px;
 }
 
 .avatar {
-    width: 40px;
-    height: 40px;
-    margin-left: 80px;
-    margin-top: 30px;
+  width: 40px;
+  height: 40px;
+  margin-left: 80px;
+  margin-top: 30px;
 }
 
 .logo-register {
-    width: 250px;
-    height: 170px;
-    margin-left: 80px;
-    margin-top: 60px;
+  width: 250px;
+  height: 170px;
+  margin-left: 80px;
+  margin-top: 60px;
 }
 
 .container-save {
-    font-weight: bold;
-    text-align: left;
+  font-weight: bold;
+  text-align: left;
 }
 
 .welcomebackAthlete {
-    font-family: Roboto;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 47px;
-    letter-spacing: 0em;
-    text-align: left;
-color:#061A48;    
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #061a48;
 
-width: 350px;
-    
-height: 49.98px;
-top: 807px;
-left: 80px;
+  width: 350px;
+
+  height: 49.98px;
+  top: 807px;
+  left: 80px;
 }
 
 .descriptionAthlete {
-    width: 201px;
-    height: 19px;
-    top: 889.94px;
-    margin-left: 2%;
-    font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: left;
-color: #6D717A;
+  width: 201px;
+  height: 19px;
+  top: 889.94px;
+  margin-left: 2%;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6d717a;
 }
 
 .save-img {
-    margin-left: 120px;
-    margin-top: 30px;
-   
+  margin-left: 120px;
+  margin-top: 30px;
 }
 
 .save-button {
-    height: 40px;
-    width: 340px;
-    background-color: #eef11b;
-    color: black;
-    border-radius: 8px;
-    margin-top: 20px;
+  height: 40px;
+  width: 340px;
+  background-color: #eef11b;
+  color: black;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
 .copy-right {
-    text-decoration: none;
-    color: rgb(18, 17, 17);
-    font-size: 8px;
-    margin-left: 0px;
+  text-decoration: none;
+  color: rgb(18, 17, 17);
+  font-size: 8px;
+  margin-left: 0px;
 }

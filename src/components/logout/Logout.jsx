@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Logout.css';
-import Logo2 from '../../assets/lockup-color-1@2x.png';
-import Icon from '../../assets/Group 59.svg'
+import Logo2 from '../../assets/ata-logo-color.png';
+import Icon from '../../assets/other-login-options.svg'
 
 
 const Logout = () => {

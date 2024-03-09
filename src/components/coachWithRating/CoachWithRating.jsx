@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import './CoachWithRating.css';
-import MainLogo from '../../assets/Rectangle 64.svg';
-import MainLogo4 from '../../assets/price icon.svg';
-import MainLogo3 from '../../assets/Group 5.svg';
-import MainLogo1 from '../../assets/material-symbols_verified-rounded.svg';
-import MainLogo2 from '../../assets/Rectangle 63.svg';
-import MessageLogo from '../../assets/Group (1).svg';
-import CallLogo from '../../assets/fluent_call-16-regular.svg';
-import VDLogo from '../../assets/watch intro.svg';
+import MainLogo4 from '../../assets/rupee-icon.svg';
+import MainLogo3 from '../../assets/online-icon.svg';
+import MainLogo1 from '../../assets/verified.svg';
+import MainLogo2 from '../../assets/coach-4.svg';
+import MessageLogo from '../../assets/chat-icon.svg';
+import CallLogo from '../../assets/call-icon.svg';
+import VDLogo from '../../assets/watch-intro-cta.svg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalculator, faCamera, faCog, faGreaterThan, faMicrophone, faPaperclip, faVideo } from "@fortawesome/free-solid-svg-icons";
 

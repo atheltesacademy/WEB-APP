@@ -5,7 +5,7 @@ import Register from "./components/athleteProfile/Register";
 import SignInForm from "./components/signInForm/SignInForm";
 import Home from "./components/home/Home";
 import CoachChat from "./components/coachChat/CoachChat";
-import Coachprofile from "./components/coachProfile/Coachprofile";
+import CoachProfile from "./components/coachProfile/CoachProfile";
 import CoachId from "./components/coachId/CoachId";
 import Logout from "./components/logout/Logout";
 import { CoachVideoChat } from "./components/coachVideoChat/CoachVideoChat";
@@ -23,7 +23,7 @@ const App = () => {
       <Route path="/home" element={<Home />} />
       <Route path="/coachesRating" element={<CoachWithRating />} />
       <Route path="/coachChat" element={<CoachChat />} />
-      <Route path="/coachProfile" element={<Coachprofile />} />
+      <Route path="/coachProfile" element={<CoachProfile />} />
       <Route path="/logout" element={<Logout />} />
       <Route path="/coachVideoChat" element={<CoachVideoChat />} />
       <Route path="/category/:sport" element={<CategoryPage />} />

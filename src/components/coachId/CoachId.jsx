@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import myImage0 from '../../assets/Group 1380.svg'
-import myImage from '../../assets/mask-group-61@2x.png';
-import myImage1 from '../../assets/mask-group-5@2x.png';
-import myImage2 from '../../assets/mask-group-4@2x.png';
+import myImage0 from '../../assets/filter-icon.svg'
+import myImage from '../../assets/coach-1.png';
+import myImage1 from '../../assets/coach-2.png';
+import myImage2 from '../../assets/coach-3.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

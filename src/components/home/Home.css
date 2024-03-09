@@ -1,15 +1,16 @@
 
 #card-divmain {
-  height: 640px;
+  /* height: 640px; */
   background-color: rgb(221, 230, 227);
   width: 70%;
-  border-radius: 7%;
+  border-radius: 20px;
   border: 5px solid rgb(4, 186, 135);
   margin-top: 30px;
   float: left;
   margin-left: 160px;
-  /* padding: 15px; */
+  padding: 15px;
 }
+
 .top-left {
   position: absolute;
   height: 28px;
@@ -24,9 +25,9 @@
 }
 
 .img1-01 {
-  border: 1px solid #ddd;
+  width: 300px;
   border-radius: 4px;
-  padding: 20px;
+  margin: 4px 10px;
 }
 .search-container {
   position: relative;

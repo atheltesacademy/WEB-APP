@@ -2,10 +2,10 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalculator, faCamera,  faGreaterThan, faMessage, faMicrophone, faPaperclip, faVideo } from "@fortawesome/free-solid-svg-icons";
 import { Card } from 'react-bootstrap';
-import Avatar from '../../assets/AvatarImageVideo.png';
+import Avatar from '../../assets/video-chat-avatar.png';
 import MaleAvatar from '../../assets/videoAvatarMale.png';
 import FemaleAvatar from '../../assets/femaleAvatar.png';
-import OnlineProve from '../../assets/Group 42.svg';
+import OnlineProve from '../../assets/voice-graph.svg';
 import NavigationBar from '../navigation/NavigationBar';
 import DummyAvatar from '../../assets/maleAvatar.png'
 import './CoachVideoChat.css'

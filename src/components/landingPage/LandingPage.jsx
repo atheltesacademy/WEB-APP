@@ -1,14 +1,14 @@
 import React from "react";
 import "./LandingPage.css";
-import Image from "../../assets/bg - Copy.jpeg";
-import Logo from "../../assets/lockup-white-1@2x.png";
+import LandingBG from "../../assets/ata-landing-bg.jpeg";
+import Logo from "../../assets/ata-logo-white.png";
 import NavigationBar from "../navigation/NavigationBar";
 
 function LandingPage() {
   return (
     <div>
       <section id="main">
-        <img src={Image} alt="boom!" width="100%" height="100%" />
+        <img src={LandingBG} alt="boom!" width="100%" height="100%" />
         <div className="inner">
           <img className="logoImage" src={Logo} alt="logo" width="60%" />
           <div id="landing-intro">

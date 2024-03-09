@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SignInForm.css';
-import blueLogo from '../../assets/lockup-color-1@2x.png';
-import Icon from '../../assets/Group 59.svg'
+import blueLogo from '../../assets/ata-logo-color.png';
+import Icon from '../../assets/other-login-options.svg'
 
 import { Link } from 'react-router-dom';
 
