@@ -1,0 +1,68 @@
+#btn {
+    background-color: #255B9B;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.card {
+    background-color: rgba(129, 186, 255, 0.09) !important;
+    height: 550px !important;
+   
+}
+
+#senderMsg {
+    background-color: #131B26;
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    font-family: 'roboto';
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+#receiverMsg {
+    background-color: #4A5767;
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 500;
+    font-family: 'roboto';
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.bottom-container {
+    background-color: rgba(18, 167, 225, 0.08);
+    width: 80%;
+}
+
+.img-fluid {
+    height: 500px !important;
+    width: 650px !important;
+}
+
+#audioIcon {
+    background-color: rgba(0, 0, 0, 0.52);
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+#callIcon {
+    background-color: #F8000F;
+    height: 50px;
+    width: 50px;
+    border-radius: 12px;
+}
+
+#msgContainer {
+    background-color: #49627D;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-family: 'roboto';
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}

@@ -1,21 +1,34 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.css';
-import LandingPage from './LandingPage';
-import CoachList from './CoachList';
-import ChatBot from './ChatBot';
-
-function App() {
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import SignUpForm from "./components/signUpForm/SignUpForm";
+import Register from "./components/athleteProfile/Register";
+import SignInForm from "./components/signInForm/SignInForm";
+import Home from "./components/home/Home";
+import CoachChat from "./components/coachChat/CoachChat";
+import Coachprofile from "./components/coachProfile/Coachprofile";
+import CoachId from "./components/coachId/CoachId";
+import Logout from "./components/logout/Logout";
+import { CoachVideoChat } from "./components/coachVideoChat/CoachVideoChat";
+import CoachWithRating from "./components/coachWithRating/CoachWithRating";
+import CategoryPage from "./components/categoryPage/CategoryPage";
+import LandingPage from "./components/landingPage/LandingPage";
+const App = () => {
   return (
-    <>
-    <Router>
-        <Switch>
-          <Route path="/" exact component={LandingPage} />
-          <Route path="/coaches/:sport" component={CoachList} />
-        </Switch>
-    </Router>
-    <ChatBot />
-    </>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/signup" element={<SignUpForm />} />
+      <Route path="/signin" element={<SignInForm />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/coachId" element={<CoachId />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/coachesRating" element={<CoachWithRating />} />
+      <Route path="/coachChat" element={<CoachChat />} />
+      <Route path="/coachProfile" element={<Coachprofile />} />
+      <Route path="/logout" element={<Logout />} />
+      <Route path="/coachVideoChat" element={<CoachVideoChat />} />
+      <Route path="/category/:sport" element={<CategoryPage />} />
+    </Routes>
   );
-}
+};
 
 export default App;

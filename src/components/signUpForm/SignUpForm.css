@@ -1,0 +1,101 @@
+
+.SignupLabel{
+    padding: 12px 12px 12px 0;
+    display: inline-block; 
+}
+.SignupInput{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+   
+}
+.save-pageUp {
+    border-radius: 5px;
+    background-color: hsl(0, 33%, 97%);
+    width: 400px;
+    height: 900px;
+    padding: 20px;
+    margin-right: 160px;
+    
+}
+
+.col-75 {
+    float: left;
+    width: 79%;
+    height: 45px;
+    margin-top: 12px;
+}
+
+.row1-signup:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+/* Additional styling for the React component */
+.signUpContainer{
+    height: 600px;
+    background-color: white;
+    width: 100%;
+    margin-left: 80px;
+    margin-top: 100px;
+    display: flex;
+}
+.card-containerUp {
+    background-color: rgb(39, 241, 214);
+    width: 450px;
+    height: 700px;
+    float: left;
+    border-radius: 10px;
+}
+.avatar {
+    width: 100px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+.logoSignUp {
+    width: 250px;
+    height: 170px;
+    margin-left: 130px;
+    margin-top: 160px;
+}
+.container-save {
+    font-weight: bold;
+    text-align: left;
+}
+.signin-link {
+    color: rgb(244, 117, 6);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.terms-link,
+.privacy-link {
+    color: rgb(244, 117, 6);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.sign-in-buttonSignUp {
+    height: 40px;
+    width: 300px;
+    background-color: #0f0e62;
+    color: rgb(244, 235, 235);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.or-text {
+    color: rgb(16, 15, 14);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}

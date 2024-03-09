@@ -1,0 +1,140 @@
+
+.SigninLabel{
+    padding: 12px 12px 12px 0;
+    display: inline-block; 
+}
+.SigninInput{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+
+}
+.savepageIn {
+    border-radius: 5px;
+    background-color: #faf5f5;
+    width: 400px;
+    height: 700px;
+    padding: 20px;
+    margin-right: 160px;
+    float: right;
+}
+
+/* .col-25 {
+    float: left;
+    width: 35%;
+    margin-top: 116px;
+} */
+
+.col-75 {
+    float: left;
+    width: 79%;
+    height: 45px;
+    margin-top: 12px;
+}
+
+.row-signin:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.main-container {
+    height: 600px;
+    background-color: white;
+    width: 108%;
+    margin-left: 320px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.card-containerIn {
+    background-color: #26ECBC;
+    width: 450px;
+    height: 700px;
+    float: left;
+    border-radius: 10px;
+}
+
+
+.logo-register {
+    width: 250px;
+    height: 170px;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+
+.container-save {
+    font-weight: bold;
+    text-align: left;
+}
+
+.welcomebackIn {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+color:#061A48;    
+
+    width: 350px;
+height: 49.98px;
+top: 807px;
+left: 80px;
+}
+
+.descriptionIn {
+    width: 201px;
+    height: 19px;
+    top: 889.94px;
+    margin-left: 2%;
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #6D717A;
+}
+
+.sign-in-title {
+    margin-left: 60px;
+}
+
+.register-link {
+    color: rgb(244, 117, 6);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: bold;
+}
+
+.signInOnly {
+    height: 40px;
+    width: 250px;
+    background-color: #0f0e62;
+    color: rgb(244, 235, 235);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+.forget-password-link {
+    color: rgb(246, 105, 5);
+    text-align: center;
+    font-weight: bold;
+}
