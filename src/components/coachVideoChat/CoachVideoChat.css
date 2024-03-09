@@ -2,12 +2,13 @@
     background-color: #255B9B;
     border-radius: 10px;
     padding: 4px;
+    font-size: 24
 }
 
 .card {
     background-color: rgba(129, 186, 255, 0.09) !important;
     height: 550px !important;
-   
+    /* width: 340px; */
 }
 
 #senderMsg {

@@ -1,0 +1,86 @@
+.card {
+    height: 28rem !important;
+    width: 40rem !important;
+    background-color: #FFFFFF !important;
+    border-color: transparent;
+    border-radius: 8px;
+}
+
+#btn {
+    background-color: #255B9B;
+    border-radius: 10px;
+    font-size: 19px
+}
+
+#aboutText {
+    font-size: 10px;
+    color: #000000;
+}
+
+.secondContainer {
+    height: 40rem !important;
+    width: 42rem !important;
+    background-image: linear-gradient(#0E86D4, #000000) !important;
+}
+
+.vl {
+    border-left: 2px solid #FFFFFF;
+    height: 80px;
+    margin-right: 100px;
+}
+
+#balanceBtn {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    border-color: transparent;
+    background-color: #B84E2D;
+    padding: 5px 20px 5px;
+    border-radius: 20px;
+    margin-left: 250px;
+    color: white
+}
+
+#withdrawBtn {
+    font-size: 15px;
+    font-weight: 500;
+    border-color: transparent;
+    background-color: white;
+    padding: 5px 20px 5px;
+    border-radius: 25px;
+    color: #094F6A;
+}
+
+.whiteTitle {
+    font-size: 22px;
+    color: #FFFFFF;
+    font-weight: 500
+}
+
+#inputType {
+    background-color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600px;
+    padding: 10px 60px 10px !important;
+    width: 300px;
+    text-align: center;
+    color: black
+}
+
+#moneyBtn {
+    background-color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 60px 10px;
+    text-align: center;
+    color: black;
+    margin-left: 70px
+}
+
+#whiteContainer {
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 10px 5px;
+}
