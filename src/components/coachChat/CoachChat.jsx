@@ -4,13 +4,13 @@ import {
   faContactBook,
   faGreaterThan,
 } from "@fortawesome/free-solid-svg-icons";
-import MainLogo4 from "../../assets/rupee-icon.svg";
-import MainLogo3 from "../../assets/online-icon.svg";
-import MainLogo1 from "../../assets/verified.svg";
-import MainLogo2 from "../../assets/coach-4.svg";
-import MessageLogo from "../../assets/chat-icon.svg";
-import CallLogo from "../../assets/call-icon.svg";
-import VDLogo from "../../assets/watch-intro-cta.svg";
+import MainLogo4 from "../../assets/svgs/rupee-icon.svg";
+import MainLogo3 from "../../assets/svgs/online-icon.svg";
+import MainLogo1 from "../../assets/svgs/verified.svg";
+import MainLogo2 from "../../assets/svgs/coach-4.svg";
+import MessageLogo from "../../assets/svgs/chat-icon.svg";
+import CallLogo from "../../assets/svgs/call-icon.svg";
+import VDLogo from "../../assets/svgs/watch-intro-cta.svg";
 import "./CoachChat.css"; // Import the CSS file for CoachChat component
 import { Link } from "react-router-dom";
 import NavigationBar from "../navigation/NavigationBar";

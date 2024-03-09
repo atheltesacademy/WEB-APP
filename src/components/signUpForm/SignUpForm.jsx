@@ -1,6 +1,6 @@
 import React from "react";
-import blueLogo from "../../assets/ata-logo-color.png";
-import Icon from "../../assets/other-login-options.svg";
+import blueLogo from "../../assets/images/ata-logo-color.png";
+import Icon from "../../assets/svgs/other-login-options.svg";
 import { Link } from "react-router-dom";
 import "./SignUpForm.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

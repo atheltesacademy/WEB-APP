@@ -6,7 +6,7 @@ import SignInForm from "./components/signInForm/SignInForm";
 import Home from "./components/home/Home";
 import CoachChat from "./components/coachChat/CoachChat";
 import CoachProfile from "./components/coachProfile/CoachProfile";
-import CoachId from "./components/coachId/CoachId";
+import CoachList from "./components/coachList/CoachList";
 import Logout from "./components/logout/Logout";
 import { CoachVideoChat } from "./components/coachVideoChat/CoachVideoChat";
 import CoachWithRating from "./components/coachWithRating/CoachWithRating";
@@ -19,7 +19,7 @@ const App = () => {
       <Route path="/signup" element={<SignUpForm />} />
       <Route path="/signin" element={<SignInForm />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/coachId" element={<CoachId />} />
+      <Route path="/coaches" element={<CoachList />} />
       <Route path="/home" element={<Home />} />
       <Route path="/coachesRating" element={<CoachWithRating />} />
       <Route path="/coachChat" element={<CoachChat />} />

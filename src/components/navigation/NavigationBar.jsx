@@ -1,6 +1,6 @@
 import React from "react";
-import ImageLogo from "../../assets/ata-logo-navbar.png";
-import SignLogo from "../../assets/sign-up-cta.svg";
+import ImageLogo from "../../assets/images/ata-logo-navbar.png";
+import SignLogo from "../../assets/svgs/sign-up-cta.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faSearch } from "@fortawesome/free-solid-svg-icons";

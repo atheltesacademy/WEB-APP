@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavigationBar from '../navigation/NavigationBar';
 import CategoryPageCard from './CategoryPageCard';
-import football from '../../assets/football-card-large.png';
-import basketball from '../../assets/basketball-card-small.png';
-import tennis from '../../assets/tennis-card-small.png';
-import yoga from '../../assets/yoga-card-small.png';
-import More from '../../assets/more.svg';
+import football from '../../assets/images/football-card-large.png';
+import basketball from '../../assets/images/basketball-card-small.png';
+import tennis from '../../assets/images/tennis-card-small.png';
+import yoga from '../../assets/images/yoga-card-small.png';
+import More from '../../assets/svgs/more.svg';
 import './CategoryPage.css'
 
 const sportsData = [

@@ -1,15 +1,15 @@
 import React from "react";
 import "./LandingPage.css";
-import LandingBG from "../../assets/ata-landing-bg.jpeg";
-import Logo from "../../assets/ata-logo-white.png";
+import LandingBG from "../../assets/images/ata-landing-bg.jpeg";
+import Logo from "../../assets/images/ata-logo-white.png";
 import NavigationBar from "../navigation/NavigationBar";
 
 function LandingPage() {
   return (
     <div>
-      <section id="main">
+      <section className="landing-page-container">
         <img src={LandingBG} alt="boom!" width="100%" height="100%" />
-        <div className="inner">
+        <div className="landing-page-content">
           <img className="logoImage" src={Logo} alt="logo" width="60%" />
           <div id="landing-intro">
             Welcome to Athelets Academy- Your Gateway to sporting excellence! At

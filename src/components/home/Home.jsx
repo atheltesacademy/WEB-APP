@@ -1,12 +1,11 @@
 import React from "react";
 import "./Home.css";
-import myImage0 from "../../assets/filter-icon.svg";
-import Sports from "../../assets/tennis-card-large.png";
-import Sports2 from "../../assets/yoga-card-large.png";
-import Sports3 from "../../assets/football-card-large.png";
-import Sports4 from "../../assets/cricket.png";
-import Sports5 from "../../assets/boxing-large.png";
-import Sports6 from "../../assets/basketball-card-large.png";
+import Sports from "../../assets/images/tennis-card-large.png";
+import Sports2 from "../../assets/images/yoga-card-large.png";
+import Sports3 from "../../assets/images/football-card-large.png";
+import Sports4 from "../../assets/images/cricket.png";
+import Sports5 from "../../assets/images/boxing-large.png";
+import Sports6 from "../../assets/images/basketball-card-large.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrophone, faSearch } from "@fortawesome/free-solid-svg-icons";
 

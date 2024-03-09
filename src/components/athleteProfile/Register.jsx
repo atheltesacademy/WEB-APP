@@ -1,7 +1,7 @@
 import React from "react";
 import "./Register.css";
-import blueLogo from "../../assets/ata-logo-color.png";
-import menLogo from "../../assets/profile.png";
+import blueLogo from "../../assets/images/ata-logo-color.png";
+import menLogo from "../../assets/images/profile.png";
 import { Link } from "react-router-dom";
 const Register = () => {
   return (
