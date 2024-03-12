@@ -21,6 +21,7 @@ import { CoachJourney } from './components/coachJourney/CoachJourney';
 import { CoachPageEdit } from './components/coachPageEdit/CoachPageEdit';
 import CategoryPage from './components/categoryPage/CategoryPage';
 
+
 const App = () => {
   return (
     <>

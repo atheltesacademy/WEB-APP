@@ -1,17 +1,15 @@
-
-.RegisterInput{
+.RegisterInput {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-    color: white;
+    color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
-
 }
 
 .savepageAthlete {
@@ -44,7 +42,10 @@
 }
 
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
@@ -86,13 +87,13 @@
     line-height: 47px;
     letter-spacing: 0em;
     text-align: left;
-color:#061A48;    
+    color: #061A48;
 
-width: 350px;
-    
-height: 49.98px;
-top: 807px;
-left: 80px;
+    width: 350px;
+
+    height: 49.98px;
+    top: 807px;
+    left: 80px;
 }
 
 .descriptionAthlete {
@@ -101,18 +102,18 @@ left: 80px;
     top: 889.94px;
     margin-left: 2%;
     font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: left;
-color: #6D717A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6D717A;
 }
 
 .save-img {
     margin-left: 120px;
     margin-top: 30px;
-   
+
 }
 
 .save-button {
