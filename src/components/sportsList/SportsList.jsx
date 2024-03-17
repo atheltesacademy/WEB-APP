@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "./SportsList.css";
 import Sports from "../../assets/images/tennis-card-large.png";
 import Sports2 from "../../assets/images/yoga-card-large.png";
 import Sports3 from "../../assets/images/football-card-large.png";
@@ -12,11 +12,10 @@ import { faMicrophone, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import NavigationBar from "../navigation/NavigationBar";
 
-const Home = () => {
+const SportsList = () => {
   return (
     <div>
       <NavigationBar />
-
       <span className="search-barhome">
         <div className="search-container">
           <input
@@ -33,38 +32,38 @@ const Home = () => {
             }}
           />
           <FontAwesomeIcon icon={faSearch} className="search-icon" />
-          <FontAwesomeIcon icon={faMicrophone} className="Micro-icon" />
+          <FontAwesomeIcon icon={faMicrophone} className="micro-icon" />
         </div>
         <br />
         <br />
         {/* <input type="text" id="input" placeholder="Popular Now.." style={{ borderRadius: '25px', width: '190px', height: '30px', marginLeft: '150px', borderColor: 'black', backgroundColor: 'lightgray',paddingLeft: '1%' }} />
 <img src={myImage0} alt="error" style={{marginLeft:'50%'}} /> */}
       </span>
-      <div id="card-divmain">
-        <Link to="/coachId">
+      <div className="sports-list-container">
+        <Link to="/coaches">
           <button className="top-left">Tennis</button>
           <img className="img1-01" src={Sports} alt="Forest" width="33%" />
         </Link>
-        <Link to="/coachId">
+        <Link to="/coaches">
           <button className="top-left">Yoga</button>
           <img className="img1-01" src={Sports2} alt="Forest" width="33%" />
         </Link>
-        <Link to="/coachId">
+        <Link to="/coaches">
           <button className="top-left">Football</button>
           <img className="img1-01" src={Sports3} alt="Forest" width="33%" />
         </Link>
-        <Link to="/coachId">
+        <Link to="/coaches">
           <div className="top-left" style={{ textAlign: "center" }}>
             Cricket
           </div>
           <img className="img1-01" src={Sports4} alt="Forest" width="33%" />
         </Link>
-        <Link to="/coachId">
+        <Link to="/coaches">
           <button className="top-left">Boxing</button>
           <img className="img1-01" src={Sports5} alt="Forest" width="33%" />
         </Link>
         <button className="top-left">Basketball</button>
-        <Link to="/coachId">
+        <Link to="/coaches">
           <img className="img1-01" src={Sports6} alt="Forest" width="33%" />
         </Link>
         {/* Repeat the card elements as needed */}
@@ -73,4 +72,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default SportsList;
