@@ -1,7 +1,6 @@
 import React from "react";
-import ImageLogo from "../../assets/logo-navbar.png";
-import SignLogo from "../../assets/Sign up.svg";
-import LoginLogo from "../../assets/Costumer login.svg";
+import ImageLogo from "../../assets/images/ata-logo-navbar.png";
+import SignLogo from "../../assets/svgs/sign-up-cta.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -22,7 +21,7 @@ function NavigationBar() {
         <Link to="/home">
           <i className="fa fa-fw fa-home"></i> Home
         </Link>
-        <Link to="/category/:sport"> Category</Link>
+        <Link to="/category/1"> Category</Link>
         {/* Blog page will be added later */}
         <Link to="/coachesRating"> Blog</Link>
         <Link to="/coachVideoChat"> Video Chat</Link>
@@ -46,11 +45,7 @@ function NavigationBar() {
         </div> */}
       </span>
       <Link to="/signup">
-        <img
-          src={LoginLogo}
-          alt=""
-          style={{ marginTop: "-4%", marginLeft: "50%" }}
-        />
+      Login
       </Link>
       <Link to="/signin">
         <img

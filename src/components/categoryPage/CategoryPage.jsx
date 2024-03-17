@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavigationBar from '../navigation/NavigationBar';
 import CategoryPageCard from './CategoryPageCard';
-import football from '../../assets/football-card@2x.png';
-import basketball from '../../assets/basketball-card1@2x.png';
-import tennis from '../../assets/tennis-card1@2x.png';
-import yoga from '../../assets/yoga-card1@2x.png';
-import More from '../../assets/more.svg';
+import football from '../../assets/images/football-card-large.png';
+import basketball from '../../assets/images/basketball-card-small.png';
+import tennis from '../../assets/images/tennis-card-small.png';
+import yoga from '../../assets/images/yoga-card-small.png';
+import More from '../../assets/svgs/more.svg';
 import './CategoryPage.css'
 
 const sportsData = [
@@ -26,8 +26,8 @@ const CategoryPage = () => {
   return (
     <div>
       <NavigationBar />
-      <div className="content">
-        <div className="row">
+      <div className="category-page-container">
+        <div className="category-page-desc">
           <div className="sport-desc">
             <h1 style={{ fontSize: "80px" }}>Sports</h1>
             <h2>{selectedSport.title}</h2>
@@ -42,7 +42,7 @@ const CategoryPage = () => {
             <img src={selectedSport.image} alt={selectedSport.title} width="400px" />
           </div>
         </div>
-        <div className="row1">
+        <div className="category-page-images">
           {sportsData.map((sport, index) => (
             <Link key={index} onClick={() => handleSelectSport(sport)}>
               <CategoryPageCard

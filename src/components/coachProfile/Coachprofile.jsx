@@ -1,10 +1,10 @@
 import React from 'react';
-import './Coachprofile.css';
-import blueLogo from '../../assets/lockup-color-1@2x.png';
-import menLogo from '../../assets/unsplashumfpfokxivg@2x.png';
+import './CoachProfile.css';
+import blueLogo from '../../assets/images/ata-logo-color.png';
+import menLogo from '../../assets/images/profile.png';
 import { Link } from 'react-router-dom';
 
-const Coachprofile = () => {
+const CoachProfile = () => {
     return (
         <div className="main-container">
             <div className="card-containerPro">
@@ -67,4 +67,4 @@ const Coachprofile = () => {
     );
 };
 
-export default Coachprofile;
+export default CoachProfile;
