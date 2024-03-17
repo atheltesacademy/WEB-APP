@@ -12,12 +12,16 @@ function LandingPage() {
         <div className="landing-page-content">
           <img className="logoImage" src={Logo} alt="logo" width="60%" />
           <div id="landing-intro">
-            Welcome to Athelets Academy- Your Gateway to sporting excellence! At
-            athelets academy we are dedicated to connecting aspiring athelets
-            with experienced coaches and mentors through our cutting-edge chat
-            platform. Whether you are passionate about football, tennis,
-            cricket, atheletics, yoga, or any other sports, we have got you
-            covered!
+            <div>
+              Welcome to Athelets Academy- Your Gateway to sporting excellence!
+            </div>
+            <div>
+              At athelets academy we are dedicated to connecting aspiring
+              athelets with experienced coaches and mentors through our
+              cutting-edge chat platform. Whether you are passionate about
+              football, tennis, cricket, atheletics, yoga, or any other sports,
+              we have got you covered!
+            </div>
           </div>
         </div>
       </section>

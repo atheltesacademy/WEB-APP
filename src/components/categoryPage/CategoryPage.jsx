@@ -52,7 +52,7 @@ const CategoryPage = () => {
               />
             </Link>
           ))}
-          <Link to="/home"><img src={More} alt="error" /></Link>
+          <Link to="/sports"><img src={More} alt="error" /></Link>
         </div>
       </div>
     </div>
