@@ -79,7 +79,7 @@ const CoachId = ({ name }) => {
                 <Link to="/coachChat"><button className="buttonStyle1">
                   Chat Now
                 </button></Link>
-                <Link to='/Coach-video-chat'><button className="buttonStyle2">
+                <Link to='/video-chat'><button className="buttonStyle2">
                   Call Now
                 </button></Link>
               </div>
@@ -183,7 +183,7 @@ const CoachId = ({ name }) => {
                 <Link to="/coachChat"><button className="buttonStyle1">
                   Chat Now
                 </button></Link>
-                <Link to='/Coach-video-chat'><button className="buttonStyle2" >
+                <Link to='/video-chat'><button className="buttonStyle2" >
                   Call Now
                 </button></Link>
               </div>

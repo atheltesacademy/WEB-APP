@@ -24,13 +24,11 @@ export const Blog = () => {
                         Title: "The Art of Striking: Mastering the Perfect Shot"
                         <hr />
 
-                        <p style={{
-                            fontSize: '22px',
-                            textAlign: 'center',
-                            fontWeight: '600',
-                            color: "#283C46",
-                            padding: '10px 200px 10px'
-                        }}>In the world of football, few moments rival the excitement of a perfectly executed strike on goal. Whether it's a thunderous shot from outside the box or a delicate chip over the keeper, the art of strikeing is oneof that requires skills, precision, and fitness</p>
+                        <p className='subTitle'>
+                            In the world of football, few moments rival the
+                            excitement of a perfectly executed strike on goal.
+                            Whether it's a thunderous shot from outside the box
+                            or a delicate chip over the keeper, the art of strikeing is oneof that requires skills, precision, and fitness</p>
                     </div>
                 </section>
 
@@ -202,7 +200,8 @@ export const Blog = () => {
                         textAlign: 'center'
                     }}>Our best Coaches </div>
 
-                    <div className='d-flex flex-row flex-wrap align-items-center justify-content-between'>
+                    <div className='d-flex flex-row flex-wrap align-items-center justify-content-between'
+                        style={{ cursor: 'pointer' }}>
                         <img className='mt-4' src={FootballImage} alt="img1" height="200px" width="280px" />
                         <img className='mt-4' src={FootballImage} alt="img1" height="200px" width="280px" />
                         <img className='mt-4' src={FootballImage} alt="img1" height="200px" width="280px" />
@@ -222,29 +221,16 @@ export const Blog = () => {
                                 fontWeight: "bold",
                                 fontSize: "28px"
                             }}>Sign up for the newsletter
-                            <div class="input-group mt-5">
+                            <div className="input-group mt-5">
                                 <input type="text" className="form-control" placeholder="Enter your email..." />
                                 <button className="input-group-text" id='signUp'>SIGN UP</button>
                             </div>
                         </div>
 
-                        <div className='border border-dark'
-                            style={{
-                                marginLeft: '30px',
-                                padding: '0px 60px 0px',
-                                color: '#090909',
-                                fontWeight: "bold",
-                                fontSize: "28px",
-                                textAlign: "center",
-                            }}>Have Question?
-                            <div class="mt-5 pb-4"
-                                style={{
-                                    color: '#090909',
-                                    fontWeight: "500",
-                                    fontSize: "22px",
-                                    width: '400px',
-                                    textAlign: "center",
-                                }}>
+                        <div className='questionTitle border border-dark'
+                        >Have Question?
+                            <div className="questionContainer mt-5 pb-4"
+                            >
                                 Reach out to us by emailing at Team@athletesacademy.tech and we'll get back to you.
                             </div>
                         </div>

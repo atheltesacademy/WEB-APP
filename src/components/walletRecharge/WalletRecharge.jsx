@@ -1,44 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavigationBar from '../navigation/NavigationBar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faArrowRotateBack, faGreaterThan } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faGreaterThan } from '@fortawesome/free-solid-svg-icons'
 import maleAvatar from '../../assets/min-frame@2x.png'
 import PayPal from '../../assets/Paypal.png'
 import Gpay from '../../assets/GPay.png'
 import AmazonPay from '../../assets/AmazonPay.png'
 import Paytm from '../../assets/Vector.png'
-import './WalletRecharge.css'
 import { Link } from 'react-router-dom'
 import { BestCoaches } from '../bestCoaches/BestCoaches'
 import { Services } from '../services/Services'
 import { Footer } from '../footer/Footer'
-
+import './WalletRecharge.css'
 
 //bootstrap import
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import { coaches } from '../../constants/coachData'
 
 export const WalletRecharge = () => {
-
-    const coaches = [
-        {
-            name: 'Vijay',
-            sports: "Cricket"
-        },
-        {
-            name: 'Ajay',
-            sports: "Football"
-        },
-        {
-            name: 'Vipul',
-            sports: "Boxing"
-        },
-        {
-            name: 'Dhruv',
-            sports: "Tennis"
-        },
-    ]
-
+    const [name, setName] = useState("Rahul")
+    const [age, setAge] = useState("08")
+    const [language, setLanguage] = useState("English, Hindi")
+    const [occupation, setOccupation] = useState("Football, Player")
     return (
         <>
             <NavigationBar />
@@ -51,17 +35,17 @@ export const WalletRecharge = () => {
                             <span style={{ fontSize: 20 }}>&nbsp;<FontAwesomeIcon icon={faGreaterThan} />&nbsp;Player</span>
                         </div>
 
-                        <div className='card mt-5 shadow' id='box'>
+                        <div className='card mt-5 shadow' id='coachInfoCard'>
                             <div className="card-body d-flex flex-row">
                                 <img src={maleAvatar} height={'260px'} width={'220px'} />
                                 <div className='px-5 mt-2'>
-                                    <div className='coach-text'>Rahul</div>
+                                    <div className='coach-text'>{name}</div>
                                     <div className='pt-4' id='coach-data'
-                                    >Football, Player
+                                    >{occupation}
                                         <div className='pt-4'
-                                        >English, Hindi</div>
+                                        >{language}</div>
                                         <div className='pt-4'
-                                        > Age: 08</div>
+                                        > Age: {age}</div>
                                     </div>
                                     <div id='aboutText' className='pt-3'>
                                         <span> <b>About me: </b></span>
@@ -74,7 +58,7 @@ export const WalletRecharge = () => {
                             </div>
                         </div>
 
-                        <div className='card mt-3 shadow' id='box'>
+                        <div className='card mt-3 shadow' id='coachInfoCard'>
                             <h6 className='text-center pt-4'>Wallet Transactions</h6>
                             <table className="table mt-4">
                                 <tr>

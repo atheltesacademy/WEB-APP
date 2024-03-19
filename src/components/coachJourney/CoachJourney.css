@@ -24,28 +24,23 @@
     width: 28px
 }
 
-.linkedInIcon {
-    background-color: #2867B2;
+.iconStyle {
     border-radius: 30px;
     height: 28px;
     width: 28px;
     margin-left: 30px
+}
+
+.linkedInIcon {
+    background-color: #2867B2;
 }
 
 .youtubeIcon {
     background-color: #FF0000;
-    border-radius: 30px;
-    height: 28px;
-    width: 28px;
-    margin-left: 30px
 }
 
 .instaIcon {
     background-color: #F00073;
-    border-radius: 30px;
-    height: 28px;
-    width: 28px;
-    margin-left: 30px
 }
 
 .readMoreBtn {
