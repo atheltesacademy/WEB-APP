@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import './Register.css';
 import blueLogo from '../../assets/lockup-color-1@2x.png';
 import menLogo from '../../assets/unsplashumfpfokxivg@2x.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import apiCall from '../../api/api';
 const Register = () => {
+    const { state } = useLocation();
+
     const [data, setData] = useState({
         name: "",
-        email: "",
         phone: "",
         dob: "",
         address: "",
@@ -25,7 +26,7 @@ const Register = () => {
     const onSaveData = async () => {
         try {
             const body = {
-                "email": data.email,
+                "email": state?.email,
                 "name": data.name,
                 "phone": data.phone,
                 "dob": data.dob,
@@ -36,7 +37,6 @@ const Register = () => {
             const result = await apiCall('detailSignup', 'PUT', body);
             setData({
                 name: "",
-                email: "",
                 phone: "",
                 dob: "",
                 address: "",
@@ -70,14 +70,6 @@ const Register = () => {
                                 placeholder="Enter Name"
                                 className='registerInput'
                                 value={data.name}
-                                onChange={handleChange} />
-                        </div>
-                    </div>
-                    <div className="row-register">
-                        <div className="col-75">
-                            <input type="email" id="email" name="email" placeholder="Enter E-mail"
-                                className='registerInput'
-                                value={data.email}
                                 onChange={handleChange} />
                         </div>
                     </div>

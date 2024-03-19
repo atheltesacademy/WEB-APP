@@ -41,7 +41,12 @@ export const SignUpForm = () => {
                 "userType": formData.userType
             }
             const result = await apiCall('signup', 'POST', body);
-            navigate(formData?.userType == 'athlete' ? "/register" : '/coachProfile')
+            {
+                formData?.userType == 'athlete' ?
+                    navigate('/register', { state: { email: formData.email } })
+                    :
+                    navigate('/coachProfile', { state: { email: formData.email } })
+            }
         }
         catch (error) {
             if (error?.response?.data?.error) {
@@ -137,7 +142,8 @@ export const SignUpForm = () => {
                                 userType: "coach",
                             })}
                             id='athleteCard'>
-                            <FontAwesomeIcon icon={faUser} />Coach</div>
+                            <FontAwesomeIcon icon={faUser} />
+                            <span>Coach</span></div>
                     </div>
 
 
