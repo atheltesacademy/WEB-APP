@@ -60,3 +60,11 @@
   font-size: 25px;
   font-weight: bold;
 }
+
+.btnPopular {
+  border-radius: 25px;
+  padding: 5px 25px 5px;
+  margin-left: 150px;
+  border-color: black;
+  background-color: lightgray
+}

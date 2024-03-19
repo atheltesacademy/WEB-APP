@@ -33,7 +33,7 @@ const Register = () => {
                 "alternative_contact": data.atlernatePhone,
                 "health_height_desc": data.height
             }
-            const result = await apiCall('api/v1/detailSignup', 'PUT', body);
+            const result = await apiCall('detailSignup', 'PUT', body);
             setData({
                 name: "",
                 email: "",
@@ -44,7 +44,7 @@ const Register = () => {
                 height: ""
             })
         } catch (e) {
-            console.log("eeee", e)
+            throw new Error(e)
         }
 
     }
@@ -68,7 +68,7 @@ const Register = () => {
                                 id="name"
                                 name="name"
                                 placeholder="Enter Name"
-                                className='RegisterInput'
+                                className='registerInput'
                                 value={data.name}
                                 onChange={handleChange} />
                         </div>
@@ -76,7 +76,7 @@ const Register = () => {
                     <div className="row-register">
                         <div className="col-75">
                             <input type="email" id="email" name="email" placeholder="Enter E-mail"
-                                className='RegisterInput'
+                                className='registerInput'
                                 value={data.email}
                                 onChange={handleChange} />
                         </div>
@@ -84,7 +84,7 @@ const Register = () => {
                     <div className="row-register">
                         <div className="col-75">
                             <input type="number"
-                                id="phone" name="phone" placeholder="Enter Phone number" className='RegisterInput'
+                                id="phone" name="phone" placeholder="Enter Phone number" className='registerInput'
                                 value={data.phone}
                                 onChange={handleChange} />
                         </div>
@@ -92,14 +92,14 @@ const Register = () => {
                     <div className="row-register">
                         <div className="col-75">
                             <input type="date" id="dob" name="dob" placeholder="Enter D.O.B."
-                                className='RegisterInput'
+                                className='registerInput'
                                 value={data.dob}
                                 onChange={handleChange} />
                         </div>
                     </div>
                     <div className="row-register">
                         <div className="col-75">
-                            <input type="text" id="address" name="address" placeholder="Full Address With Pin Code" className='RegisterInput'
+                            <input type="text" id="address" name="address" placeholder="Full Address With Pin Code" className='registerInput'
                                 value={data.address}
                                 onChange={handleChange} />
                         </div>
@@ -110,7 +110,7 @@ const Register = () => {
                                 id="contact"
                                 name="contact"
                                 placeholder="Alternative Contact"
-                                className='RegisterInput'
+                                className='registerInput'
                                 value={data.atlernatePhone}
                                 onChange={handleChange} />
                         </div>
@@ -121,7 +121,7 @@ const Register = () => {
                                 id="height"
                                 name="height"
                                 placeholder="Details about your health or height"
-                                className='RegisterInput'
+                                className='registerInput'
                                 value={data.height}
                                 onChange={handleChange} />
                         </div>

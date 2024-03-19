@@ -1,16 +1,17 @@
-
-.SignupLabel{
+.SignupLabel {
     padding: 12px 12px 12px 0;
-    display: inline-block; 
+    display: inline-block;
 }
-.SignupInput{
+
+.SignupInput {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-   
+
 }
+
 .save-pageUp {
     border-radius: 5px;
     background-color: hsl(0, 33%, 97%);
@@ -18,7 +19,7 @@
     height: 900px;
     padding: 20px;
     margin-right: 160px;
-    
+
 }
 
 .col-75 {
@@ -35,13 +36,17 @@
 }
 
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
 }
+
 /* Additional styling for the React component */
-.signUpContainer{
+.signUpContainer {
     height: 600px;
     background-color: white;
     width: 100%;
@@ -49,6 +54,7 @@
     margin-top: 100px;
     display: flex;
 }
+
 .card-containerUp {
     background-color: rgb(39, 241, 214);
     width: 450px;
@@ -56,28 +62,33 @@
     float: left;
     border-radius: 10px;
 }
+
 .avatar {
     width: 100px;
     height: 30px;
     margin-left: 80px;
     margin-top: 60px;
 }
+
 .logoSignUp {
     width: 250px;
     height: 170px;
     margin-left: 130px;
     margin-top: 160px;
 }
+
 .container-save {
     font-weight: bold;
     text-align: left;
 }
+
 .signin-link {
     color: rgb(244, 117, 6);
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
 }
+
 .terms-link,
 .privacy-link {
     color: rgb(244, 117, 6);
@@ -85,6 +96,7 @@
     cursor: pointer;
     font-weight: bold;
 }
+
 .sign-in-buttonSignUp {
     height: 40px;
     width: 300px;
@@ -93,9 +105,30 @@
     border-radius: 20px;
     margin-top: 20px;
 }
+
 .or-text {
     color: rgb(16, 15, 14);
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+}
+
+#athleteCard {
+    background-color: #061A48;
+    color: white;
+    border-radius: 10px;
+    cursor: "pointer";
+    padding: 3px;
+}
+
+#athleteCard :hover {
+    background-color: darkgray;
+}
+
+.atheleteContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 20px
 }

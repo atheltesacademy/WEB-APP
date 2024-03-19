@@ -1,4 +1,4 @@
-.RegisterInput {
+.registerInput {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -41,18 +41,6 @@
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
-
-    .col-25,
-    .col-75,
-    input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-}
-
-
-
 .RegisterCard-container {
     background-color: rgb(39, 241, 214);
     width: 450px;
@@ -85,13 +73,10 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 47px;
-    letter-spacing: 0em;
     text-align: left;
     color: #061A48;
-
     width: 350px;
-
-    height: 49.98px;
+    height: 50px;
     top: 807px;
     left: 80px;
 }

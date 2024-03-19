@@ -14,9 +14,7 @@ export const SignUpForm = () => {
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
-        name: '',
         email: '',
-        phone: '',
         password: '',
         confirmPassword: '',
         userType: ''
@@ -42,7 +40,7 @@ export const SignUpForm = () => {
                 "confirmPassword": formData.confirmPassword,
                 "userType": formData.userType
             }
-            const result = await apiCall('api/v1/signup', 'POST', body);
+            const result = await apiCall('signup', 'POST', body);
             navigate(formData?.userType == 'athlete' ? "/register" : '/coachProfile')
         }
         catch (error) {
@@ -55,10 +53,6 @@ export const SignUpForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Basic validation
-        if (formData.name.trim() === '') {
-            alert('Please enter your name');
-            return;
-        }
         if (formData.email.trim() === '') {
             alert('Please enter your email');
             return;
@@ -67,20 +61,13 @@ export const SignUpForm = () => {
             alert('Please enter a valid email address');
             return;
         }
-        if (formData.phone.trim() === '') {
-            alert('Please enter your phone number');
-            return;
-        }
+
         if (formData.password !== formData.confirmPassword) {
             alert('Confirm password should be the same as password');
             return;
         }
         if (formData.password.trim() === '') {
             alert('Please enter a password');
-            return;
-        }
-        if (!validatePhone(formData.phone)) {
-            alert('Please enter a valid phone number');
             return;
         }
         if (checked == false) {
@@ -103,11 +90,6 @@ export const SignUpForm = () => {
         return regex.test(email);
     };
 
-    const validatePhone = (phone) => {
-        // Basic phone number validation
-        const regex = /^[0-9]{10}$/;
-        return regex.test(phone);
-    };
 
 
     return (
@@ -122,13 +104,9 @@ export const SignUpForm = () => {
                     <h1 style={{ color: 'black', fontSize: '30px', fontFamily: 'Raleway ,sans-serif', marginBottom: '20px' }}>Create an Account</h1>
                     <p>Already have an account?
                         <Link to="/signin" className="signin-link">Sign in</Link></p>
-
                     <div className="row1-signup">
                         <div className="col-75">
-                            <input type="text" id="name" name="name"
-                                placeholder="Full Name" className='SignupInput'
-                                value={formData.name}
-                                onChange={handleChange} />
+                            <input type="text" id="email" name="email" placeholder="Email" className='SignupInput' value={formData.email} onChange={handleChange} />
                         </div>
                     </div>
                     <div className="row1-signup">
@@ -141,31 +119,24 @@ export const SignUpForm = () => {
                             <input type="password" id="confirmPassword" name="confirmPassword" className='SignupInput' placeholder="  Confirm Password" value={formData.confirmPassword} onChange={handleChange} style={{ height: "40px", width: "286px", borderRadius: "3px" }} />
                         </div>
                     </div>
-                    <div className="row1-signup">
-                        <div className="col-75">
-                            <input type="text" id="email" name="email" placeholder="Email" className='SignupInput' value={formData.email} onChange={handleChange} />
-                        </div>
-                    </div>
-                    <div className="row1-signup">
-                        <div className="col-75">
-                            <input type="text" id="phone" name="phone" className='SignupInput' placeholder="Mob. No." value={formData.phone} onChange={handleChange} />
-                        </div>
-                    </div>
 
-                    <div style={{ flexDirection: 'row', alignItems: 'center', display: "flex" }}>
+                    <div className='atheleteContainer'>
                         <div
+                            id='athleteCard'
                             onClick={() => setFormData({
                                 ...formData,
                                 userType: "athlete",
                             })}
-                            style={{ backgroundColor: "#061A48", color: "white", borderRadius: "10px", marginTop: "20px", marginLeft: "9px", paddingLeft: '2%', width: '28%' }}>
-                            <FontAwesomeIcon icon={faUser} />Athelete</div>
+                        >
+                            <FontAwesomeIcon icon={faUser} />
+                            <span>Athelete</span>
+                        </div>
                         <div
                             onClick={() => setFormData({
                                 ...formData,
                                 userType: "coach",
                             })}
-                            style={{ backgroundColor: "#061A48", color: "white", borderRadius: "10px", marginTop: "20px", marginLeft: "90px", paddingLeft: '2%', width: '28%' }}>
+                            id='athleteCard'>
                             <FontAwesomeIcon icon={faUser} />Coach</div>
                     </div>
 
