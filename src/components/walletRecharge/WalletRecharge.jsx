@@ -60,7 +60,7 @@ export const WalletRecharge = () => {
 
                         <div className='card mt-3 shadow' id='coachInfoCard'>
                             <h6 className='text-center pt-4'>Wallet Transactions</h6>
-                            <table className="table mt-4">
+                            <table className="table tableContainer mt-4">
                                 <tr>
                                     <th scope="col">Date Created</th>
                                     <th scope="col">Transaction</th>

@@ -33,7 +33,7 @@ export const WalletCoachBalance = () => {
                             <span style={{ fontSize: 20 }}>&nbsp;<FontAwesomeIcon icon={faGreaterThan} />&nbsp;Player</span>
                         </div>
 
-                        <div className='card mt-5 shadow'>
+                        <div className='card cardContainer mt-5 shadow'>
                             <div className="card-body d-flex flex-row">
                                 <img src={maleAvatar} height={'260px'} width={'220px'} />
 
