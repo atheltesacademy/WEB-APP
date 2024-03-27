@@ -34,18 +34,18 @@ export const SignUpForm = () => {
 
     const registerUser = async () => {
         try {
-            const body = {
-                "email": formData.email,
-                "password": formData.password,
-                "confirmPassword": formData.confirmPassword,
-                "userType": formData.userType
-            }
-            const result = await apiCall('signup', 'POST', body);
+            // const body = {
+            //     "email": formData.email,
+            //     "password": formData.password,
+            //     "confirmPassword": formData.confirmPassword,
+            //     "userType": formData.userType
+            // }
+            // const result = await apiCall('signup', 'POST', body);
             {
                 formData?.userType == 'athlete' ?
-                    navigate('/register', { state: { email: formData.email } })
+                    navigate('/register-athlete', { state: { email: formData.email } })
                     :
-                    navigate('/coachProfile', { state: { email: formData.email } })
+                    navigate('/register-coach', { state: { email: formData.email } })
             }
         }
         catch (error) {
@@ -79,13 +79,6 @@ export const SignUpForm = () => {
             alert('Please agree terms and privacy policy');
             return;
         }
-        // if (formData?.userType === '') {
-        //     alert('Please select a userType');
-        //     return;
-        // }
-        // Other validation rules can be added as needed
-
-        // If all validations pass, continue with form submission
         registerUser()
     };
 
@@ -152,12 +145,9 @@ export const SignUpForm = () => {
                             onChange={handleCheckBox} defaultUnChecked name="remember" /> I have read and agree to the <a href="#" className="terms-link">Terms and Services</a> and <a href="#" className="privacy-link">Privacy Policy</a>
                     </label>
                     <div className="row1-signup">
-
-                        {/* <Link to={formData?.userType == 'athlete' ? "/register" : '/coachProfile'} > */}
                         <button type="submit" className="sign-in-buttonSignUp"
                             onClick={handleSubmit}>
                             Register</button>
-                        {/* </Link> */}
                         <p className="or-text">or Register with</p>
                         <div id='threeIcon'><img src={Icon} alt="hello" style={{ marginTop: '20%', marginLeft: '30px' }} /></div>
 

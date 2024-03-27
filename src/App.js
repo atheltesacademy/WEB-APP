@@ -28,12 +28,12 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/signup" element={<SignUpForm />} />
         <Route path="/signin" element={<SignInForm />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/register-athlete" element={<Register />} />
         <Route path='/coachId' element={<CoachId />} />
         <Route path='/home' element={<Home />} />
         <Route path='/coachesRating' element={<CoachWithRating />} />
         <Route path='/coachChat' element={<CoachChat />} />
-        <Route path='/coachProfile' element={<Coachprofile />} />
+        <Route path='/register-coach' element={<Coachprofile />} />
         <Route path='/logout' element={<Logout />} />
         <Route path='/category/:sport' element={<CategoryPage />} />
         <Route path='/video-chat' element={<CoachVideoChat />} />
