@@ -34,13 +34,13 @@ export const SignUpForm = () => {
 
     const registerUser = async () => {
         try {
-            // const body = {
-            //     "email": formData.email,
-            //     "password": formData.password,
-            //     "confirmPassword": formData.confirmPassword,
-            //     "userType": formData.userType
-            // }
-            // const result = await apiCall('signup', 'POST', body);
+            const body = {
+                "email": formData.email,
+                "password": formData.password,
+                "confirmPassword": formData.confirmPassword,
+                "userType": formData.userType
+            }
+            const result = await apiCall('signup', 'POST', body);
             {
                 formData?.userType == 'athlete' ?
                     navigate('/register-athlete', { state: { email: formData.email } })
