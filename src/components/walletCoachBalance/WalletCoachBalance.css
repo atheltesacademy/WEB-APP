@@ -1,4 +1,4 @@
-.card {
+.cardContainer {
     height: 28rem !important;
     width: 40rem !important;
     background-color: #FFFFFF !important;
@@ -6,18 +6,12 @@
     border-radius: 8px;
 }
 
-#btn {
-    background-color: #255B9B;
-    border-radius: 10px;
-    font-size: 19px
-}
-
 #aboutText {
     font-size: 10px;
     color: #000000;
 }
 
-.secondContainer {
+.balanceContainer {
     height: 40rem !important;
     width: 42rem !important;
     background-image: linear-gradient(#0E86D4, #000000) !important;
@@ -79,7 +73,7 @@
     margin-left: 70px
 }
 
-#whiteContainer {
+#slideBtn {
     background-color: white;
     border-radius: 8px;
     padding: 5px 10px 5px;

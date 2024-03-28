@@ -10,9 +10,44 @@ import LinkedIn from '../../assets/linkedin.svg'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
+const sportData = [
+    {
+        id: 1,
+        name: "Cricket"
+    },
+    {
+        id: 2,
+        name: "Football"
+    },
+    {
+        id: 3,
+        name: "Tennis"
+    },
+    {
+        id: 4,
+        name: "Yoga"
+    },
+    {
+        id: 5,
+        name: "Boxing"
+    },
+    {
+        id: 6,
+        name: "Skating"
+    },
+    {
+        id: 7,
+        name: "Athletics"
+    },
+    {
+        id: 8,
+        name: "BasketBall"
+    }
+]
+
 export const Footer = () => {
     return (
-        <div id='footer'>
+        <div className='footer'>
             <div className='row px-5 pt-5 pb-5'>
                 <div className='col-md-4'>
                     <img src={LogoImage} height="120px" width='150px' />
@@ -38,16 +73,12 @@ export const Footer = () => {
                 <div className='col-md-1'>
                     <div id='heading'>
                         Coaches</div>
-                    <div className='mt-3' id='subHeading'> Cricket <br />
-                        Football <br />
-                        Tennis <br />
-                        Yoga <br />
-                        Boxing <br />
-                        Skating <br />
-                        Athletics <br />
-                        BasketBall <br />
-                        <a style={{ color: "blue" }}><u>More</u></a>
-                    </div>
+                    {sportData.map((sport, index) => {
+                        return (
+                            <div className='mt-2' id='subHeading'> {sport.name}</div>
+                        )
+                    })}
+                    <a style={{ color: "blue" }}><u>More</u></a>
                 </div>
 
                 <div className='col-md-1'>
@@ -77,15 +108,15 @@ export const Footer = () => {
                             <img src={FacebookIcon} height='15px' width='15px' />
                         </div>
 
-                        <div className='d-flex align-items-center justify-content-center linkedInIcon'>
+                        <div className='d-flex align-items-center justify-content-center iconStyle linkedInIcon'>
                             <img src={LinkedIn} height='15px' width='15px' />
                         </div>
 
-                        <div className='d-flex align-items-center justify-content-center youtubeIcon'>
+                        <div className='d-flex align-items-center justify-content-center iconStyle youtubeIcon'>
                             <img src={YoutubeIcon} height='15px' width='15px' />
                         </div>
 
-                        <div className='d-flex align-items-center justify-content-center instaIcon'>
+                        <div className='d-flex align-items-center justify-content-center iconStyle instaIcon'>
                             <img src={InstagramIcon} height='15px' width='15px' />
                         </div>
                     </div>

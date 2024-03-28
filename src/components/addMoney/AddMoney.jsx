@@ -11,6 +11,7 @@ import './AddMoney.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { Footer } from '../footer/Footer'
+import { coaches } from '../../constants/coachData'
 
 const amount = [
     {
@@ -51,24 +52,6 @@ const amount = [
     },
 ]
 
-const coaches = [
-    {
-        name: 'Vijay',
-        sports: "Cricket"
-    },
-    {
-        name: 'Ajay',
-        sports: "Football"
-    },
-    {
-        name: 'Vipul',
-        sports: "Boxing"
-    },
-    {
-        name: 'Dhruv',
-        sports: "Tennis"
-    },
-]
 
 export const AddMoney = () => {
     return (

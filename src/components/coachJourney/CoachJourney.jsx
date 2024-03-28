@@ -18,8 +18,8 @@ export const CoachJourney = () => {
             <NavigationBar />
             <div className='container-fluid mt-4'>
                 <div className='d-flex justify-content-start align-items-center mx-5'>
-                    <FontAwesomeIcon icon={faGreaterThan} /> &nbsp;&nbsp;
-                    <button type="button" id='btn' className='text-white px-3 border-light'
+                    <FontAwesomeIcon icon={faGreaterThan} />
+                    <button type="button" id='btn' className='text-white px-3 border-light mx-4'
                     >Coach Profile</button>
                 </div>
 
@@ -46,15 +46,15 @@ export const CoachJourney = () => {
                                     <img src={FacebookIcon} height='15px' width='15px' />
                                 </div>
 
-                                <div className='d-flex align-items-center justify-content-center linkedInIcon'>
+                                <div className='d-flex align-items-center justify-content-center iconStyle linkedInIcon'>
                                     <img src={LinkedIn} height='15px' width='15px' />
                                 </div>
 
-                                <div className='d-flex align-items-center justify-content-center youtubeIcon'>
+                                <div className='d-flex align-items-center justify-content-center iconStyle youtubeIcon'>
                                     <img src={YoutubeIcon} height='15px' width='15px' />
                                 </div>
 
-                                <div className='d-flex align-items-center justify-content-center instaIcon'>
+                                <div className='d-flex align-items-center justify-content-center iconStyle instaIcon'>
                                     <img src={InstagramIcon} height='15px' width='15px' />
                                 </div>
                             </div>

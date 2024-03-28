@@ -1,6 +1,5 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-// import Mainpage from './components/mainPage/Mainpage';
 import SignUpForm from './components/signUpForm/SignUpForm';
 import Register from './components/athleteProfile/Register';
 import SignInForm from './components/signInForm/SignInForm';
@@ -21,6 +20,7 @@ import { CoachJourney } from './components/coachJourney/CoachJourney';
 import { CoachPageEdit } from './components/coachPageEdit/CoachPageEdit';
 import CategoryPage from './components/categoryPage/CategoryPage';
 
+
 const App = () => {
   return (
     <>
@@ -28,16 +28,15 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/signup" element={<SignUpForm />} />
         <Route path="/signin" element={<SignInForm />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/register-athlete" element={<Register />} />
         <Route path='/coachId' element={<CoachId />} />
         <Route path='/home' element={<Home />} />
         <Route path='/coachesRating' element={<CoachWithRating />} />
         <Route path='/coachChat' element={<CoachChat />} />
-        <Route path='/coachProfile' element={<Coachprofile />} />
+        <Route path='/register-coach' element={<Coachprofile />} />
         <Route path='/logout' element={<Logout />} />
-        {/* <Route path='/coachVideoChat' element={<CoachVideoChat />} /> */}
         <Route path='/category/:sport' element={<CategoryPage />} />
-        <Route path='/Coach-video-chat' element={<CoachVideoChat />} />
+        <Route path='/video-chat' element={<CoachVideoChat />} />
         <Route path='/wallet-recharge' element={<WalletRecharge />} />
         <Route path='/add-money' element={<AddMoney />} />
         <Route path='/wallet-coach-balance' element={<WalletCoachBalance />} />

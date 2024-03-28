@@ -17,26 +17,10 @@ import { Footer } from '../footer/Footer'
 //bootstrap import
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import { coaches } from '../../constants/coachData'
 
 export const WalletCoachBalance = () => {
-    const coaches = [
-        {
-            name: 'Vijay',
-            sports: "Cricket"
-        },
-        {
-            name: 'Ajay',
-            sports: "Football"
-        },
-        {
-            name: 'Vipul',
-            sports: "Boxing"
-        },
-        {
-            name: 'Dhruv',
-            sports: "Tennis"
-        },
-    ]
+
     return (
         <>
             <NavigationBar />
@@ -49,7 +33,7 @@ export const WalletCoachBalance = () => {
                             <span style={{ fontSize: 20 }}>&nbsp;<FontAwesomeIcon icon={faGreaterThan} />&nbsp;Player</span>
                         </div>
 
-                        <div className='card mt-5 shadow'>
+                        <div className='card cardContainer mt-5 shadow'>
                             <div className="card-body d-flex flex-row">
                                 <img src={maleAvatar} height={'260px'} width={'220px'} />
 
@@ -78,7 +62,7 @@ export const WalletCoachBalance = () => {
                         </div>
                     </div>
 
-                    <div className='secondContainer col-md-6 mt-5 text-white pt-4'>
+                    <div className='balanceContainer col-md-6 mt-5 text-white pt-4'>
                         <div className='d-flex flex-row align-items-center'>
                             <FontAwesomeIcon icon={faArrowLeft} color=' white' size='2xl' />
                             <button id='balanceBtn'>Balance</button>
@@ -118,9 +102,9 @@ export const WalletCoachBalance = () => {
                         </div>
 
                         <div className='d-flex flex-row justify-content-center align-items-center m-5'>
-                            <div id='whiteContainer'></div>
-                            <div id='whiteContainer' className='mx-3'></div>
-                            <div id='whiteContainer'></div>
+                            <div id='slideBtn'></div>
+                            <div id='slideBtn' className='mx-3'></div>
+                            <div id='slideBtn'></div>
                         </div>
                     </div>
 

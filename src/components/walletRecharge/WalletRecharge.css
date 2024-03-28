@@ -1,4 +1,4 @@
-#box {
+#coachInfoCard {
     height: 20rem !important;
     width: 40rem !important;
     background-color: #FFFFFF !important;
@@ -24,12 +24,7 @@
     ;
 }
 
-.vl {
-    border-left: 2px solid #FFFFFF;
-    height: 80px;
-}
-
-.table {
+.tableContainer {
     background-color: #425EF3 !important;
     font-size: 15px;
     color: #000000;

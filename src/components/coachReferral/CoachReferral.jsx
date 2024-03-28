@@ -52,7 +52,7 @@ export const CoachReferral = () => {
                             </div>
                             <hr />
                             <div className='d-flex align-items-center justify-content-center'>
-                                <button id='btnStyle'>SHOW ALL HISTORY</button>
+                                <button id='showHistoryBtn'>SHOW ALL HISTORY</button>
                             </div>
                         </div>
                     </div>

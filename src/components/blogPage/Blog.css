@@ -1,7 +1,3 @@
-.container {
-    background-color: #FFFFFF !important;
-}
-
 #signUp {
     background-color: #000000;
     color: #FFFFFF;
@@ -20,4 +16,29 @@
     text-align: center;
     font-weight: bold;
     color: #000000
+}
+
+.questionTitle {
+    margin-left: 30px;
+    padding: 0px 60px 0px;
+    color: #090909;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
+
+.questionContainer {
+    color: #090909;
+    font-weight: 500;
+    font-size: 22px;
+    width: 400px;
+    text-align: center
+}
+
+.subTitle {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600px;
+    color: #283C46;
+    padding: 10px 200px 10px
 }
